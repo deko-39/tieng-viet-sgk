@@ -161,6 +161,28 @@ export const paragraphs: Paragraph[] = [
     addedAt: "2026-08-13",
   }),
   createParagraph({
+    slug: "con-qua-thong-minh",
+    title: "Con quạ thông minh",
+    authorSlug: "dan-gian",
+    content:
+      "Một con quạ khát nước. Nó tìm thấy một chiếc lọ có nước. Song nước trong lọ có ít, cổ lọ lại cao, nó không sao thò mỏ vào uống được. Quạ liền nghĩ ra một kế. Nó lấy mỏ gắp từng hòn sỏi bỏ vào lọ. Nước dâng lên dần dần. Thế là quạ tha hồ uống.",
+    excerpt:
+      "Đoạn văn ngắn, sáng rõ và giàu tính kể chuyện, phù hợp với mạch đọc lớp 1 về con vật và sự thông minh trong tình huống khó.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "con-vat",
+      "tri-khon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createParagraph({
     slug: "tren-duong-ve-que",
     title: "Trên đường về quê",
     authorSlug: "dan-gian",

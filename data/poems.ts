@@ -1133,6 +1133,50 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
+    slug: "me-va-co",
+    title: "Mẹ và cô",
+    authorSlug: "dan-gian",
+    content:
+      "Buổi sáng bé chào mẹ,\nChạy tới ôm cô cô,\nBuổi chiều bé chào cô,\nRồi sà vào lòng mẹ.\n\nMặt trời mọc rồi lặn\nTrên đôi chân lon ton.\nHai chân trời của con\nLà mẹ và cô giáo.",
+    excerpt:
+      "Bài thơ ngắn, ấm và gần, phù hợp với mạch đọc lớp 1 về mẹ, cô giáo và thế giới yêu thương của trẻ nhỏ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "truong-hoc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "quyen-vo-cua-em",
+    title: "Quyền vở của em",
+    authorSlug: "dan-gian",
+    content:
+      "Quyển vở này mở ra\nBao nhiêu trang giấy trắng\nTừng dòng kẻ ngay ngắn\nNhư chúng em xếp hàng.\n\nLật từng trang, từng trang\nGiấy trắng sờ mát rượi\nThơm tho mùi giấy mới\nNắn nót bàn tay xinh.\n\nÔi quyển vở mới tinh\nEm viết cho sạch, đẹp\nChữ đẹp là tính nết\nCủa những người trò ngoan.",
+    excerpt:
+      "Bài thơ ngắn, sáng và giàu không khí đầu năm học, phù hợp với mạch đọc lớp 1 về vở mới, chữ đẹp và nếp học chăm ngoan.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "truong-hoc",
+      "hoc-tap",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Học đường"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
     slug: "goi-ban-den-lop",
     title: "Gọi bạn đến lớp",
     authorSlug: "vo-quang",
