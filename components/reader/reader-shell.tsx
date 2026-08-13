@@ -10,6 +10,7 @@ import {
   SunMedium,
   X,
 } from "lucide-react";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import { useEffect, useLayoutEffect, useState } from "react";
 
@@ -86,14 +87,17 @@ export function ReaderShell({
             >
               <Menu className="h-4.5 w-4.5" aria-hidden="true" />
             </button>
-            <div className="flex min-w-0 items-center gap-2.5">
+            <Link
+              href="/"
+              className="flex min-w-0 items-center gap-2.5 rounded-full outline-none transition hover:text-brick focus-visible:ring-2 focus-visible:ring-brick/40"
+            >
               <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line/70 bg-surface text-brick">
                 <BookOpenText className="h-4 w-4" aria-hidden="true" />
               </span>
               <p className="truncate font-serif text-base tracking-[0.08em] text-ink sm:text-lg">
                 THƯ VIỆN THƠ VĂN
               </p>
-            </div>
+            </Link>
           </div>
           <div className="flex items-center gap-2">
             <button
