@@ -12,112 +12,195 @@ export default function OpenGraphImage() {
   return new ImageResponse(
     <div
       style={{
-        background: "#171717",
-        color: "#f8f8f8",
+        background:
+          "linear-gradient(135deg, #f5f1e8 0%, #ebe3d4 54%, #d8ccb7 100%)",
+        color: "#171717",
         display: "flex",
-        flexDirection: "column",
         height: "100%",
-        justifyContent: "space-between",
-        padding: "64px",
+        padding: "48px",
         width: "100%",
       }}
     >
       <div
         style={{
-          alignItems: "center",
-          color: "#d39a7d",
           display: "flex",
-          fontSize: 28,
-          fontWeight: 700,
-          letterSpacing: 6,
-          textTransform: "uppercase",
-        }}
-      >
-        Thu vien tho van
-      </div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 20,
-          maxWidth: 860,
-        }}
-      >
-        <div style={{ fontSize: 72, fontWeight: 700, lineHeight: 1.08 }}>
-          {siteConfig.name}
-        </div>
-        <div style={{ color: "#c9c1b7", fontSize: 30, lineHeight: 1.4 }}>
-          {siteConfig.description}
-        </div>
-      </div>
-      <div
-        style={{
-          alignItems: "center",
-          display: "flex",
-          gap: 18,
+          gap: 28,
+          width: "100%",
         }}
       >
         <div
           style={{
-            border: "2px solid #2d2d2d",
-            borderRadius: 24,
             display: "flex",
-            overflow: "hidden",
+            flexDirection: "column",
+            flex: 1,
+            justifyContent: "space-between",
           }}
         >
           <div
             style={{
-              background: "#f8f8f8",
-              color: "#171717",
               display: "flex",
               flexDirection: "column",
-              gap: 12,
-              padding: "26px 20px",
-              width: 94,
+              gap: 24,
+              maxWidth: 700,
+              paddingTop: 12,
+              width: "100%",
             }}
           >
             <div
               style={{
-                width: 42,
-                height: 6,
+                alignItems: "center",
+                alignSelf: "flex-start",
+                background: "rgba(255,255,255,0.7)",
+                border: "1px solid rgba(154, 91, 67, 0.18)",
                 borderRadius: 999,
-                background: "#171717",
+                display: "flex",
+                fontSize: 22,
+                fontWeight: 700,
+                letterSpacing: 4,
+                padding: "12px 18px",
+                textTransform: "uppercase",
+                color: "#9a5b43",
               }}
-            />
+            >
+              Thu vien tho van SGK
+            </div>
             <div
               style={{
-                width: 54,
-                height: 6,
-                borderRadius: 999,
-                background: "#171717",
+                display: "flex",
+                flexDirection: "column",
+                gap: 18,
               }}
-            />
+            >
+              <div
+                style={{
+                  fontSize: 72,
+                  lineHeight: 1.04,
+                  fontWeight: 700,
+                  color: "#171717",
+                }}
+              >
+                Thu vien tho van Viet Nam cho nhung trang doc dau doi.
+              </div>
+              <div
+                style={{
+                  color: "#5f5f5f",
+                  fontSize: 29,
+                  lineHeight: 1.38,
+                  maxWidth: 650,
+                }}
+              >
+                {siteConfig.description}
+              </div>
+            </div>
             <div
               style={{
-                width: 36,
-                height: 6,
-                borderRadius: 999,
-                background: "#171717",
+                alignItems: "center",
+                display: "flex",
+                gap: 16,
+                paddingTop: 10,
               }}
-            />
+            >
+              <div
+                style={{
+                  alignItems: "center",
+                  background: "#5e7152",
+                  borderRadius: 999,
+                  color: "#f5f1e8",
+                  display: "flex",
+                  fontSize: 22,
+                  fontWeight: 700,
+                  padding: "16px 28px",
+                }}
+              >
+                Bat dau doc
+              </div>
+              <div
+                style={{
+                  alignItems: "center",
+                  background: "rgba(255,255,255,0.72)",
+                  border: "1px solid rgba(94, 113, 82, 0.16)",
+                  borderRadius: 999,
+                  color: "#171717",
+                  display: "flex",
+                  fontSize: 20,
+                  padding: "15px 24px",
+                }}
+              >
+                Doc theo sach, tho va doan van
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div
+          style={{
+            background: "rgba(255,255,255,0.72)",
+            border: "1px solid rgba(154, 91, 67, 0.14)",
+            borderRadius: 30,
+            boxShadow: "0 20px 40px rgba(44, 36, 24, 0.08)",
+            display: "flex",
+            flexDirection: "column",
+            gap: 18,
+            padding: "28px",
+            width: 360,
+          }}
+        >
           <div
             style={{
               alignItems: "center",
-              background: "#f2d2c1",
-              color: "#171717",
+              background: "#fffaf3",
+              border: "1px solid rgba(154, 91, 67, 0.12)",
+              borderRadius: 999,
+              color: "#9a5b43",
               display: "flex",
-              fontSize: 42,
+              fontSize: 18,
               fontWeight: 700,
+              height: 52,
               justifyContent: "center",
               width: 52,
             }}
           >
-            V
+            TV
           </div>
-        </div>
-        <div style={{ color: "#c9c1b7", fontSize: 24 }}>
-          Sach giao khoa, tho, doan van va bai doc quen thuoc
+          <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+            <div
+              style={{
+                color: "#9a5b43",
+                fontSize: 16,
+                fontWeight: 700,
+                letterSpacing: 3,
+                textTransform: "uppercase",
+              }}
+            >
+              Mo thu vien
+            </div>
+            <div style={{ fontSize: 34, fontWeight: 700, lineHeight: 1.16 }}>
+              Hinh anh chia se nay lay tu giao dien trang chu
+            </div>
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+            {[
+              "Chon bai doc theo tung tap sach giao khoa.",
+              "Xem hinh minh hoa va mo rong noi dung khi can.",
+              "Di chuyen lien mach giua tho va doan van quen thuoc.",
+            ].map((item) => (
+              <div
+                key={item}
+                style={{
+                  background: "rgba(245, 241, 232, 0.9)",
+                  border: "1px solid rgba(94, 113, 82, 0.12)",
+                  borderRadius: 18,
+                  color: "#5f5f5f",
+                  display: "flex",
+                  fontSize: 18,
+                  lineHeight: 1.4,
+                  padding: "14px 16px",
+                }}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>,

@@ -48,6 +48,7 @@ export interface BaseContent {
   title: string;
   authorSlug?: string;
   content: string;
+  fullContent?: string;
   excerpt: string;
   tags: string[];
   categories: string[];

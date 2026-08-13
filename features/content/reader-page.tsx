@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BookOpenText } from "lucide-react";
 import { notFound } from "next/navigation";
+import { ExpandableReaderContent } from "@/components/reader/expandable-reader-content";
 import { ReaderNavigation } from "@/components/reader/reader-navigation";
 import { LibrarySidebar } from "@/components/reader/library-sidebar";
 import { ReaderShell } from "@/components/reader/reader-shell";
@@ -273,15 +274,11 @@ export async function renderReaderPage({
                           : "max-w-[39rem]"
                       }`}
                     >
-                      <div
-                        className={
-                          selectedItem.kind === "poem"
-                            ? "poem-lines text-center text-ink"
-                            : "paragraph-body text-left text-ink"
-                        }
-                      >
-                        {selectedItem.content}
-                      </div>
+                      <ExpandableReaderContent
+                        kind={selectedItem.kind}
+                        content={selectedItem.content}
+                        fullContent={selectedItem.fullContent}
+                      />
                     </div>
                   </div>
 

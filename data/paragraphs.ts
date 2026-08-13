@@ -3,6 +3,8 @@ import type { Paragraph } from "@/types/content";
 
 type ParagraphSeed = Omit<Paragraph, "id" | "kind" | "image" | "addedAt"> & {
   addedAt?: string;
+  imageCaption?: string;
+  image?: Paragraph["image"];
 };
 
 function createParagraph(seed: ParagraphSeed): Paragraph {
@@ -11,18 +13,153 @@ function createParagraph(seed: ParagraphSeed): Paragraph {
     id: seed.slug,
     kind: "paragraph",
     addedAt: seed.addedAt ?? "2026-08-13",
-    image: createPlaceholderImage(
-      seed.slug,
-      `Ảnh chờ bổ sung cho đoạn văn ${seed.title}.`,
-      `Vị trí minh họa dành cho ${seed.title}, theo tinh thần ${seed.textbook}.`,
-      seed.textbook,
-      seed.volume,
-      seed.title,
-    ),
+    image:
+      seed.image === undefined
+        ? createPlaceholderImage(
+            seed.slug,
+            `${seed.title}`,
+            seed.imageCaption ?? `<${seed.title}>`,
+            seed.textbook,
+            seed.volume,
+            seed.title,
+          )
+        : seed.image,
   };
 }
 
 export const paragraphs: Paragraph[] = [
+  createParagraph({
+    slug: "truong",
+    title: "Trường em",
+    authorSlug: "dan-gian",
+    content:
+      "Trường học là ngôi nhà thứ hai của em.\nỞ trường có cô giáo hiền như mẹ, có nhiều bè bạn thân thiết như anh em. Trường học dạy em thành người tốt.\nTrường học dạy em những điều hay.\nEm rất yêu mái trường của em.",
+    excerpt:
+      "Đoạn văn ngắn, mộc và gần, phù hợp với mạch đọc lớp 1 về mái trường, cô giáo và bè bạn.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "truong-hoc",
+      "gia-dinh",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Học đường", "Thiếu nhi"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createParagraph({
+    slug: "cai-nhan-vo",
+    title: "Cái nhãn vở",
+    authorSlug: "dan-gian",
+    content:
+      "Bố cho Giang một quyển vở mới. Giữa trang bìa là một chiếc nhãn vở trang trí rất đẹp. Giang lấy bút nắn nót viết tên trường, tên lớp, họ và tên của em vào nhãn vở.\nBố nhìn những dòng chữ ngay ngắn, khen con gái đã tự viết được nhãn vở.",
+    excerpt:
+      "Đoạn văn ngắn, gần và giàu không khí học đường đầu cấp, phù hợp với mạch đọc lớp 1 về vở mới và việc luyện viết.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "truong-hoc",
+      "hoc-tap",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Học đường", "Thiếu nhi"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createParagraph({
+    slug: "doi-ban-tay-cua-me",
+    title: "Đôi bàn tay của mẹ",
+    authorSlug: "dan-gian",
+    content:
+      "Bình yêu nhất là đôi bàn tay mẹ. Hằng ngày, đôi bàn tay của mẹ phải làm biết bao nhiêu là việc.\nĐi làm về, mẹ lại đi chợ, nấu cơm. Mẹ còn tắm cho em bé, giặt một chậu tã lót đầy.\nBình yêu lắm đôi bàn tay rám nắng, các ngón tay gầy gầy, xương xương của mẹ.",
+    excerpt:
+      "Đoạn văn ngắn, mộc và giàu tình cảm gia đình, phù hợp với mạch đọc lớp 1 về mẹ và công việc hằng ngày.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "gia-dinh",
+      "me",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Gia đình", "Thiếu nhi"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createParagraph({
+    slug: "ve-ngua",
+    title: "Vẽ ngựa",
+    authorSlug: "dan-gian",
+    content:
+      "Bé vẽ ngựa chẳng ra hình con ngựa. Thế mà bé kể với chị:\n\n- Chị ơi, bà chưa trông thấy con ngựa bao giờ đâu!\n- Sao em biết? - Chị hỏi.\n- Sáng nay, em vẽ một bức tranh con ngựa, đưa cho bà xem, bà lại hỏi: “Cháu vẽ con gì thế?”.",
+    excerpt:
+      "Đoạn văn ngắn, dí dỏm và gần lời nói trẻ nhỏ, phù hợp với mạch đọc lớp 1 về hội thoại và trí tưởng tượng của bé.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "tuoi-tho",
+      "hoi-thoai",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Sinh hoạt"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createParagraph({
+    slug: "hoa-ngoc-lan",
+    title: "Hoa ngọc lan",
+    authorSlug: "dan-gian",
+    content:
+      "Ở ngay đầu hè nhà bà em có một cây hoa ngọc lan.\nThân cây cao, to, vỏ bạc trắng. Lá dày, cỡ bằng bàn tay, xanh thẫm.\n\nHoa lan lấp ló qua kẽ lá. Nụ hoa xinh xinh, trắng ngần. Khi hoa nở, cánh xoè ra duyên dáng. Hương lan ngan ngát, toả khắp vườn, khắp nhà.\n\nVào mùa lan, sáng sáng, bà thường cài một búp lan lên mái tóc em.",
+    excerpt:
+      "Đoạn văn miêu tả dịu và giàu hương sắc, phù hợp với mạch đọc lớp 1 về cây hoa, khu vườn và tình cảm với bà.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "thien-nhien",
+      "hoa-la",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createParagraph({
+    slug: "muu-chu-se",
+    title: "Mưu chú sẻ",
+    authorSlug: "dan-gian",
+    content:
+      "Buổi sớm, một con Mèo chộp được một chú Sẻ. Sẻ hoảng lắm, nhưng nó nén sợ, lễ phép nói:\n\n- Thưa anh, tại sao một người sạch sẽ như anh trước khi ăn sáng lại không rửa mặt?\n\nNghe vậy, Mèo bèn đặt Sẻ xuống, đưa hai chân lên vuốt râu, xoa mép. Thế là Sẻ vụt bay đi. Mèo rất tức giận nhưng đã muộn mất rồi.",
+    excerpt:
+      "Đoạn văn ngắn, dí dỏm và có tình huống rõ, phù hợp với mạch đọc lớp 1 về con vật, đối đáp và sự nhanh trí.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "con-vat",
+      "hoi-thoai",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Sinh hoạt"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
   createParagraph({
     slug: "tren-duong-ve-que",
     title: "Trên đường về quê",

@@ -769,6 +769,8 @@ export const poems: Poem[] = [
     authorSlug: "dan-gian",
     content:
       "Việt Nam đất nước ta ơi\nMênh mông biển lúa đâu trời đẹp hơn\nCánh cò bay lả dập dờn\nMây mờ che đỉnh Trường Sơn sớm chiều.",
+    fullContent:
+      "Việt Nam đất nước ta ơi\nMênh mông biển lúa đâu trời đẹp hơn\nCánh cò bay lả dập dờn\nMây mờ che đỉnh Trường Sơn sớm chiều\n\nQuê hương biết mấy thân yêu\nBao nhiêu đời đã chịu nhiều thương đau\nMặt người vất vả in sâu\nGái trai cũng một áo nâu nhuộm bùn.\n\nĐất nghèo nuôi những anh hùng\nChìm trong máu lửa lại vùng đứng lên\nĐạp quân thù xuống đất đen\nSúng gươm vứt bỏ lại hiền như xưa\n\nViệt Nam đất nắng chan hoà\nHoa thơm quả ngọt bốn mùa trời xanh\nMắt đen cô gái long lanh\nYêu ai yêu trọn tấm tình thuỷ chung.\n\nĐất trăm nghề của trăm vùng\nKhách phương xa tới lạ lùng tìm xem\nTay người như có phép tiên\nTrên tre lá cũng dệt nghìn bài thơ\n\nNước bâng khuâng những chuyến đò\nĐêm đêm còn vọng câu hò Trương Chi\nĐói nghèo nên phải chia ly\nXót xa lòng kẻ rời quê lên đường.\n\nTa đi ta nhớ núi rừng\nTa đi ta nhớ dòng sông vỗ bờ\nNhớ đồng ruộng, nhớ khoai ngô\nBữa cơm rau muống quả cà giòn tan.",
     excerpt:
       "Bài thơ giàu hình ảnh quê hương đất nước và nhịp điệu ngân vang, phù hợp với mạch đọc lớp 1 về cảnh sắc Việt Nam.",
     tags: [
@@ -973,6 +975,154 @@ export const poems: Poem[] = [
       "tho",
       "thien-nhien",
       "nong-thon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "me",
+    title: "Mẹ",
+    authorSlug: "dan-gian",
+    content:
+      "Nơi ấy ngôi sao khuya\nSoi vào trong giấc ngủ\nNgọn đèn khuya bóng mẹ\nSáng một vùng trên sân.",
+    excerpt:
+      "Bài thơ ngắn, dịu và ấm, phù hợp với mạch đọc lớp 1 về mẹ, đêm khuya và tình cảm gia đình.",
+    tags: ["tieng-viet-1-tap-2", "tho", "gia-dinh", "me", "van-hoc-thieu-nhi"],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "chim-en",
+    title: "Chim én",
+    authorSlug: "dan-gian",
+    content:
+      "Chim én bạn đi đâu\nHôm nay về mở hội\nLượn bay như dàn lối\nRủ mùa xuân cùng về.",
+    excerpt:
+      "Bài thơ ngắn, tươi và giàu không khí mùa xuân, phù hợp với mạch đọc lớp 1 về chim én và cảnh sắc đầu năm.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "thien-nhien",
+      "mua-xuan",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "trang",
+    title: "Trăng",
+    authorSlug: "dan-gian",
+    content:
+      "Những đêm nào trăng khuyết\nTrông giống con thuyền trôi\nEm đi, trăng theo bước\nNhư muốn cùng đi chơi.",
+    excerpt:
+      "Bài thơ ngắn, nhẹ và giàu hình ảnh, phù hợp với mạch đọc lớp 1 về trăng đêm và liên tưởng tuổi thơ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "thien-nhien",
+      "trang-dem",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "thuyen",
+    title: "Thuyền",
+    authorSlug: "dan-gian",
+    content:
+      "Sóng nâng thuyền\nLao hối hả\nLưới tung tròn\nKhoang đầy cá\nGió lên rồi\nCánh buồm ơi.",
+    excerpt:
+      "Bài thơ ngắn, khỏe nhịp và giàu hình ảnh lao động biển, phù hợp với mạch đọc lớp 1 về thuyền bè và sóng gió.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "song-nuoc",
+      "lao-dong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Lao động"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "tang-chau",
+    title: "Tặng cháu",
+    authorSlug: "dan-gian",
+    content:
+      "Vở này ta tặng cháu yêu ta\nTỏ chút lòng yêu cháu gọi là\nMong cháu ra công mà học tập\nMai sau cháu giúp nước non nhà.",
+    excerpt:
+      "Bài thơ ngắn, mộc và giàu lời nhắn nhủ, phù hợp với mạch đọc lớp 1 về học tập và tình thương dành cho cháu nhỏ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "hoc-tap",
+      "gia-dinh",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Học tập"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "cai-bong",
+    title: "Cái Bống",
+    authorSlug: "dan-gian",
+    content:
+      "Cái Bống là cái bống bang\n\nKhéo sảy, khéo sàng cho mẹ nấu cơm.\n\nMẹ Bống đi chợ đường trơn\nBống ra gánh đỡ chạy cơn mưa ròng.",
+    excerpt:
+      "Bài thơ ngắn mang nhịp đồng dao và hình ảnh gia đình gần gũi, phù hợp với mạch đọc lớp 1 về công việc nhà và tình mẹ con.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "dong-dao",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "ai-day-som",
+    title: "Ai dậy sớm",
+    authorSlug: "dan-gian",
+    content:
+      "Ai dậy sớm\nBước ra vườn,\nHoa ngát hương\nĐang chờ đón.\n\nAi dậy sớm\nĐi ra đồng,\nCó vừng đông\nĐang chờ đón.\n\nAi dậy sớm\nChạy lên đồi,\nCả đất trời\nĐang chờ đón.",
+    excerpt:
+      "Bài thơ ngắn, trong và nhịp nhàng, phù hợp với mạch đọc lớp 1 về buổi sớm, thiên nhiên và nếp sống chăm chỉ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "thien-nhien",
+      "buoi-som",
       "van-hoc-thieu-nhi",
     ],
     categories: ["Thiếu nhi", "Thiên nhiên"],
