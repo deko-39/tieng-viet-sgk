@@ -31,7 +31,7 @@ export const poems: Poem[] = [
   createPoem({
     slug: "be-ngu-trua",
     title: "Bé ngủ trưa",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Gió lùa kẽ lá\nLá khẽ đu đưa\nGió qua cửa sổ\nBé vừa ngủ trưa.",
     excerpt:
       "Bài thơ bốn câu ngắn, nhẹ và êm, phù hợp với mạch đọc đầu cấp về giấc ngủ trưa và nhịp sinh hoạt tuổi nhỏ.",
@@ -46,14 +46,14 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     image: undefined,
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "gio-tu-tay-me",
     title: "Gió từ tay mẹ",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Gió từ tay mẹ\nRu bé ngủ say\nThay cho gió trời\nGiữa trưa oi ả.",
     excerpt:
       "Bài thơ ngắn, dịu và gần, phù hợp với mạch đọc Tiếng Việt 1 về giấc ngủ trưa và hơi ấm gia đình.",
@@ -68,13 +68,13 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "be-thoi-sao",
     title: "Bé thổi sáo",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Suối chảy rì rào\nGió reo lao xao\nBé ngồi thổi sáo.",
     excerpt:
       "Bài thơ ba câu ngắn, gọn và giàu âm thanh, hợp với mạch đọc đầu cấp về thiên nhiên và tuổi nhỏ.",
@@ -89,13 +89,13 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "chao-mao",
     title: "Chào Mào",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Chào Mào có áo màu nâu\nCứ mùa ổi tới từ đâu bay về.",
     excerpt:
       "Bài thơ ngắn với hình ảnh chim chóc và mùa quả chín, hợp với mạch đọc lớp 1 về thiên nhiên gần gũi.",
@@ -110,13 +110,13 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "un-a-un-in",
     title: "Ủn à ủn ỉn",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Ủn à ủn ỉn\nChín chú lợn con\nĂn đã no tròn\nCả đàn đi ngủ.",
     excerpt:
       "Bài thơ đồng dao ngắn, vui tai và gần sinh hoạt tuổi nhỏ, hợp với mạch đọc lớp 1.",
@@ -137,7 +137,7 @@ export const poems: Poem[] = [
   createPoem({
     slug: "song",
     title: "Sóng",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Sóng nối sóng\nMãi không thôi\nSóng sóng sóng\nĐến chân trời.",
     excerpt:
       "Bài thơ ngắn, nhịp lặp rõ và giàu hình ảnh, phù hợp với mạch đọc lớp 1 về thiên nhiên và âm điệu.",
@@ -242,8 +242,8 @@ export const poems: Poem[] = [
   }),
   createPoem({
     slug: "bong-va-may",
-    title: "Bông và mây",
-    authorSlug: "dan-gian",
+    title: "Mây và bông",
+    authorSlug: "ngo-van-phu",
     content:
       "Trên trời mây trắng như bông\nỞ dưới cánh đồng bông trắng như mây\nMấy cô má đỏ hây hây\nĐội bông như thể đội mây về làng.",
     excerpt:
@@ -259,13 +259,13 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Ngô Văn Phú.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "thang-7-thang-8",
     title: "Tháng 7 tháng 8",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Mưa tháng bảy gãy cành trám\nNắng tháng tám rám trái bòng.",
     excerpt:
       "Bài thơ ngắn, giàu nhịp dân gian và hình ảnh mùa vụ, phù hợp với mạch đọc lớp 1 về thiên nhiên và thời tiết.",
@@ -285,12 +285,14 @@ export const poems: Poem[] = [
   }),
   createPoem({
     slug: "den-truong",
-    title: "Đến trường",
-    authorSlug: "dan-gian",
+    title: "Chùm hoa giẻ",
+    authorSlug: "xuan-hoai",
     content:
-      "Vàng mơ như trái chín\nNhành giẻ treo nơi nào\nGió đưa hương thơm lạ\nĐường tới trường xôn xao.",
+      "Bờ cây chen chúc lá\nChùm giẻ treo nơi nào?\nGió về đưa hương lạ\nCứ thơm hoài, xôn xao!",
+    fullContent:
+      "Bờ cây chen chúc lá\nChùm giẻ treo nơi nào?\nGió về đưa hương lạ\nCứ thơm hoài, xôn xao!\n\nBạn trai vin cành hái\nBạn gái lượm đầy tay\nBạn trai túi áo đầy\nBạn gái cài sau nón\n\nChùm nay hoa vàng rộm\nRủ nhau dành tặng cô\nLớp học chưa đến giờ\nĐã thơm bàn cô giáo.",
     excerpt:
-      "Bài thơ ngắn, giàu hương sắc và nhịp rộn, phù hợp với mạch đọc lớp 1 về con đường đến lớp.",
+      "Bài thơ ngắn, giàu hương sắc và nhịp rộn, phù hợp với mạch đọc lớp 1 về chùm hoa giẻ, bạn bè và lớp học đầu ngày.",
     tags: [
       "tieng-viet-1-tap-1",
       "tho",
@@ -302,14 +304,16 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Xuân Hoài.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "con-co",
     title: "Con cò",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Con cò mà đi ăn đêm\nĐậu phải cành mềm lộn cổ xuống ao.",
+    fullContent:
+      "Con cò mà đi ăn đêm,\nĐậu phải cành mềm lộn cổ xuống ao.\nÔng ơi, ông vớt tôi nao,\nTôi có lòng nào ông hãy xáo măng.\nCó xáo thì xáo nước trong,\nĐừng xáo nước đục đau lòng cò con.",
     excerpt:
       "Bài thơ ngắn mang âm điệu ca dao quen thuộc, phù hợp với mạch đọc lớp 1 về lời đồng dao và hình ảnh dân gian.",
     tags: [
@@ -323,15 +327,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "em-be-ngoan",
-    title: "Em bé ngoan",
-    authorSlug: "dan-gian",
+    title: "Con cò bé bé",
+    authorSlug: "le-xuan-tho",
     content:
-      "Khi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ có yêu không nào?",
+      "Con cò bé bé\nNó đậu cành tre\nĐi không hỏi mẹ\nBiết đi đường nào",
+    fullContent:
+      "Con cò bé bé\nNó đậu cành tre\nĐi không hỏi mẹ\nBiết đi đường nào\n\nKhi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ có yêu không nào",
     excerpt:
       "Bài thơ ngắn, sáng và gần lời nói hằng ngày, phù hợp với mạch đọc lớp 1 về lễ phép và nếp sinh hoạt.",
     tags: [
@@ -345,15 +351,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Lê Xuân Thọ.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "ba",
-    title: "Bà",
-    authorSlug: "dan-gian",
+    title: "Quả ngọt cuối mùa",
+    authorSlug: "vo-thanh-an",
     content:
       "Trong vòm lá mới chồi non\nChùm cam bà giữ vẫn còn đung đưa\nQuả ngon dành tận cuối mùa\nChờ con, phần cháu bà chưa trảy vào.",
+    fullContent:
+      "Trong vòm lá mới chồi non\nChùm cam bà giữ vẫn còn đung đưa\nQuả ngon dành tận cuối mùa\nChờ con, phần cháu bà chưa trảy vào\nGiêng, hai rét cứa như dao\nNghe tiếng chào mào chống gậy ra trông\nNom đoài rồi lại ngắm đông\nBề lo sương táp, bề phòng chim ăn\nQuả vàng nằm giữa cành xuân\nMải mê góp mật, chuyên cần toả hương\nBà ơi! Thương mấy là thương\nVắng con, xa cháu tóc sương da mồi\nBà như quả ngọt chín rồi\nCàng thêm tuổi tác, càng tươi lòng vàng.",
     excerpt:
       "Bài thơ gia đình dịu và ấm, phù hợp với mạch đọc lớp 1 về bà và tình thân trong đời sống hằng ngày.",
     tags: [
@@ -367,15 +375,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Võ Thanh An.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "trong-cay",
-    title: "Trồng cây",
-    authorSlug: "dan-gian",
+    title: "Bài hát trồng cây",
+    authorSlug: "be-kien-quoc",
     content:
       "Ai trồng cây\nNgười đó có tiếng hát\nTrên vòm cây\nChim hót lời mê say.",
+    fullContent:
+      "Ai trồng cây\nNgười đó có tiếng hát\nTrên vòm cây\nChim hót lời mê say\n\nAi trồng cây\nNgười đó có ngọn gió\nRung cành cây\nHoa lá đùa lay lay\n\nAi trồng cây\nNgười đó có bóng mát\nTrong vòm cây\nQuên nắng xa đường dài\n\nAi trồng cây\nNgười đó có hạnh phúc\nMong chờ cây\nMau lớn theo từng ngày\n\nAi trồng cây...\nEm trồng cây...\nEm trồng cây...",
     excerpt:
       "Bài thơ ngắn, sáng nhịp và gần thiên nhiên, phù hợp với mạch đọc lớp 1 về cây cối và niềm vui lao động.",
     tags: [
@@ -389,7 +399,7 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Bế Kiến Quốc.",
     addedAt: "2026-08-13",
   }),
   createPoem({
@@ -416,7 +426,7 @@ export const poems: Poem[] = [
   }),
   createPoem({
     slug: "ga",
-    title: "Gà",
+    title: "Đố 6",
     authorSlug: "dan-gian",
     content:
       "Con gì mào đỏ\nLông mượt như tơ\nSáng sớm tinh mơ\nGọi người thức dậy?",
@@ -438,10 +448,12 @@ export const poems: Poem[] = [
   }),
   createPoem({
     slug: "oc",
-    title: "Ốc",
-    authorSlug: "dan-gian",
+    title: "Một mái nhà chung",
+    authorSlug: "dinh-hai",
     content:
       "Mái nhà của ốc\nTròn vo bên mình\nMái nhà của em\nNghiêng giàn gấc đỏ.",
+    fullContent:
+      "Mái nhà của chim\nLợp nghìn lá biếc\nMái nhà của cá\nSóng xanh rập rình.\n\nMái nhà của dím\nSâu trong lòng đất\nMái nhà của ốc\nTròn vo bên mình.\n\nMái nhà của em\nNghiêng giàn gấc đỏ\nMái nhà của bạn\nHoa giấy lợp hồng.\n\nMọi mái nhà riêng\nCó mái nhà chung\nLà bầu trời xanh\nXanh đến vô cùng.\n\nMọi mái nhà riêng\nCó mái nhà chung\nRực rỡ vòm cao\nBảy sắc cầu vồng.\n\nBạn ơi, ngước mắt\nNgước mắt lên trông\nBạn ơi, hãy hát\nHát câu cuối cùng:\nMột mái nhà chung\nMột mái nhà chung…",
     excerpt:
       "Bài thơ ngắn, giàu hình ảnh so sánh và gần đời sống, phù hợp với mạch đọc lớp 1 về con vật và mái ấm quen thuộc.",
     tags: [
@@ -455,15 +467,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Định Hải.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "que-huong",
     title: "Quê hương",
-    authorSlug: "dan-gian",
+    authorSlug: "do-trung-quan",
     content:
       "Quê hương là con diều biếc\nChiều chiều con thả trên đồng\nQuê hương là con đò nhỏ\nÊm đềm khua nước ven sông.",
+    fullContent:
+      "Quê hương là gì hả mẹ\nMà cô giáo dạy hãy yêu?\nQuê hương là gì hả mẹ\nAi đi xa cũng nhớ nhiều?\n\nQuê hương là chùm khế ngọt\nCho con trèo hái mỗi ngày\nQuê hương là đường đi học\nCon về rợp bướm vàng bay\n\nQuê hương là con diều biếc\nTuổi thơ con thả trên đồng\nQuê hương là con đò nhỏ\nÊm đềm khua nước ven sông\n\nQuê hương là cầu tre nhỏ\nMẹ về nón lá nghiêng che\nLà hương hoa đồng cỏ nội\nBay trong giấc ngủ đêm hè\n\nQuê hương là đêm trăng tỏ\nHoa cau rụng trắng ngoài thềm\nTiếng ếch râm ran bờ ruộng\nCon nằm nghe giữa mưa đêm\n\nQuê hương là bàn tay mẹ\nDịu dàng hái lá mồng tơi\nBát canh ngọt ngào tỏa khói\nSau chiều tan học mưa rơi\n\nQuê hương là vàng hoa bí\nLà hồng tím giậu mồng tơi\nLà đỏ đôi bờ dâm bụt\nMàu hoa sen trắng tinh khôi\n\nQuê hương mỗi người đều có\nVừa khi mở mắt chào đời\nQuê hương là dòng sữa mẹ\nThơm thơm giọt xuống bên nôi\n\nQuê hương mỗi người chỉ một\nNhư là chỉ một mẹ thôi\nQuê hương nếu ai không nhớ\nSẽ không lớn nổi thành người.",
     excerpt:
       "Bài thơ ngắn, dịu và giàu hình ảnh quê nhà, phù hợp với mạch đọc lớp 1 về cảnh vật thân thuộc và tình cảm gắn bó.",
     tags: [
@@ -477,15 +491,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Đỗ Trung Quân.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "doi-tay",
-    title: "Đôi tay",
-    authorSlug: "dan-gian",
+    title: "Cô dạy",
+    authorSlug: "pham-ho",
     content:
-      "Mẹ, mẹ ơi cô dạy\nPhải giữ sạch đôi tay\nBàn tay mà dây bẩn\nSách, áo cũng bẩn ngay.",
+      "Mẹ, mẹ ơi! Cô dạy:\nPhải giữ sạch đôi tay,\nBàn tay mà giây bẩn,\nSách, áo cũng bẩn ngay.",
+    fullContent:
+      "Mẹ, mẹ ơi! Cô dạy:\nPhải giữ sạch đôi tay,\nBàn tay mà giây bẩn,\nSách, áo cũng bẩn ngay.\n\nMẹ, mẹ ơi! Cô dạy:\nCãi nhau là không vui\nCái miệng nó xinh thế\nChỉ nói điều hay thôi.",
     excerpt:
       "Bài thơ ngắn, rõ ý và gần sinh hoạt học đường, phù hợp với mạch đọc lớp 1 về giữ gìn vệ sinh và nề nếp.",
     tags: [
@@ -499,15 +515,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Phạm Hổ.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "loi-chao",
-    title: "Lời chào",
-    authorSlug: "dan-gian",
+    title: "Lời chào đi trước",
+    authorSlug: "nguyen-hoang-son",
     content:
       "Đi đến nơi nào\nLời chào đi trước\nLời chào dẫn bước\nChẳng sợ lạc nhà\nLời chào kết bạn\nCon đường bớt xa.",
+    fullContent:
+      "Đi đến nơi nào\nLời chào đi trước\nLời chào dẫn bước\nChẳng sợ lạc nhà\nLời chào kết bạn\nCon đường bớt xa\nLời chào là hoa\nNở từ lòng tốt\nLà cơn gió mát\nBuổi sáng đầu ngày\nNhư một bàn tay\nChân thành cởi mở\n\nAi ai cũng có\nChẳng nặng là bao\nBạn ơi, đi đâu\nNhớ mang đi nhé!",
     excerpt:
       "Bài thơ ngắn, rõ ý và giàu tính nhắc nhớ, phù hợp với mạch đọc lớp 1 về lễ phép và cách ứng xử hằng ngày.",
     tags: [
@@ -521,13 +539,13 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Nguyễn Hoàng Sơn.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "cay-da",
     title: "Cây đa",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Hỏi cây bao nhiêu tuổi\nCây không nhớ tháng năm\nCây chỉ dang tay lá\nChe tròn một bóng râm.",
     excerpt:
@@ -543,15 +561,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "chim",
-    title: "Chim",
-    authorSlug: "dan-gian",
+    title: "Chim chiền chiện",
+    authorSlug: "huy-can",
     content:
       "Bay cao cao vút\nChim biến mất rồi\nChỉ còn tiếng hót\nLàm xanh da trời.",
+    fullContent:
+      "Con chim chiền chiện\nBay vút, vút cao\nLòng đầy yêu mến\nKhúc hát ngọt ngào.\n\nCánh đập trời xanh\nCao hoài, cao vợi\nTiếng hót long lanh\nNhư cành sương chói\n\nChim ơi, chim nói\nChuyện chi, chuyện chi?\nLòng vui bối rối\nĐời lên đến thì...\n\nTiếng ngọc trong veo\nChim gieo từng chuỗi\nLòng chim vui nhiều\nHát không biết mỏi.\n\nChim bay, chim sà\nLúa tròn bụng sữa\nĐồng quê chan chứa\nNhững lời chim ca.\n\nBay cao, cao vút\nChim biến mất rồi\nChỉ còn tiếng hót\nLàm xanh da trời...\n\nCon chim chiền chiện\nHồn xanh quê nhà\nSáng nay lại hót\nTưng bừng lòng ta.",
     excerpt:
       "Bài thơ ngắn, nhẹ và giàu âm vang, phù hợp với mạch đọc lớp 1 về bầu trời và tiếng chim.",
     tags: [
@@ -565,15 +585,17 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Huy Cận.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "chim-ngoi",
     title: "Chim ngói",
-    authorSlug: "dan-gian",
+    authorSlug: "ngo-van-phu",
     content:
       "Những đàn chim ngói\nMặc áo màu nâu\nĐeo cườm ở cổ\nChân đất hồng hồng\nNhư nung qua lửa.",
+    fullContent:
+      "Không hiểu từ đâu\nCứ mùa thu\nChúng bay về khắp cánh đồng,\nsiêng năng nhặt đỗ,\nNhững đàn chim ngói,\nmặc áo màu nâu,\nđeo cườm ở cổ,\nchân đất hồng hồng,\nnhư nung qua lửa.\nMang theo ngọn gió mùa đông bắc đầu tiên\nMùa màng bỗng rực rỡ lên,\nnhững sắc màu đẹp nhất.\n\nChúng đem những tinh chất xa xôi từ những khoảng trời\nVề hoà với sức mỡ màu của đất.\n\nHương đồng, hi vọng tràn trong mắt,\nnhững tiếng cười bay dọc xóm vui.\n\nSao tôi thấy chúng giống những cô gái làng tôi,\nNhững cô gái báo hiệu những mùa màng bát ngát.",
     excerpt:
       "Bài thơ ngắn giàu hình ảnh tả chim, phù hợp với mạch đọc lớp 1 về thiên nhiên và loài vật quen thuộc.",
     tags: [
@@ -587,13 +609,13 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Ngô Văn Phú.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "chim-chich",
     title: "Chim chích",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Tôi là chim chích\nNhà ở cành chanh\nTìm sâu tôi bắt\nCho chanh quả nhiều\nRi rích, ri rích\nCó ích, có ích.",
     excerpt:
@@ -609,12 +631,12 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Tác giả khuyết danh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "vit",
-    title: "Vịt",
+    title: "Đố 7",
     authorSlug: "dan-gian",
     content:
       "Con gì có cánh\nMà lại biết bơi\nNgày xuống ao chơi\nĐêm về đẻ trứng?",
@@ -636,7 +658,7 @@ export const poems: Poem[] = [
   }),
   createPoem({
     slug: "meo",
-    title: "Mèo",
+    title: "Con mèo mà trèo cây cau",
     authorSlug: "dan-gian",
     content:
       "Con Mèo mà trèo cây cau\nHỏi thăm chú Chuột đi đâu vắng nhà\nChú Chuột đi chợ đường xa\nMua mắm, mua muối giỗ cha con Mèo.",
@@ -1155,6 +1177,29 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
+    slug: "me-co-biet",
+    title: "Mẹ có biết",
+    authorSlug: "dan-gian",
+    content:
+      "- Mẹ có biết ở lớp\n\nBạn Hoa không học bài\n\nSáng nay cô giáo gọi\n\nĐứng dậy đỏ bừng tai...\n\n- Mẹ có biết ở lớp\n\nBạn Hùng cứ trêu con\n\nBạn Mai tay đầy mực\n\nCòn bôi bẩn ra bàn...\n\nVuốt tóc con, mẹ bảo:\n\n- Mẹ chẳng nhớ nổi đâu\n\nNói mẹ nghe ở lớp\n\nCon đã ngoan thế nào?",
+    excerpt:
+      "Bài thơ ngắn, dí dỏm và gần lời nói trẻ nhỏ, phù hợp với mạch đọc lớp 1 về mẹ, lớp học và bài học tự nhìn lại mình.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "truong-hoc",
+      "hoi-thoai",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
     slug: "quyen-vo-cua-em",
     title: "Quyền vở của em",
     authorSlug: "dan-gian",
@@ -1170,6 +1215,163 @@ export const poems: Poem[] = [
       "van-hoc-thieu-nhi",
     ],
     categories: ["Thiếu nhi", "Học đường"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "ngoi-nha",
+    title: "Ngôi nhà",
+    authorSlug: "dan-gian",
+    content:
+      "Em yêu nhà em\nHàng xoan trước ngõ\nHoa xao xuyến nở\nNhư mây từng chùm.\n\nEm yêu tiếng chim\nĐầu hồi lảnh lót\nMái vàng thơm phức\nRạ đầy sân phơi.\n\nEm yêu ngôi nhà\nGỗ, tre mộc mạc\nNhư yêu đất nước\nBốn mùa chim ca.",
+    excerpt:
+      "Bài thơ ngắn, êm và giàu hình ảnh quê nhà, phù hợp với mạch đọc lớp 1 về mái ấm, sân vườn và tình yêu đất nước từ những điều gần gũi.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "que-huong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "bo",
+    title: "Bố",
+    authorSlug: "dan-gian",
+    content:
+      "Bố em là bộ đội\nỞ tận vùng đảo xa\nChưa lần nào về phép\nMà luôn luôn có quà.\n\nBố gửi nghìn cái nhớ\nGửi cả nghìn cái thương\nBố gửi nghìn lời chúc\nGửi cả nghìn cái hôn.\n\nBố cho quà nhiều thế\nVì biết em rất ngoan\nVì em luôn giúp bố\nTay súng thêm vững vàng.",
+    excerpt:
+      "Bài thơ ngắn, ấm và giàu tình cảm gia đình, phù hợp với mạch đọc lớp 1 về bố, người lính và tình thương từ nơi xa.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "dat-nuoc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "coc-coc-coc",
+    title: "Cốc, cốc, cốc",
+    authorSlug: "dan-gian",
+    content:
+      "Cốc, cốc, cốc!\n\n- Ai gọi đó?\n- Tôi là Thỏ.\n- Nếu là Thỏ\n\nCho xem tai.\n\nCốc, cốc, cốc!\n\n- Ai gọi đó?\n- Tôi là Nai.\n- Thật là Nai\n\nCho xem gạc.\n\nCốc, cốc, cốc!\n\n- Ai gọi đó?\n- Tôi là Gió.\n- Xin mời vào\n\nKiễng chân cao\n\nVào trong cửa.\n\nCùng soạn sửa\n\nĐón trăng lên\n\nQuạt mát thêm\n\nHơi biển cả\n\nReo hoa lá\n\nĐẩy buồm thuyền...\n\nĐi khắp miền\n\nLàm việc tốt.",
+    excerpt:
+      "Bài thơ đối thoại ngắn, giàu nhịp điệu và tưởng tượng, phù hợp với mạch đọc lớp 1 về con vật, gió và những liên tưởng hồn nhiên của trẻ nhỏ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "hoi-thoai",
+      "thien-nhien",
+      "con-vat",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "meo-di-hoc",
+    title: "Mèo đi học",
+    authorSlug: "dan-gian",
+    content:
+      "Mèo con buồn bực\n\nMai phải đến trường\n\nBèn kiếm cớ luôn:\n\n- Cái đuôi tôi ốm.\n\nCừu mới be toáng:\n\n- Tôi sẽ chữa lành\n\nNhưng muốn cho nhanh\n\nCắt đuôi khỏi hết!\n\n- Cắt đuôi? Ấy chết...!\n\nTôi đi học thôi!",
+    excerpt:
+      "Bài thơ ngắn, hóm hỉnh và giàu đối thoại, phù hợp với mạch đọc lớp 1 về chuyện đi học và cách trẻ nhỏ tìm cớ rồi tự đổi ý.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "truong-hoc",
+      "con-vat",
+      "hoi-thoai",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Học đường"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "nguong-cua",
+    title: "Ngưỡng cửa",
+    authorSlug: "dan-gian",
+    content:
+      "Nơi này ai cũng quen\nNgay từ thời tấm bé\nKhi tay bà, tay mẹ\nCòn dắt vòng đi men.\n\nNơi bố mẹ ngày đêm\nLúc nào qua cũng vội,\nNơi bạn bè chạy tới\nThường lúc nào cũng vui.\n\nNơi này đã đưa tôi\nBuổi đầu tiên đến lớp\nNay con đường xa tắp,\nVẫn đang chờ tôi đi.",
+    excerpt:
+      "Bài thơ ngắn, lắng và gần gũi, phù hợp với mạch đọc lớp 1 về mái nhà, gia đình và bước đi đầu tiên ra thế giới rộng hơn.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "truong-hoc",
+      "tuoi-tho",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "ke-cho-be-nghe",
+    title: "Kể cho bé nghe",
+    authorSlug: "dan-gian",
+    content:
+      "Hay nói ầm ĩ\nLà con vịt bầu.\n\nHay hỏi đâu đâu\nLà con chó vện.\n\nHay chăng dây điện\nLà con nhện con.\n\nĂn no quay tròn\nLà cối xay lúa.\n\nMồm thở ra gió\nLà cái quạt hòm.\n\nKhông thèm cỏ non\nLà con trâu sắt.\n\nRồng phun nước bạc\nLà chiếc máy bơm.\n\nDùng miệng nấu cơm\nLà cua, là cáy...",
+    excerpt:
+      "Bài thơ ngắn, vui và giàu liên tưởng, phù hợp với mạch đọc lớp 1 về con vật, đồ vật quen thuộc và lối so sánh hồn nhiên của trẻ nhỏ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "con-vat",
+      "doi-song",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Sinh hoạt"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "luy-tre",
+    title: "Lũy tre",
+    authorSlug: "dan-gian",
+    content:
+      "Mỗi sớm mai thức dậy\nLuỹ tre xanh rì rào\nNgọn tre cong gọng vó\nKéo mặt trời lên cao.\n\nNhững trưa đồng đầy nắng\nTrâu nằm nhai bóng râm\nTre bần thần nhớ gió\nChợt về đầy tiếng chim.",
+    excerpt:
+      "Bài thơ ngắn, êm và giàu hình ảnh đồng quê, phù hợp với mạch đọc lớp 1 về lũy tre, nắng trưa và nhịp sống làng quê gần gũi.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "que-huong",
+      "thien-nhien",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
