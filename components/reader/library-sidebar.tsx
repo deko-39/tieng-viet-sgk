@@ -21,6 +21,7 @@ interface LibrarySidebarProps {
   selectedSlug: string | null;
   currentQuery: string;
   clearHref: string;
+  reserveHeaderActionSpace?: boolean;
 }
 
 function getInitialOpenState(
@@ -56,6 +57,7 @@ export function LibrarySidebar({
   selectedSlug,
   currentQuery,
   clearHref,
+  reserveHeaderActionSpace = false,
 }: LibrarySidebarProps) {
   const initialState = getInitialOpenState(groups, selectedSlug);
   const [openGroups, setOpenGroups] = useState(initialState.groups);
@@ -79,32 +81,33 @@ export function LibrarySidebar({
 
   return (
     <div className="flex flex-col">
-      <div className="border-b border-line/70 px-2 py-2">
-        <div className="flex items-start justify-between gap-2">
-          <p className="section-kicker">Thư viện</p>
-          <div className="flex items-center gap-1.5 text-ink-soft">
-            <button
-              type="button"
-              onClick={() => setAllOpen(true)}
-              className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 transition hover:text-ink"
-              aria-label="Mở hết mục lục"
-              title="Mở hết mục lục"
-            >
-              <ChevronsDown className="h-3.5 w-3.5" aria-hidden="true" />
-            </button>
-            <button
-              type="button"
-              onClick={() => setAllOpen(false)}
-              className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 transition hover:text-ink"
-              aria-label="Thu gọn mục lục"
-              title="Thu gọn mục lục"
-            >
-              <ChevronsUp className="h-3.5 w-3.5" aria-hidden="true" />
-            </button>
-          </div>
+      <div
+        className={`border-b border-line/70 px-1.5 py-1.5 ${
+          reserveHeaderActionSpace ? "pl-10" : ""
+        }`}
+      >
+        <div className="flex items-center justify-end gap-1.5 text-ink-soft">
+          <button
+            type="button"
+            onClick={() => setAllOpen(true)}
+            className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 transition hover:text-ink"
+            aria-label="Mở hết mục lục"
+            title="Mở hết mục lục"
+          >
+            <ChevronsDown className="h-3.5 w-3.5" aria-hidden="true" />
+          </button>
+          <button
+            type="button"
+            onClick={() => setAllOpen(false)}
+            className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 transition hover:text-ink"
+            aria-label="Thu gọn mục lục"
+            title="Thu gọn mục lục"
+          >
+            <ChevronsUp className="h-3.5 w-3.5" aria-hidden="true" />
+          </button>
         </div>
         {currentQuery ? (
-          <div className="mt-2 flex items-center justify-between gap-2 rounded-lg border border-line/70 bg-paper/80 px-2 py-1.5 text-[0.78rem] text-ink-soft">
+          <div className="mt-1.5 flex items-center justify-between gap-2 rounded-lg border border-line/70 bg-paper/80 px-2 py-1.5 text-[0.75rem] text-ink-soft">
             <span className="truncate">Từ khóa: {currentQuery}</span>
             <Link
               href={clearHref}
@@ -118,7 +121,7 @@ export function LibrarySidebar({
 
       <div>
         {groups.length ? (
-          <div className="space-y-1 px-1.5 py-1.5">
+          <div className="space-y-1 px-1 py-1">
             {groups.map((group) => {
               const itemCount = group.volumes.reduce(
                 (count, volume) => count + volume.items.length,
@@ -138,17 +141,19 @@ export function LibrarySidebar({
                         [group.id]: !currentState[group.id],
                       }))
                     }
-                    className="flex w-full items-center justify-between gap-3 px-2.5 py-2.5 text-left text-[0.82rem] font-medium text-ink"
+                    className="flex w-full items-center justify-between gap-2 px-2 py-2 text-left text-[0.79rem] font-medium text-ink"
                     aria-expanded={openGroups[group.id]}
                   >
-                    <span>{group.title}</span>
+                    <span className="text-[0.74rem] leading-4.5">
+                      {group.title}
+                    </span>
                     <span className="text-[0.66rem] uppercase tracking-[0.14em] text-ink-soft">
                       {itemCount}
                     </span>
                   </button>
 
                   {openGroups[group.id] ? (
-                    <div className="space-y-1.5 border-t border-line/55 px-1.5 py-1.5">
+                    <div className="space-y-1 border-t border-line/55 px-1 py-1">
                       {group.volumes.map((volume) => (
                         <div
                           key={volume.id}
@@ -162,17 +167,19 @@ export function LibrarySidebar({
                                 [volume.id]: !currentState[volume.id],
                               }))
                             }
-                            className="flex w-full items-center justify-between gap-3 px-2.5 py-2 text-left text-[0.78rem] text-ink"
+                            className="flex w-full items-center justify-between gap-2 px-2 py-1.5 text-left text-[0.74rem] text-ink"
                             aria-expanded={openVolumes[volume.id]}
                           >
-                            <span>{volume.title}</span>
+                            <span className="text-[0.69rem] leading-4">
+                              {volume.title}
+                            </span>
                             <span className="text-[0.62rem] uppercase tracking-[0.14em] text-ink-soft">
                               {volume.items.length}
                             </span>
                           </button>
 
                           {openVolumes[volume.id] ? (
-                            <ul className="space-y-0.5 border-t border-line/45 px-1.5 py-1.5">
+                            <ul className="space-y-0.5 border-t border-line/45 px-1 py-1">
                               {volume.items.length ? (
                                 volume.items.map((item) => {
                                   const isSelected = item.slug === selectedSlug;
@@ -189,7 +196,7 @@ export function LibrarySidebar({
                                           {},
                                           buildContentPath(item),
                                         )}
-                                        className={`block rounded-md px-2.5 py-1.5 transition ${
+                                        className={`block rounded-md px-2 py-1.5 transition ${
                                           isSelected
                                             ? "reader-current-item"
                                             : "text-ink-soft hover:bg-paper/80 hover:text-ink"
@@ -197,7 +204,7 @@ export function LibrarySidebar({
                                       >
                                         <span className="flex items-start gap-2">
                                           <BookText
-                                            className={`mt-0.5 h-3.5 w-3.5 shrink-0 ${
+                                            className={`mt-0.5 h-3 w-3 shrink-0 ${
                                               isSelected
                                                 ? "text-brick"
                                                 : "text-ink-soft/70"
@@ -205,7 +212,7 @@ export function LibrarySidebar({
                                             aria-hidden="true"
                                           />
                                           <span className="min-w-0 flex-1">
-                                            <span className="block text-[0.8rem] leading-5.5">
+                                            <span className="block text-[0.76rem] leading-5">
                                               {item.title}
                                             </span>
                                             <span className="block text-[0.62rem] uppercase tracking-[0.12em] text-ink-soft/80">

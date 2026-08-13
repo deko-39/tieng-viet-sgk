@@ -10,7 +10,7 @@ import {
   X,
 } from "lucide-react";
 import type { ReactNode } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 
 interface ReaderShellProps {
   search: ReactNode;
@@ -37,14 +37,30 @@ export function ReaderShell({
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(initialSearchOpen);
   const [theme, setTheme] = useState<"paper" | "dusk">("paper");
+  const [hasLoadedPreferences, setHasLoadedPreferences] = useState(false);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    const storedSidebarState =
+      window.localStorage.getItem("reader-sidebar-collapsed") === "true";
     const storedTheme =
       window.localStorage.getItem("reader-theme") === "dusk" ? "dusk" : "paper";
 
+    setDesktopSidebarCollapsed(storedSidebarState);
     document.documentElement.dataset.theme = storedTheme;
     setTheme(storedTheme);
+    setHasLoadedPreferences(true);
   }, []);
+
+  useEffect(() => {
+    if (!hasLoadedPreferences) {
+      return;
+    }
+
+    window.localStorage.setItem(
+      "reader-sidebar-collapsed",
+      String(desktopSidebarCollapsed),
+    );
+  }, [desktopSidebarCollapsed, hasLoadedPreferences]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -114,41 +130,31 @@ export function ReaderShell({
         <div className="mx-auto flex max-w-[1640px] items-start gap-3 px-3 py-3 sm:px-4">
           <aside
             className={`reader-scrollbar reader-muted-panel hidden self-start rounded-xl lg:sticky lg:top-[3.75rem] lg:block lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto ${
-              desktopSidebarCollapsed ? "w-12" : "w-[14rem] xl:w-[15rem]"
-            }`}
+              desktopSidebarCollapsed ? "w-11" : "w-[12rem] xl:w-[13rem]"
+            } relative`}
           >
-            <div className="flex min-h-full flex-col">
-              <div
-                className={`border-b border-line/70 ${
-                  desktopSidebarCollapsed
-                    ? "flex justify-center p-1"
-                    : "flex justify-end p-1"
-                }`}
-              >
-                <button
-                  type="button"
-                  onClick={() =>
-                    setDesktopSidebarCollapsed((currentState) => !currentState)
-                  }
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-line bg-paper text-ink transition hover:bg-surface"
-                  aria-label={
-                    desktopSidebarCollapsed ? "Hiện mục lục" : "Thu gọn mục lục"
-                  }
-                  aria-pressed={desktopSidebarCollapsed}
-                  title={
-                    desktopSidebarCollapsed ? "Hiện mục lục" : "Thu gọn mục lục"
-                  }
-                >
-                  {desktopSidebarCollapsed ? (
-                    <PanelLeftOpen className="h-4 w-4" aria-hidden="true" />
-                  ) : (
-                    <PanelLeftClose className="h-4 w-4" aria-hidden="true" />
-                  )}
-                </button>
-              </div>
-              <div className="min-h-0 flex-1">
-                {desktopSidebarCollapsed ? desktopRail : desktopSidebar}
-              </div>
+            <button
+              type="button"
+              onClick={() =>
+                setDesktopSidebarCollapsed((currentState) => !currentState)
+              }
+              className="absolute left-1.5 top-1.5 z-10 inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 text-ink transition hover:bg-surface"
+              aria-label={
+                desktopSidebarCollapsed ? "Hiện mục lục" : "Thu gọn mục lục"
+              }
+              aria-pressed={desktopSidebarCollapsed}
+              title={
+                desktopSidebarCollapsed ? "Hiện mục lục" : "Thu gọn mục lục"
+              }
+            >
+              {desktopSidebarCollapsed ? (
+                <PanelLeftOpen className="h-3.5 w-3.5" aria-hidden="true" />
+              ) : (
+                <PanelLeftClose className="h-3.5 w-3.5" aria-hidden="true" />
+              )}
+            </button>
+            <div className="min-h-0 flex-1">
+              {desktopSidebarCollapsed ? desktopRail : desktopSidebar}
             </div>
           </aside>
 
@@ -185,13 +191,12 @@ export function ReaderShell({
         onClick={() => setMobileSidebarOpen(false)}
       />
       <aside
-        className={`reader-scrollbar reader-muted-panel fixed inset-y-0 left-0 z-50 w-[min(22rem,calc(100vw-1.5rem))] overflow-y-auto border-r border-line shadow-[0_18px_48px_rgba(0,0,0,0.18)] transition-transform lg:hidden ${
+        className={`reader-scrollbar reader-muted-panel fixed inset-y-0 left-0 z-50 w-[min(18rem,calc(100vw-1.5rem))] overflow-y-auto border-r border-line shadow-[0_18px_48px_rgba(0,0,0,0.18)] transition-transform lg:hidden ${
           mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Mục lục sách giáo khoa"
       >
-        <div className="flex h-12 items-center justify-between border-b border-line px-4">
-          <p className="section-kicker">Thư viện</p>
+        <div className="flex h-12 items-center justify-end border-b border-line px-4">
           <button
             type="button"
             onClick={() => setMobileSidebarOpen(false)}

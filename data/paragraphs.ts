@@ -24,29 +24,6 @@ function createParagraph(seed: ParagraphSeed): Paragraph {
 
 export const paragraphs: Paragraph[] = [
   createParagraph({
-    slug: "bua-com-cua-me",
-    title: "Bữa cơm của mẹ",
-    authorSlug: "vo-quang",
-    content:
-      "Trời nhá nhem, bếp vừa dậy mùi cơm mới. Mẹ đặt chiếc bát nhỏ ngay ngắn, cả căn nhà như sáng lên bởi khói canh và tiếng gọi nhau ngồi vào mâm. Những bữa cơm như thế luôn đi cùng cảm giác ấm áp rất chậm, như thể chỉ cần nhìn lên là đã thấy cả tuổi thơ còn ở đó.",
-    excerpt:
-      "Một đoạn văn gia đình chậm và ấm, phù hợp với nhịp đọc lớp 1 cuối năm.",
-    tags: [
-      "tieng-viet-1-tap-2",
-      "doan-van",
-      "gia-dinh",
-      "me",
-      "van-hoc-thieu-nhi",
-    ],
-    categories: ["Gia đình", "Sinh hoạt"],
-    grade: "Lớp 1",
-    textbook: "Tiếng Việt 1 - Tập 2",
-    volume: "Tập 2",
-    source: "Đoạn văn mô phỏng cho thư viện demo.",
-    featured: true,
-    addedAt: "2026-08-02",
-  }),
-  createParagraph({
     slug: "tren-duong-ve-que",
     title: "Trên đường về quê",
     authorSlug: "dan-gian",

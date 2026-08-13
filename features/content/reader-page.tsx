@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { BookOpenText } from "lucide-react";
 import { notFound } from "next/navigation";
+import { ReaderNavigation } from "@/components/reader/reader-navigation";
 import { LibrarySidebar } from "@/components/reader/library-sidebar";
 import { ReaderShell } from "@/components/reader/reader-shell";
 import { StructuredData } from "@/components/ui/structured-data";
@@ -56,6 +57,8 @@ interface LoadedReaderData {
   selectedItem: ContentItem | null;
   selectedAuthor: Author | null;
   selectedTags: Tag[];
+  previousItem: ContentItem | null;
+  nextItem: ContentItem | null;
   query: string;
   isPathSelection: boolean;
 }
@@ -114,7 +117,15 @@ export async function renderReaderPage({
     notFound();
   }
 
-  const { groups, selectedItem, selectedAuthor, selectedTags, query } = data;
+  const {
+    groups,
+    selectedItem,
+    selectedAuthor,
+    selectedTags,
+    previousItem,
+    nextItem,
+    query,
+  } = data;
   const selectedPath = selectedItem ? buildContentPath(selectedItem) : pathname;
   const routeInfo = selectedItem
     ? getRouteInfo(selectedItem.textbook, selectedItem.volume)
@@ -184,7 +195,7 @@ export async function renderReaderPage({
           </form>
         }
         desktopRail={
-          <div className="flex h-full flex-col items-center justify-between gap-1 px-1.5 py-3 text-ink-soft">
+          <div className="flex h-full flex-col items-center justify-between gap-1 px-1.5 pb-3 pt-10 text-ink-soft">
             <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
               Sách
             </span>
@@ -201,6 +212,7 @@ export async function renderReaderPage({
             selectedSlug={selectedItem?.slug ?? null}
             currentQuery={query}
             clearHref={pathname}
+            reserveHeaderActionSpace
           />
         }
         mobileSidebar={
@@ -269,23 +281,32 @@ export async function renderReaderPage({
                   </div>
 
                   {selectedItem.image ? (
-                    <section className="space-y-3 lg:hidden">
-                      <div className="overflow-hidden rounded-[0.9rem] bg-paper">
-                        <Image
-                          src={selectedItem.image.src}
-                          alt={selectedItem.image.alt}
-                          width={selectedItem.image.width}
-                          height={selectedItem.image.height}
-                          className="h-auto w-full object-cover"
-                          priority
+                    <>
+                      <section className="space-y-3 lg:hidden">
+                        <div className="overflow-hidden rounded-[0.9rem] bg-paper">
+                          <Image
+                            src={selectedItem.image.src}
+                            alt={selectedItem.image.alt}
+                            width={selectedItem.image.width}
+                            height={selectedItem.image.height}
+                            className="h-auto w-full object-cover"
+                            priority
+                          />
+                        </div>
+                        {selectedItem.image.caption ? (
+                          <p className="text-center text-sm leading-7 text-ink-soft">
+                            {selectedItem.image.caption}
+                          </p>
+                        ) : null}
+                      </section>
+                      <section className="lg:hidden">
+                        <ReaderNavigation
+                          previousItem={previousItem}
+                          nextItem={nextItem}
+                          query={query}
                         />
-                      </div>
-                      {selectedItem.image.caption ? (
-                        <p className="text-center text-sm leading-7 text-ink-soft">
-                          {selectedItem.image.caption}
-                        </p>
-                      ) : null}
-                    </section>
+                      </section>
+                    </>
                   ) : null}
 
                   <footer className="space-y-4 border-t border-line/60 pt-4 text-sm leading-7 text-ink-soft">
@@ -328,7 +349,7 @@ export async function renderReaderPage({
         desktopAside={
           selectedItem?.image ? (
             <div className="flex flex-col px-5 py-6">
-              <div className="space-y-4">
+              <section className="space-y-4">
                 <div className="overflow-hidden rounded-[0.9rem] bg-paper">
                   <Image
                     src={selectedItem.image.src}
@@ -344,7 +365,14 @@ export async function renderReaderPage({
                     {selectedItem.image.caption}
                   </p>
                 ) : null}
-              </div>
+              </section>
+              <section className="mt-4">
+                <ReaderNavigation
+                  previousItem={previousItem}
+                  nextItem={nextItem}
+                  query={query}
+                />
+              </section>
             </div>
           ) : undefined
         }
@@ -384,6 +412,10 @@ async function loadReaderData({
     : null;
   const selectedItem =
     selectedFromPath ?? matchedItems[0] ?? orderedItems[0] ?? null;
+  const navigationItems = query ? matchedItems : orderedItems;
+  const selectedIndex = selectedItem
+    ? navigationItems.findIndex((item) => item.slug === selectedItem.slug)
+    : -1;
   const treeItems = query
     ? orderedItems.filter(
         (item) =>
@@ -399,6 +431,12 @@ async function loadReaderData({
     selectedItem,
     selectedAuthor,
     selectedTags: selectedItem ? resolveTagsForItem(selectedItem, tagMap) : [],
+    previousItem:
+      selectedIndex > 0 ? (navigationItems[selectedIndex - 1] ?? null) : null,
+    nextItem:
+      selectedIndex >= 0 && selectedIndex < navigationItems.length - 1
+        ? (navigationItems[selectedIndex + 1] ?? null)
+        : null,
     query,
     isPathSelection: Boolean(selectedFromPath || !routeParams),
   };
