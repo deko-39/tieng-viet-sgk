@@ -6,6 +6,7 @@ import { notFound } from "next/navigation";
 import { ReaderNavigation } from "@/components/reader/reader-navigation";
 import { LibrarySidebar } from "@/components/reader/library-sidebar";
 import { ReaderShell } from "@/components/reader/reader-shell";
+import { SurroundingPagePrefetch } from "@/components/reader/surrounding-page-prefetch";
 import { StructuredData } from "@/components/ui/structured-data";
 import { contentRepository } from "@/lib/content-repository";
 import {
@@ -16,6 +17,7 @@ import {
 import { createMetadata } from "@/lib/metadata";
 import {
   buildContentPath,
+  buildReaderUrl,
   buildVolumePath,
   getRouteInfo,
   getSearchQuery,
@@ -59,6 +61,7 @@ interface LoadedReaderData {
   selectedTags: Tag[];
   previousItem: ContentItem | null;
   nextItem: ContentItem | null;
+  surroundingPageHrefs: string[];
   query: string;
   isPathSelection: boolean;
 }
@@ -124,6 +127,7 @@ export async function renderReaderPage({
     selectedTags,
     previousItem,
     nextItem,
+    surroundingPageHrefs,
     query,
   } = data;
   const selectedPath = selectedItem ? buildContentPath(selectedItem) : pathname;
@@ -162,6 +166,7 @@ export async function renderReaderPage({
         />
       ) : null}
       {breadcrumbData ? <StructuredData data={breadcrumbData} /> : null}
+      <SurroundingPagePrefetch hrefs={surroundingPageHrefs} />
       <ReaderShell
         search={
           <form
@@ -416,6 +421,19 @@ async function loadReaderData({
   const selectedIndex = selectedItem
     ? navigationItems.findIndex((item) => item.slug === selectedItem.slug)
     : -1;
+  const surroundingPageHrefs =
+    selectedIndex >= 0
+      ? navigationItems
+          .slice(Math.max(0, selectedIndex - 5), selectedIndex + 6)
+          .filter((item) => item.slug !== selectedItem?.slug)
+          .map((item) =>
+            buildReaderUrl(
+              query ? { q: query } : {},
+              {},
+              buildContentPath(item),
+            ),
+          )
+      : [];
   const treeItems = query
     ? orderedItems.filter(
         (item) =>
@@ -437,6 +455,7 @@ async function loadReaderData({
       selectedIndex >= 0 && selectedIndex < navigationItems.length - 1
         ? (navigationItems[selectedIndex + 1] ?? null)
         : null,
+    surroundingPageHrefs,
     query,
     isPathSelection: Boolean(selectedFromPath || !routeParams),
   };
