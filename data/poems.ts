@@ -939,6 +939,50 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
+    slug: "hoa-dao-hoa-mai",
+    title: "Hoa đào hoa mai",
+    authorSlug: "dan-gian",
+    content:
+      "Hoa đào ưa rét\nLấm tấm mưa bay\nHoa mai chỉ say\nNắng pha chút gió\nHoa đào thắm đỏ\nHoa mai dát vàng.",
+    excerpt:
+      "Bài thơ ngắn, giàu sắc màu và nhịp êm, phù hợp với mạch đọc lớp 1 về hoa lá và cảm nhận mùa xuân.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "thien-nhien",
+      "hoa-la",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "bo-de",
+    title: "Bờ đê",
+    authorSlug: "dan-gian",
+    content:
+      "Cỏ mọc xanh chân đê\nDâu xum xuê nương bãi\nCây cam vàng thêm trái\nHoa khoe sắc nơi nơi.",
+    excerpt:
+      "Bài thơ ngắn, giàu màu sắc đồng quê và nhịp êm, phù hợp với mạch đọc lớp 1 về thiên nhiên và cảnh bãi bờ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "thien-nhien",
+      "nong-thon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-13",
+  }),
+  createPoem({
     slug: "goi-ban-den-lop",
     title: "Gọi bạn đến lớp",
     authorSlug: "vo-quang",
