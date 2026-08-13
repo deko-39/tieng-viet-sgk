@@ -1,6 +1,7 @@
 "use client";
 
 import {
+  BookOpenText,
   Menu,
   MoonStar,
   PanelLeftClose,
@@ -85,7 +86,10 @@ export function ReaderShell({
             >
               <Menu className="h-4.5 w-4.5" aria-hidden="true" />
             </button>
-            <div className="min-w-0">
+            <div className="flex min-w-0 items-center gap-2.5">
+              <span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-line/70 bg-surface text-brick">
+                <BookOpenText className="h-4 w-4" aria-hidden="true" />
+              </span>
               <p className="truncate font-serif text-base tracking-[0.08em] text-ink sm:text-lg">
                 THƯ VIỆN THƠ VĂN
               </p>
