@@ -261,6 +261,24 @@ export const authors: Author[] = [
     bio: "Tác giả của những bài thơ thiếu nhi trong sáng về lớp học, trang sách và những chuyển động nhỏ đầy vui tươi của buổi sáng đến trường.",
   },
   {
+    id: "nguyen-tung",
+    slug: "nguyen-tung",
+    name: "Nguyễn Tùng",
+    bio: "Tác giả của những bài đọc ngắn giàu không khí lễ hội, gần với nhịp sinh hoạt làng quê và cảm xúc hồn nhiên của trẻ nhỏ.",
+  },
+  {
+    id: "nguyen-phan-hach",
+    slug: "nguyen-phan-hach",
+    name: "Nguyễn Phan Hách",
+    bio: "Nhà thơ có nhiều bài thơ giàu cảm xúc về đất nước, thiếu nhi và những khoảnh khắc trang trọng được nhìn bằng ánh mắt trong trẻo.",
+  },
+  {
+    id: "nguyen-xuan-sanh",
+    slug: "nguyen-xuan-sanh",
+    name: "Nguyễn Xuân Sanh",
+    bio: "Nhà thơ có những bài thơ thiếu nhi ấm áp về lớp học, cô giáo và cảm xúc trong trẻo của tuổi nhỏ.",
+  },
+  {
     id: "vo-thanh-an",
     slug: "vo-thanh-an",
     name: "Võ Thanh An",

@@ -365,7 +365,7 @@ export const paragraphs: Paragraph[] = [
     title: "Bác đưa thư",
     authorSlug: "tran-nguyen-dao",
     content:
-      "Bác đưa thư trao cho Minh một bức thư. Đúng là thư của bố rồi. Minh mừng quýnh. Minh muốn chạy thật nhanh vào nhà khoe với mẹ. Nhưng em chợt thấy bác đưa thư mồ hôi nhễ nhại.\n\nMinh chạy vội vào nhà. Em rót một cốc nước mát lạnh. Hai tay bưng ra, em lễ phép mời bác uống.",
+      "Bác đưa thư trao cho Minh một bức thư. Đúng là thư của bố rồi. Minh mừng quýnh. Minh muốn chạy thật nhanh vào nhà khoe với mẹ. Nhưng em chợt thấy bác đưa thư mồ hôi nhễ nhại.\nMinh chạy vội vào nhà. Em rót một cốc nước mát lạnh. Hai tay bưng ra, em lễ phép mời bác uống.",
     excerpt:
       "Đoạn văn ngắn, ấm và rõ tình huống, phù hợp với mạch đọc lớp 1 về phép lịch sự, lòng quan tâm và cách cư xử đẹp trong đời sống thường ngày.",
     tags: [
@@ -409,7 +409,7 @@ export const paragraphs: Paragraph[] = [
     title: "Anh hùng biển cả",
     authorSlug: "le-quang-long",
     content:
-      "Cá heo là tay bơi giỏi nhất của biển. Nó có thể bơi nhanh vun vút như tên bắn.\n\nCá heo sinh con và nuôi con bằng sữa. Nó khôn hơn cả chó, khỉ. Có thể dạy nó canh gác bờ biển, dẫn tàu thuyền vào ra các cảng, săn lùng tàu thuyền giặc. Một chú cá heo ở Biển Đen mới đây đã được thưởng huân chương. Chú cá heo này đã cứu sống một phi công, khi anh nhảy dù xuống biển vì máy bay bị hỏng.",
+      "Cá heo là tay bơi giỏi nhất của biển. Nó có thể bơi nhanh vun vút như tên bắn.\nCá heo sinh con và nuôi con bằng sữa. Nó khôn hơn cả chó, khỉ. Có thể dạy nó canh gác bờ biển, dẫn tàu thuyền vào ra các cảng, săn lùng tàu thuyền giặc. Một chú cá heo ở Biển Đen mới đây đã được thưởng huân chương. Chú cá heo này đã cứu sống một phi công, khi anh nhảy dù xuống biển vì máy bay bị hỏng.",
     excerpt:
       "Đoạn văn ngắn, giàu thông tin và gợi hứng thú khám phá, phù hợp với mạch đọc lớp 1 về loài vật biển và sự dũng cảm.",
     tags: [
@@ -442,6 +442,72 @@ export const paragraphs: Paragraph[] = [
       "van-hoc-thieu-nhi",
     ],
     categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-14",
+  }),
+  createParagraph({
+    slug: "con-chuot-huenh-hoang",
+    title: "Con chuột huênh hoang",
+    authorSlug: "dan-gian",
+    content:
+      "Một con Chuột có tính huênh hoang.\nMột lần, Chuột rơi bộp xuống giữa một đàn Thỏ. Bọn Thỏ giật mình ba chân bốn cẳng bỏ chạy. Chuột tưởng Thỏ sợ mình. Nó lấy làm đắc ý lắm. Nó nghĩ: so với Thỏ thì Mèo nhỏ hơn. Chắc Mèo phải sợ nó.\nMột hôm, Chuột đến gần bồ thóc. Phía trên bồ thóc, một con Mèo đang kêu ngao, ngao. Chuột chẳng thèm để ý đến Mèo, định leo thẳng lên bồ thóc.\nBỗng huỵch một cái, Mèo nhảy phắt xuống, ngoạm ngay lấy Chuột.",
+    excerpt:
+      "Đoạn văn kể chuyện ngắn, rõ tình huống và giàu tính nhắc nhở, phù hợp với mạch đọc lớp 1 về thói huênh hoang và hậu quả của sự chủ quan.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "con-vat",
+      "pham-chat",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-14",
+  }),
+  createParagraph({
+    slug: "ruoc-den",
+    title: "Rước đèn",
+    authorSlug: "nguyen-tung",
+    content:
+      "Đêm Trung thu. Càng về khuya đám rước đèn càng đông. Các bạn nhỏ mỗi người cầm trong tay một chiếc đèn: đèn lồng, đèn ông sao... Tiếng nói cười ríu rít làm rộn rã cả xóm làng. Đám rước đi chậm rãi trên đoạn đường làng khúc khuỷu trông như một con rồng lửa bò ngoằn ngoèo.",
+    excerpt:
+      "Đoạn văn ngắn, giàu không khí lễ hội và hình ảnh sáng rực, phù hợp với mạch đọc lớp 1 về Trung thu, xóm làng và niềm vui trẻ nhỏ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "le-hoi",
+      "tuoi-tho",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Sinh hoạt"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Tùng.",
+    addedAt: "2026-08-14",
+  }),
+  createParagraph({
+    slug: "quyen-sach-moi",
+    title: "Quyển sách mới",
+    authorSlug: "dan-gian",
+    content:
+      "Năm học sắp kết thúc. Hôm nay, Khánh Linh được phát sách Tiếng Việt 2. Em mở ngay sách ra xem. Sách có rất nhiều tranh ảnh đẹp. Em thích quá. Tan học, vừa về đến nhà, em đã khoe ngay sách với bà.",
+    excerpt:
+      "Đoạn văn ngắn, sáng và gần không khí cuối năm học, phù hợp với mạch đọc lớp 1 về sách mới, niềm vui học tập và tình cảm gia đình.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "hoc-tap",
+      "gia-dinh",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Học đường"],
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
