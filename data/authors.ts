@@ -99,6 +99,12 @@ export const authors: Author[] = [
     died: 2007,
   },
   {
+    id: "thach-quy",
+    slug: "thach-quy",
+    name: "Thạch Quỳ",
+    bio: "Nhà thơ có nhiều sáng tác gần gũi với thiếu nhi, giàu nhạc điệu và hình ảnh đời sống quen thuộc.",
+  },
+  {
     id: "xuan-quynh",
     slug: "xuan-quynh",
     name: "Xuân Quỳnh",

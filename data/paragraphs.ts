@@ -53,7 +53,7 @@ export const paragraphs: Paragraph[] = [
   createParagraph({
     slug: "cai-nhan-vo",
     title: "Cái nhãn vở",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Bố cho Giang một quyển vở mới. Giữa trang bìa là một chiếc nhãn vở trang trí rất đẹp. Giang lấy bút nắn nót viết tên trường, tên lớp, họ và tên của em vào nhãn vở.\nBố nhìn những dòng chữ ngay ngắn, khen con gái đã tự viết được nhãn vở.",
     excerpt:

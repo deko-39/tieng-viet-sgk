@@ -74,7 +74,7 @@ export default function ChangelogPage() {
                       className="paper-card rounded-[1.15rem] px-4 py-4 sm:px-5 sm:py-4"
                     >
                       <div className="flex items-start gap-3">
-                        <span className="mt-1 inline-flex h-2.5 w-2.5 shrink-0 rounded-full bg-brick" />
+                        <span className="mt-3 inline-flex h-2.5 w-2.5 shrink-0 rounded-full bg-brick" />
                         <div className="min-w-0 flex-1 space-y-2">
                           <div className="space-y-1">
                             <h2 className="font-serif text-xl leading-snug text-ink sm:text-[1.35rem]">

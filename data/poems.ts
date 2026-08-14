@@ -403,13 +403,15 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "ga-con",
-    title: "Gà con",
-    authorSlug: "dan-gian",
+    slug: "dan-ga-con",
+    title: "Đàn gà con",
+    authorSlug: "pham-ho",
     content:
-      "Cái mỏ tí hon\nCái chân bé xíu\nLông vàng mát dịu\nMắt đen sáng ngời\nƠi chú gà ơi\nTa yêu chú lắm.",
+      "Cái mỏ tí hon\nCái chân bé xíu\nLông vàng mát dịu\nMắt đen sáng ngời\nƠi chú gà ơi!\nTa yêu chú lắm.",
+    fullContent:
+      "Mười quả trứng tròn\nMẹ gà ấp ủ\nMười chú gà con\nHôm nay ra đủ\n\nLòng trắng, lòng đỏ,\nThành mỏ, thành chân\nCái mỏ tí hon\nCái chân bé xíu\n\nLông vàng mát dịu\nMắt đen sáng ngời\nƠi chú gà ơi!\nTa yêu chú lắm\n\nTrong bàn tay ấm\nChú đứng chú kêu\nMẹ gà “tục tục”\nChú ngoái nhìn theo\n\nTa thả chú ra\nChạy ăn cùng mẹ\nChạy biến cả chân\nChạy sao nhanh thế!\n\nLà gà của bé\nGà nhé đừng quên\nĂn khỏe, lớn khỏe\nĐẻ rõ nhiều lên!",
     excerpt:
-      "Bài thơ ngắn, giàu nét tả và nhịp trìu mến, phù hợp với mạch đọc lớp 1 về con vật gần gũi.",
+      "Bài thơ thiếu nhi giàu hình ảnh và nhịp điệu, phù hợp với mạch đọc lớp 1 về đàn gà con và tình cảm yêu thương loài vật nhỏ bé.",
     tags: [
       "tieng-viet-1-tap-1",
       "tho",
@@ -421,8 +423,8 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 1",
     volume: "Tập 1",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
-    addedAt: "2026-08-13",
+    source: "Theo Phạm Hổ.",
+    addedAt: "2026-08-14",
   }),
   createPoem({
     slug: "do-6",
@@ -876,11 +878,13 @@ export const poems: Poem[] = [
     addedAt: "2026-08-14",
   }),
   createPoem({
-    slug: "ca",
-    title: "Cá",
-    authorSlug: "dan-gian",
+    slug: "me-hoa-luon-song",
+    title: "Mè hoa lượn sóng",
+    authorSlug: "thach-quy",
     content:
       "Cá mè ăn nổi\nCá chép ăn chìm\nCon tép lim dim\nTrong chùm rễ cỏ\nCon cua áo đỏ\nCắt cỏ trên bờ\nCon cá múa cờ\nĐẹp ơi là đẹp.",
+    fullContent:
+      "Mẻ hỏa mè hoa\n\nÙa ra giỡn nước\n\nChị bơi đi trước\n\nEm lượn theo sau\n\nRuộng rộng, ao sâu\n\nĐìa con đìa cạn\n\nGọi chúng gọi bạn\n\nĐắp đập be bờ\n\nQuăng đó quăng lờ\n\nCắm cờ lá chuối\n\nCá mè ăn nổi\n\nCá chép ăn chìm\n\nCon tép lim dim\n\nTrong chùm rễ cỏ\n\nCon cua áo đỏ\n\nCắt cỏ trên bờ\n\nCon cá múa cờ\n\nĐẹp ơi là đẹp!",
     excerpt:
       "Bài thơ ngắn, giàu nhịp điệu và hình ảnh sinh động, phù hợp với mạch đọc lớp 1 về thế giới con vật dưới nước.",
     tags: [
@@ -894,8 +898,8 @@ export const poems: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
-    addedAt: "2026-08-13",
+    source: "Theo Thạch Quỳ.",
+    addedAt: "2026-08-14",
   }),
   createPoem({
     slug: "hoa",
