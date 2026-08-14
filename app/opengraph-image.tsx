@@ -62,7 +62,7 @@ export default function OpenGraphImage() {
                 color: "#9a5b43",
               }}
             >
-              Thu vien tho van SGK
+              Thư viện thơ văn SGK
             </div>
             <div
               style={{
@@ -79,7 +79,7 @@ export default function OpenGraphImage() {
                   color: "#171717",
                 }}
               >
-                Thu vien tho van Viet Nam cho nhung trang doc dau doi.
+                Thư viện thơ văn Việt Nam cho những trang đọc đầu đời.
               </div>
               <div
                 style={{
@@ -112,7 +112,7 @@ export default function OpenGraphImage() {
                   padding: "16px 28px",
                 }}
               >
-                Bat dau doc
+                Bắt đầu đọc
               </div>
               <div
                 style={{
@@ -126,7 +126,7 @@ export default function OpenGraphImage() {
                   padding: "15px 24px",
                 }}
               >
-                Doc theo sach, tho va doan van
+                Đọc theo sách, thơ và đoạn văn
               </div>
             </div>
           </div>
@@ -172,17 +172,17 @@ export default function OpenGraphImage() {
                 textTransform: "uppercase",
               }}
             >
-              Mo thu vien
+              Mở thư viện
             </div>
             <div style={{ fontSize: 34, fontWeight: 700, lineHeight: 1.16 }}>
-              Hinh anh chia se nay lay tu giao dien trang chu
+              Đọc theo sách, bài thơ và đoạn văn quen thuộc
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
             {[
-              "Chon bai doc theo tung tap sach giao khoa.",
-              "Xem hinh minh hoa va mo rong noi dung khi can.",
-              "Di chuyen lien mach giua tho va doan van quen thuoc.",
+              "Chọn bài đọc từ mục lục sách giáo khoa theo từng tập.",
+              "Xem hình minh họa theo đúng thư mục bài học để dễ tự bổ sung.",
+              "Di chuyển liền mạch giữa các bài bằng nút trước và sau.",
             ].map((item) => (
               <div
                 key={item}

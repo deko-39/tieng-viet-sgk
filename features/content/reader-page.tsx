@@ -16,7 +16,7 @@ import {
   resolveTagsForItem,
 } from "@/lib/content-utils";
 import { createMetadata } from "@/lib/metadata";
-import { formatDeploymentTimestamp } from "@/lib/site";
+import { getLastDeploymentLabel } from "@/lib/site";
 import {
   buildContentPath,
   buildReaderUrl,
@@ -117,7 +117,7 @@ export async function renderReaderPage({
   routeParams,
 }: ReaderPageInput) {
   const data = await loadReaderData({ searchParams, routeParams });
-  const lastDeploymentLabel = formatDeploymentTimestamp();
+  const lastDeploymentLabel = await getLastDeploymentLabel();
 
   if (routeParams && !data.isPathSelection) {
     notFound();

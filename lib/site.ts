@@ -1,4 +1,11 @@
+import { createClient, type RedisClientType } from "redis";
+
 const DEFAULT_SITE_URL = "https://tieng-viet-sgk.vercel.app";
+
+const DEPLOYMENT_LABEL_KEY_PREFIX = "tiengviet:last-deployment-label";
+
+let redisClientPromise: Promise<RedisClientType> | null = null;
+let deploymentLabelPromise: Promise<string> | null = null;
 
 function normalizeSiteUrl(value?: string) {
   if (!value) {
@@ -55,6 +62,74 @@ export function formatDeploymentTimestamp(date = new Date()) {
     timeStyle: "short",
     timeZone: "Asia/Ho_Chi_Minh",
   }).format(date);
+}
+
+function resolveDeploymentIdentifier() {
+  return (
+    process.env.VERCEL_DEPLOYMENT_ID ??
+    process.env.VERCEL_GIT_COMMIT_SHA ??
+    process.env.VERCEL_URL ??
+    "local-development"
+  );
+}
+
+function resolveDeploymentLabelKey() {
+  return `${DEPLOYMENT_LABEL_KEY_PREFIX}:${resolveDeploymentIdentifier()}`;
+}
+
+async function getRedisClient() {
+  if (!process.env.REDIS_URL) {
+    throw new Error("REDIS_URL is not configured.");
+  }
+
+  redisClientPromise ??= (async () => {
+    const client = createClient({ url: process.env.REDIS_URL });
+
+    client.on("error", (error) => {
+      console.error("Redis client error", error);
+    });
+
+    if (!client.isOpen) {
+      await client.connect();
+    }
+
+    return client;
+  })();
+
+  return redisClientPromise;
+}
+
+async function resolveDeploymentLabel() {
+  const fallbackLabel = formatDeploymentTimestamp();
+
+  if (!process.env.REDIS_URL) {
+    return fallbackLabel;
+  }
+
+  try {
+    const client = await getRedisClient();
+    const key = resolveDeploymentLabelKey();
+    const cachedLabel = await client.get(key);
+
+    if (cachedLabel) {
+      return cachedLabel;
+    }
+
+    await client.set(key, fallbackLabel, {
+      NX: true,
+    });
+
+    return (await client.get(key)) ?? fallbackLabel;
+  } catch (error) {
+    console.error("Failed to resolve deployment label from Redis", error);
+    return fallbackLabel;
+  }
+}
+
+export async function getLastDeploymentLabel() {
+  deploymentLabelPromise ??= resolveDeploymentLabel();
+
+  return deploymentLabelPromise;
 }
 
 export function absoluteUrl(pathname = "/") {

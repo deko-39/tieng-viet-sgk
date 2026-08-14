@@ -279,6 +279,12 @@ export const authors: Author[] = [
     bio: "Nhà thơ có những bài thơ thiếu nhi ấm áp về lớp học, cô giáo và cảm xúc trong trẻo của tuổi nhỏ.",
   },
   {
+    id: "to-hoai",
+    slug: "to-hoai",
+    name: "Tô Hoài",
+    bio: "Nhà văn nổi bật với những trang viết gần gũi về miền núi, con người lao động và thiên nhiên Việt Nam giàu sức sống.",
+  },
+  {
     id: "vo-thanh-an",
     slug: "vo-thanh-an",
     name: "Võ Thanh An",
@@ -334,5 +340,11 @@ export const authors: Author[] = [
     slug: "be-kien-quoc",
     name: "Bế Kiến Quốc",
     bio: "Nhà thơ có nhiều sáng tác thiếu nhi giàu nhạc điệu, gần gũi với thiên nhiên, lao động và cảm xúc trong trẻo của tuổi nhỏ.",
+  },
+  {
+    id: "xu-khom-lin-xki",
+    slug: "xu-khom-lin-xki",
+    name: "Xu-khôm-lin-xki",
+    bio: "Tác giả của những câu chuyện thiếu nhi giàu tính gợi mở, thường khích lệ trẻ nhỏ tự lớn lên, quan sát thiên nhiên và nghĩ về những điều tốt đẹp.",
   },
 ];

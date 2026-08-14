@@ -515,6 +515,50 @@ export const paragraphs: Paragraph[] = [
     addedAt: "2026-08-14",
   }),
   createParagraph({
+    slug: "hai-cau-be-va-hai-nguoi-bo",
+    title: "Hai cậu bé và hai người bố",
+    authorSlug: "dan-gian",
+    content:
+      "Hai cậu bé lần đầu được bố dẫn đến trường. Một cậu tên là Việt, cậu kia tên là Sơn. Hai cậu làm quen với nhau.\n\nViệt hỏi:\n\n- Bố bạn làm gì?\n\nSơn trả lời:\n\n- Bố mình là bác sĩ. Thế bố bạn làm gì?\n- Bố mình làm ruộng. - Việt đáp.\n\nSơn bảo:\n\n- Công việc của bố cậu thật quan trọng. Không có lúa gạo thì chẳng ai sống nổi.\n\nViệt nói:\n\n- Công việc của bố cậu cũng quan trọng. Không có bác sĩ thì lấy ai chữa bệnh cho người ốm.",
+    excerpt:
+      "Đoạn văn kể chuyện ngắn, rõ đối thoại và giàu ý nghĩa, phù hợp với mạch đọc lớp 1 về nghề nghiệp, sự tôn trọng và giá trị của công việc.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "hoi-thoai",
+      "pham-chat",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Đoạn văn do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-14",
+  }),
+  createParagraph({
+    slug: "mua-thu-o-vung-cao",
+    title: "Mùa thu ở vùng cao",
+    authorSlug: "to-hoai",
+    content:
+      "Đã sang tháng tám. Mùa thu về, vùng cao không mưa nữa. Trời xanh trong. Những dãy núi dài, xanh biếc. Nước chảy róc rách trong khe núi. Đàn bò đi ra đồi, con vàng, con đen. Đàn dê chạy lên, chạy xuống. Nương ngô vàng mượt. Nương lúa vàng óng.\n\nNgười vùng cao đang cuốc đất, chuẩn bị trồng đậu tương thu.",
+    excerpt:
+      "Đoạn văn ngắn, trong và giàu màu sắc miền núi, phù hợp với mạch đọc lớp 1 về mùa thu, vùng cao và nhịp lao động nơi nương đồi.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "thien-nhien",
+      "lao-dong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Tô Hoài.",
+    addedAt: "2026-08-14",
+  }),
+  createParagraph({
     slug: "cong",
     title: "Công",
     authorSlug: "dan-gian",
@@ -535,6 +579,28 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn do người dùng bổ sung cho thư viện.",
     addedAt: "2026-08-13",
+  }),
+  createParagraph({
+    slug: "qua-soi",
+    title: "Quả sồi",
+    authorSlug: "xu-khom-lin-xki",
+    content:
+      "Nằm dưới đất, Quả Sồi ao ước được ở trên cao ngắm trăng sao, sông núi. Nó nhờ Cây Sồi đưa lên cành cao. Cây Sồi bảo:\n\n- Hãy tự mọc rễ nhanh lên rồi cháu sẽ trở thành một cây cao như bác.",
+    excerpt:
+      "Đoạn văn ngắn, giàu tính gợi mở và gần với bài học tự lớn lên, phù hợp với mạch đọc lớp 1 về cây cối và ý chí tự vươn lên.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "doan-van",
+      "thien-nhien",
+      "cay-coi",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Xu-khôm-lin-xki.",
+    addedAt: "2026-08-14",
   }),
   createParagraph({
     slug: "tren-duong-ve-que",

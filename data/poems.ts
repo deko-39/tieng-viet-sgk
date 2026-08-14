@@ -1074,6 +1074,50 @@ export const poems: Poem[] = [
     addedAt: "2026-08-14",
   }),
   createPoem({
+    slug: "xia-ca-me",
+    title: "Xỉa cá mè",
+    authorSlug: "dan-gian",
+    content:
+      "Xỉa cá mè\nĐè cá chép\nTay nào đẹp\nĐi bẻ ngô\nTay nào to\n\nĐi dỡ củ\nTay nào nhỏ\nHái đậu đen\nTay nhọ nhem\nRửa cho sạch.",
+    excerpt:
+      "Bài thơ ngắn, vui nhịp và giàu âm điệu đồng dao, phù hợp với mạch đọc lớp 1 về trò chơi ngôn ngữ và sinh hoạt lao động gần gũi.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "dong-dao",
+      "lao-dong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Đồng dao"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-14",
+  }),
+  createPoem({
+    slug: "ong-em",
+    title: "Ông em",
+    authorSlug: "dan-gian",
+    content:
+      "Ông em tóc bạc\nTrắng muốt như tơ\nÔng em kể chuyện\nNgày xửa ngày xưa\nChuyện vui như Tết\nChuyện đẹp như mơ\nEm ngồi nghe chuyện\nMê mải say sưa...",
+    excerpt:
+      "Bài thơ ngắn, ấm và gần, phù hợp với mạch đọc lớp 1 về ông, chuyện kể gia đình và cảm giác say mê của tuổi nhỏ.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "tuoi-tho",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    addedAt: "2026-08-14",
+  }),
+  createPoem({
     slug: "khon-ngoan",
     title: "Khôn ngoan",
     authorSlug: "dan-gian",
