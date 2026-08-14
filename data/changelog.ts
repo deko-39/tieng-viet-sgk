@@ -8,6 +8,30 @@ export interface ChangelogEntry {
 
 export const changelogEntries: ChangelogEntry[] = [
   {
+    id: "2026-08-14-share-preview-image",
+    date: "2026-08-14",
+    title: "Ảnh xem trước khi chia sẻ bài đọc rõ ràng hơn",
+    description:
+      "Khi chia sẻ bài đọc, phần xem trước giờ có ảnh đại diện phù hợp hơn với nội dung đang mở.",
+    changes: [
+      "Các bài đọc có thể dùng ảnh minh họa của chính bài đó làm ảnh xem trước khi chia sẻ.",
+      "Nếu bài chưa có ảnh riêng, trang vẫn giữ ảnh chia sẻ mặc định của thư viện.",
+      "Việc chia sẻ lên Facebook giờ dễ hiển thị preview đúng nội dung hơn trước.",
+    ],
+  },
+  {
+    id: "2026-08-14-reader-share-button",
+    date: "2026-08-14",
+    title: "Có thêm nút chia sẻ trong trang đọc",
+    description:
+      "Mỗi bài đọc giờ có thêm nút chia sẻ để gửi nhanh bài đang mở cho người khác.",
+    changes: [
+      "Có thể mở nhanh cửa sổ chia sẻ Facebook ngay từ cụm nút cạnh tiêu đề bài.",
+      "Nút chia sẻ nằm cùng khu vực với nút nghe bài và nút cảm xúc để thao tác thuận tiện hơn.",
+      "Việc chia sẻ bây giờ bám theo đúng đường dẫn của bài đang đọc.",
+    ],
+  },
+  {
     id: "2026-08-14-changelog-vietnamese-labels",
     date: "2026-08-14",
     title: "Trang cập nhật được đổi tên sang tiếng Việt",

@@ -17,7 +17,7 @@ import {
   resolveTagsForItem,
 } from "@/lib/content-utils";
 import { createMetadata } from "@/lib/metadata";
-import { getLastDeploymentLabel } from "@/lib/site";
+import { absoluteUrl, getLastDeploymentLabel } from "@/lib/site";
 import {
   buildContentPath,
   buildReaderUrl,
@@ -96,6 +96,14 @@ export async function generateReaderMetadata({
       description: `Đọc ${selectedItem.kind === "poem" ? "bài thơ" : "đoạn văn"} ${selectedItem.title}${data.selectedAuthor ? ` của ${data.selectedAuthor.name}` : ""}${textbookLabel ? ` trong ${textbookLabel}` : ""}. ${selectedItem.excerpt}`,
       pathname,
       keywords: data.selectedTags.map((tag) => tag.name),
+      image: selectedItem.image
+        ? {
+            src: selectedItem.image.src,
+            alt: selectedItem.image.alt,
+            width: selectedItem.image.width,
+            height: selectedItem.image.height,
+          }
+        : undefined,
     });
   }
 
@@ -236,6 +244,7 @@ export async function renderReaderPage({
                       </div>
                       <ReaderActionButtonGroup
                         contentId={selectedItem.slug}
+                        shareUrl={absoluteUrl(selectedPath)}
                         title={selectedItem.title}
                         authorName={selectedAuthor?.name ?? "Khuyết danh"}
                         content={selectedItem.content}
