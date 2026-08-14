@@ -854,6 +854,28 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
+    slug: "di-hoc",
+    title: "Đi học",
+    authorSlug: "minh-chinh",
+    content:
+      "Hôm qua em tới trường\n\nMẹ dắt tay từng bước\n\nHôm nay mẹ lên nương\n\nMột mình em tới lớp.\n\nTrường của em be bé\n\nNằm lặng giữa rừng cây\n\nCô giáo em tre trẻ\n\nDạy em hát rất hay.\n\nHương rừng thơm đồi vắng\n\nNước suối trong thầm thì\n\nCọ xoè ô che nắng\n\nRâm mát đường em đi.",
+    excerpt:
+      "Bài thơ trong trẻo và giàu nhịp bước đến lớp, phù hợp với mạch đọc lớp 1 về mẹ, trường nhỏ và con đường đi học giữa núi rừng.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "truong-hoc",
+      "que-huong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Học đường"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Minh Chính.",
+    addedAt: "2026-08-14",
+  }),
+  createPoem({
     slug: "ca",
     title: "Cá",
     authorSlug: "dan-gian",
@@ -918,6 +940,72 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ do người dùng bổ sung cho thư viện.",
     addedAt: "2026-08-13",
+  }),
+  createPoem({
+    slug: "lam-anh",
+    title: "Làm anh",
+    authorSlug: "phan-thi-thanh-nhan",
+    content:
+      'Làm anh khó đấy\n\nPhải đâu chuyện đùa\n\nVới em gái bé\n\nPhải "người lớn" cơ.\n\nKhi em bé khóc\n\nAnh phải dỗ dành\n\nNếu em bé ngã\n\nAnh nâng dịu dàng.\n\nMẹ cho quà bánh\n\nChia em phần hơn\n\nCó đồ chơi đẹp\n\nCũng nhường em luôn.\n\nLàm anh thật khó\n\nNhưng mà thật vui\n\nAi yêu em bé\n\nThì làm được thôi.',
+    excerpt:
+      "Bài thơ ngắn, ấm và giàu nhịp nhắc nhở, phù hợp với mạch đọc lớp 1 về anh em, sự nhường nhịn và tình cảm gia đình.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "gia-dinh",
+      "pham-chat",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Phan Thị Thanh Nhàn.",
+    addedAt: "2026-08-14",
+  }),
+  createPoem({
+    slug: "o-o-o",
+    title: "Ò ó o",
+    authorSlug: "tran-dang-khoa",
+    content:
+      "Ò... ó... o...\n\nÒ... ó... o...\n\nTiếng gà\n\nTiếng gà\n\nGiục quả na\n\nMở mắt\n\nTròn xoe\n\nGiục hàng tre\n\nĐâm măng\n\nNhọn hoắt\n\nGiục buồng chuối\n\nThơm lừng\n\nTrứng cuốc\n\nGiục hạt đậu\n\nNảy mầm\n\nGiục bông lúa\n\nUốn câu\n\nGiục con trâu\n\nRa đồng\n\nGiục đàn sao\n\nTrên trời\n\nChạy trốn\n\nGọi ông trời\n\nNhô lên\n\nRửa mặt\n\nÔi bốn bề\n\nBát ngát\n\nTiếng gà\n\nÒ... ó... o\n\nÒ... ó... o.",
+    excerpt:
+      "Bài thơ giàu nhịp điệu và sức gọi thức dậy của buổi sớm, phù hợp với mạch đọc lớp 1 về làng quê, thiên nhiên và âm thanh quen thuộc.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "que-huong",
+      "thien-nhien",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Trần Đăng Khoa.",
+    addedAt: "2026-08-14",
+  }),
+  createPoem({
+    slug: "sang-nay",
+    title: "Sáng nay",
+    authorSlug: "thy-ngoc",
+    content:
+      'ó ngàn tia nắng nhỏ\n\nĐi học sáng hôm nay\n\nCó trăm trang sách mở\n\nXòe như cánh chim bay.\n\nTránh nắng, từng dòng chữ\n\nXếp thành hàng nhấp nhô:\n\n"I" gầy nên đội mũ,\n\n"O" đội nón là "ô".\n\nGiờ chơi vừa mới điểm\n\nGió nấp đâu, ùa ra,\n\nLàm nụ hồng chúm chím\n\nBật cười quá, nở hoa.',
+    excerpt:
+      "Bài thơ trong trẻo và giàu hình ảnh lớp học buổi sớm, phù hợp với mạch đọc lớp 1 về đi học, trang sách và niềm vui giờ chơi.",
+    tags: [
+      "tieng-viet-1-tap-2",
+      "tho",
+      "truong-hoc",
+      "tuoi-tho",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Học đường"],
+    grade: "Lớp 1",
+    textbook: "Tiếng Việt 1 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Thy Ngọc.",
+    addedAt: "2026-08-14",
   }),
   createPoem({
     slug: "khon-ngoan",
@@ -1115,7 +1203,7 @@ export const poems: Poem[] = [
     title: "Cái Bống",
     authorSlug: "dan-gian",
     content:
-      "Cái Bống là cái bống bang\n\nKhéo sảy, khéo sàng cho mẹ nấu cơm.\n\nMẹ Bống đi chợ đường trơn\nBống ra gánh đỡ chạy cơn mưa ròng.",
+      "Cái Bống là cái bống bang\nKhéo sảy, khéo sàng cho mẹ nấu cơm.\nMẹ Bống đi chợ đường trơn\nBống ra gánh đỡ chạy cơn mưa ròng.",
     excerpt:
       "Bài thơ ngắn mang nhịp đồng dao và hình ảnh gia đình gần gũi, phù hợp với mạch đọc lớp 1 về công việc nhà và tình mẹ con.",
     tags: [
