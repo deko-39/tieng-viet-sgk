@@ -2,69 +2,67 @@
 
 import {
   BookOpenText,
+  History,
   Menu,
   MoonStar,
   PanelLeftClose,
   PanelLeftOpen,
-  Search,
   SunMedium,
   X,
 } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
+function getStoredSidebarState() {
+  if (typeof window === "undefined") {
+    return false;
+  }
+
+  return window.localStorage.getItem("reader-sidebar-collapsed") === "true";
+}
+
+function getStoredTheme(): "paper" | "dusk" {
+  if (typeof window === "undefined") {
+    return "paper";
+  }
+
+  return window.localStorage.getItem("reader-theme") === "dusk"
+    ? "dusk"
+    : "paper";
+}
 
 interface ReaderShellProps {
-  search: ReactNode;
   desktopRail: ReactNode;
   desktopSidebar: ReactNode;
   mobileSidebar: ReactNode;
   content: ReactNode;
   desktopAside?: ReactNode;
   hasAside: boolean;
-  initialSearchOpen?: boolean;
   lastDeploymentLabel: string;
 }
 
 export function ReaderShell({
-  search,
   desktopRail,
   desktopSidebar,
   mobileSidebar,
   content,
   desktopAside,
   hasAside,
-  initialSearchOpen = false,
   lastDeploymentLabel,
 }: ReaderShellProps) {
-  const [desktopSidebarCollapsed, setDesktopSidebarCollapsed] = useState(false);
+  const [desktopSidebarCollapsed, setDesktopSidebarCollapsed] = useState(
+    getStoredSidebarState,
+  );
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(initialSearchOpen);
-  const [theme, setTheme] = useState<"paper" | "dusk">("paper");
-  const [hasLoadedPreferences, setHasLoadedPreferences] = useState(false);
-
-  useLayoutEffect(() => {
-    const storedSidebarState =
-      window.localStorage.getItem("reader-sidebar-collapsed") === "true";
-    const storedTheme =
-      window.localStorage.getItem("reader-theme") === "dusk" ? "dusk" : "paper";
-
-    setDesktopSidebarCollapsed(storedSidebarState);
-    document.documentElement.dataset.theme = storedTheme;
-    setTheme(storedTheme);
-    setHasLoadedPreferences(true);
-  }, []);
+  const [theme, setTheme] = useState<"paper" | "dusk">(getStoredTheme);
 
   useEffect(() => {
-    if (!hasLoadedPreferences) {
-      return;
-    }
-
     window.localStorage.setItem(
       "reader-sidebar-collapsed",
       String(desktopSidebarCollapsed),
     );
-  }, [desktopSidebarCollapsed, hasLoadedPreferences]);
+  }, [desktopSidebarCollapsed]);
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -102,16 +100,15 @@ export function ReaderShell({
             </Link>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => setSearchOpen((currentState) => !currentState)}
-              className="inline-flex h-9 items-center justify-center rounded-md border border-line bg-surface px-3 text-sm text-ink"
-              aria-expanded={searchOpen}
-              aria-controls="reader-search-panel"
+            <Link
+              href="/changelog"
+              className="inline-flex h-9 items-center justify-center rounded-md border border-line bg-surface px-3 text-sm text-ink transition hover:border-brick/45 hover:text-brick"
+              aria-label="Mở nhật ký cập nhật"
+              title="Xem nhật ký cập nhật"
             >
-              <Search className="h-4 w-4" aria-hidden="true" />
-              <span className="ml-2 hidden sm:inline">Tìm kiếm</span>
-            </button>
+              <History className="h-4 w-4" aria-hidden="true" />
+              <span className="ml-2 hidden sm:inline">Cập nhật</span>
+            </Link>
             <button
               type="button"
               onClick={toggleTheme}
@@ -126,14 +123,6 @@ export function ReaderShell({
             </button>
           </div>
         </div>
-        {searchOpen ? (
-          <div
-            id="reader-search-panel"
-            className="border-t border-line/70 px-3 py-3 sm:px-4"
-          >
-            <div className="mx-auto max-w-[1640px]">{search}</div>
-          </div>
-        ) : null}
       </header>
 
       <div className="flex-1">

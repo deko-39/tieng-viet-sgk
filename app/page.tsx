@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpenText, LibraryBig } from "lucide-react";
+import { ArrowRight, BookOpenText, History, LibraryBig } from "lucide-react";
 import Link from "next/link";
 import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
@@ -46,9 +46,16 @@ export default async function HomePage() {
             <div className="flex flex-wrap items-center gap-3">
               <Link
                 href={startHref}
-                className="inline-flex h-12 items-center justify-center rounded-full bg-moss px-6 text-sm font-semibold text-paper transition hover:bg-[#5a6851]"
+                className="inline-flex h-12 items-center justify-center rounded-full bg-brick px-6 text-sm font-semibold text-paper shadow-[0_12px_28px_rgba(140,75,47,0.22)] transition hover:bg-[#7a3f24] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
               >
                 Bắt đầu đọc
+              </Link>
+              <Link
+                href="/changelog"
+                className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 text-sm font-semibold text-ink transition hover:border-brick/45 hover:text-brick"
+              >
+                <History className="h-4 w-4" aria-hidden="true" />
+                <span>Cập nhật</span>
               </Link>
               <ThemeToggleButton />
               <p className="text-sm text-ink-soft">

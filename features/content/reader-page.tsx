@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BookOpenText } from "lucide-react";
 import { notFound } from "next/navigation";
 import { ExpandableReaderContent } from "@/components/reader/expandable-reader-content";
+import { ReaderActionButtonGroup } from "@/components/reader/reader-action-button-group";
 import { ReaderNavigation } from "@/components/reader/reader-navigation";
 import { LibrarySidebar } from "@/components/reader/library-sidebar";
 import { ReaderShell } from "@/components/reader/reader-shell";
@@ -172,37 +173,6 @@ export async function renderReaderPage({
       <SurroundingPagePrefetch hrefs={surroundingPageHrefs} />
       <ReaderShell
         lastDeploymentLabel={lastDeploymentLabel}
-        search={
-          <form
-            action={pathname}
-            role="search"
-            className="paper-card flex flex-col gap-3 rounded-xl p-3 sm:flex-row sm:items-center"
-          >
-            <label htmlFor="reader-search" className="sr-only">
-              Tìm bài thơ, đoạn văn, tác giả
-            </label>
-            <input
-              id="reader-search"
-              name="q"
-              defaultValue={query}
-              placeholder="Tìm bài thơ, đoạn văn, tác giả..."
-              className="h-11 w-full rounded-lg border border-line bg-paper px-4 text-sm text-ink outline-none placeholder:text-ink-soft/70"
-            />
-            <div className="flex items-center gap-2 sm:shrink-0">
-              <button className="h-11 rounded-lg bg-moss px-4 text-sm font-semibold text-paper transition hover:bg-[#5a6851]">
-                Tìm
-              </button>
-              {query ? (
-                <Link
-                  href={pathname}
-                  className="inline-flex h-11 items-center rounded-lg border border-line bg-paper px-4 text-sm text-ink-soft transition hover:text-ink"
-                >
-                  Xóa
-                </Link>
-              ) : null}
-            </div>
-          </form>
-        }
         desktopRail={
           <div className="flex h-full flex-col items-center justify-between gap-1 px-1.5 pb-3 pt-10 text-ink-soft">
             <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
@@ -255,17 +225,26 @@ export async function renderReaderPage({
                         </ol>
                       </nav>
                     ) : null}
-                    <div className="mt-5 space-y-2">
-                      <h1 className="text-balance font-serif text-[2.35rem] leading-tight text-ink sm:text-5xl lg:text-[3rem]">
-                        {selectedItem.title}
-                      </h1>
-                      <p className="text-[0.98rem] text-ink-soft sm:text-lg">
-                        {selectedAuthor ? selectedAuthor.name : "Khuyết danh"}
-                      </p>
+                    <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+                      <div className="min-w-0 flex-1 space-y-2 text-left">
+                        <h1 className="text-balance font-serif text-[2.35rem] leading-tight text-ink sm:text-5xl lg:text-[3rem]">
+                          {selectedItem.title}
+                        </h1>
+                        <p className="text-[0.98rem] text-ink-soft sm:text-lg">
+                          {selectedAuthor ? selectedAuthor.name : "Khuyết danh"}
+                        </p>
+                      </div>
+                      <ReaderActionButtonGroup
+                        contentId={selectedItem.slug}
+                        title={selectedItem.title}
+                        authorName={selectedAuthor?.name ?? "Khuyết danh"}
+                        content={selectedItem.content}
+                        fullContent={selectedItem.fullContent}
+                      />
                     </div>
-                    <div className="space-y-3 text-sm text-ink-soft">
+                    <div className="space-y-3 text-left text-sm text-ink-soft">
                       <p>{selectedTextbookLabel}</p>
-                      <div className="reader-divider mx-auto max-w-xs" />
+                      <div className="reader-divider max-w-xs" />
                     </div>
                   </header>
 
@@ -378,7 +357,6 @@ export async function renderReaderPage({
           ) : undefined
         }
         hasAside={Boolean(selectedItem?.image)}
-        initialSearchOpen={Boolean(query)}
       />
     </>
   );
