@@ -29,7 +29,7 @@ function createParagraph(seed: ParagraphSeed): Paragraph {
 
 export const paragraphs: Paragraph[] = [
   createParagraph({
-    slug: "truong",
+    slug: "truong-em",
     title: "Trường em",
     authorSlug: "dan-gian",
     content:

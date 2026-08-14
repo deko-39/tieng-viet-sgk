@@ -49,6 +49,14 @@ export const siteConfig = {
   url: resolvedSiteUrl,
 };
 
+export function formatDeploymentTimestamp(date = new Date()) {
+  return new Intl.DateTimeFormat("vi-VN", {
+    dateStyle: "medium",
+    timeStyle: "short",
+    timeZone: "Asia/Ho_Chi_Minh",
+  }).format(date);
+}
+
 export function absoluteUrl(pathname = "/") {
   return new URL(pathname, siteConfig.url).toString();
 }

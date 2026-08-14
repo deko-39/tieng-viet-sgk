@@ -23,6 +23,7 @@ interface ReaderShellProps {
   desktopAside?: ReactNode;
   hasAside: boolean;
   initialSearchOpen?: boolean;
+  lastDeploymentLabel: string;
 }
 
 export function ReaderShell({
@@ -34,6 +35,7 @@ export function ReaderShell({
   desktopAside,
   hasAside,
   initialSearchOpen = false,
+  lastDeploymentLabel,
 }: ReaderShellProps) {
   const [desktopSidebarCollapsed, setDesktopSidebarCollapsed] = useState(false);
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
@@ -185,7 +187,7 @@ export function ReaderShell({
 
       <footer className="border-t border-line/80 bg-paper/90">
         <div className="mx-auto flex h-8 max-w-[1640px] items-center justify-center px-3 text-[0.72rem] uppercase tracking-[0.18em] text-ink-soft sm:px-4">
-          Thư viện thơ văn Việt Nam · 2026
+          Thư viện thơ văn Việt Nam · Cập nhật lần cuối {lastDeploymentLabel}
         </div>
       </footer>
 

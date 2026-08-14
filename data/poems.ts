@@ -241,7 +241,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "bong-va-may",
+    slug: "may-va-bong",
     title: "Mây và bông",
     authorSlug: "ngo-van-phu",
     content:
@@ -284,7 +284,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "den-truong",
+    slug: "chum-hoa-gie",
     title: "Chùm hoa giẻ",
     authorSlug: "xuan-hoai",
     content:
@@ -331,7 +331,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "em-be-ngoan",
+    slug: "con-co-be-be",
     title: "Con cò bé bé",
     authorSlug: "le-xuan-tho",
     content:
@@ -355,7 +355,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "ba",
+    slug: "qua-ngot-cuoi-mua",
     title: "Quả ngọt cuối mùa",
     authorSlug: "vo-thanh-an",
     content:
@@ -379,7 +379,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "trong-cay",
+    slug: "bai-hat-trong-cay",
     title: "Bài hát trồng cây",
     authorSlug: "be-kien-quoc",
     content:
@@ -425,7 +425,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "ga",
+    slug: "do-6",
     title: "Đố 6",
     authorSlug: "dan-gian",
     content:
@@ -447,7 +447,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "oc",
+    slug: "mot-mai-nha-chung",
     title: "Một mái nhà chung",
     authorSlug: "dinh-hai",
     content:
@@ -495,13 +495,13 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "doi-tay",
+    slug: "co-day",
     title: "Cô dạy",
     authorSlug: "pham-ho",
     content:
-      "Mẹ, mẹ ơi! Cô dạy:\nPhải giữ sạch đôi tay,\nBàn tay mà giây bẩn,\nSách, áo cũng bẩn ngay.",
+      "Mẹ, mẹ ơi! Cô dạy:\nPhải giữ sạch đôi tay,\nBàn tay mà dây bẩn,\nSách, áo cũng bẩn ngay.",
     fullContent:
-      "Mẹ, mẹ ơi! Cô dạy:\nPhải giữ sạch đôi tay,\nBàn tay mà giây bẩn,\nSách, áo cũng bẩn ngay.\n\nMẹ, mẹ ơi! Cô dạy:\nCãi nhau là không vui\nCái miệng nó xinh thế\nChỉ nói điều hay thôi.",
+      "Mẹ, mẹ ơi! Cô dạy:\nPhải giữ sạch đôi tay,\nBàn tay mà dây bẩn,\nSách, áo cũng bẩn ngay.\n\nMẹ, mẹ ơi! Cô dạy:\nCãi nhau là không vui\nCái miệng nó xinh thế\nChỉ nói điều hay thôi.",
     excerpt:
       "Bài thơ ngắn, rõ ý và gần sinh hoạt học đường, phù hợp với mạch đọc lớp 1 về giữ gìn vệ sinh và nề nếp.",
     tags: [
@@ -519,7 +519,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "loi-chao",
+    slug: "loi-chao-di-truoc",
     title: "Lời chào đi trước",
     authorSlug: "nguyen-hoang-son",
     content:
@@ -565,7 +565,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "chim",
+    slug: "chim-chien-chien",
     title: "Chim chiền chiện",
     authorSlug: "huy-can",
     content:
@@ -635,7 +635,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "vit",
+    slug: "do-7",
     title: "Đố 7",
     authorSlug: "dan-gian",
     content:
@@ -657,7 +657,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "meo",
+    slug: "con-meo-ma-treo-cay-cau",
     title: "Con mèo mà trèo cây cau",
     authorSlug: "dan-gian",
     content:
@@ -1631,7 +1631,7 @@ export const poems: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "chieu-song-hong-tho",
+    slug: "chieu-song-hong",
     title: "Chiều sông Hồng",
     authorSlug: "huu-thinh",
     content:

@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { BookOpenText } from "lucide-react";
 import { notFound } from "next/navigation";
@@ -8,6 +7,7 @@ import { ReaderNavigation } from "@/components/reader/reader-navigation";
 import { LibrarySidebar } from "@/components/reader/library-sidebar";
 import { ReaderShell } from "@/components/reader/reader-shell";
 import { SurroundingPagePrefetch } from "@/components/reader/surrounding-page-prefetch";
+import { ContentImage } from "@/components/ui/content-image";
 import { StructuredData } from "@/components/ui/structured-data";
 import { contentRepository } from "@/lib/content-repository";
 import {
@@ -16,6 +16,7 @@ import {
   resolveTagsForItem,
 } from "@/lib/content-utils";
 import { createMetadata } from "@/lib/metadata";
+import { formatDeploymentTimestamp } from "@/lib/site";
 import {
   buildContentPath,
   buildReaderUrl,
@@ -116,6 +117,7 @@ export async function renderReaderPage({
   routeParams,
 }: ReaderPageInput) {
   const data = await loadReaderData({ searchParams, routeParams });
+  const lastDeploymentLabel = formatDeploymentTimestamp();
 
   if (routeParams && !data.isPathSelection) {
     notFound();
@@ -169,6 +171,7 @@ export async function renderReaderPage({
       {breadcrumbData ? <StructuredData data={breadcrumbData} /> : null}
       <SurroundingPagePrefetch hrefs={surroundingPageHrefs} />
       <ReaderShell
+        lastDeploymentLabel={lastDeploymentLabel}
         search={
           <form
             action={pathname}
@@ -285,16 +288,14 @@ export async function renderReaderPage({
                   {selectedItem.image ? (
                     <>
                       <section className="space-y-3 lg:hidden">
-                        <div className="overflow-hidden rounded-[0.9rem] bg-paper">
-                          <Image
-                            src={selectedItem.image.src}
-                            alt={selectedItem.image.alt}
-                            width={selectedItem.image.width}
-                            height={selectedItem.image.height}
-                            className="h-auto w-full object-cover"
-                            priority
-                          />
-                        </div>
+                        <ContentImage
+                          src={selectedItem.image.src}
+                          alt={selectedItem.image.alt}
+                          width={selectedItem.image.width}
+                          height={selectedItem.image.height}
+                          className="h-auto w-full object-cover"
+                          wrapperClassName="rounded-[0.9rem]"
+                        />
                         {selectedItem.image.caption ? (
                           <p className="text-center text-sm leading-7 text-ink-soft">
                             {selectedItem.image.caption}
@@ -352,16 +353,14 @@ export async function renderReaderPage({
           selectedItem?.image ? (
             <div className="flex flex-col px-5 py-6">
               <section className="space-y-4">
-                <div className="overflow-hidden rounded-[0.9rem] bg-paper">
-                  <Image
-                    src={selectedItem.image.src}
-                    alt={selectedItem.image.alt}
-                    width={selectedItem.image.width}
-                    height={selectedItem.image.height}
-                    className="h-auto w-full object-cover"
-                    priority
-                  />
-                </div>
+                <ContentImage
+                  src={selectedItem.image.src}
+                  alt={selectedItem.image.alt}
+                  width={selectedItem.image.width}
+                  height={selectedItem.image.height}
+                  className="h-auto w-full object-cover"
+                  wrapperClassName="rounded-[0.9rem]"
+                />
                 {selectedItem.image.caption ? (
                   <p className="text-center text-sm leading-7 text-ink-soft">
                     {selectedItem.image.caption}
