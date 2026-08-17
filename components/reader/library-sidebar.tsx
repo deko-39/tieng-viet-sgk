@@ -22,6 +22,11 @@ interface LibrarySidebarProps {
   currentQuery: string;
   clearHref: string;
   reserveHeaderActionSpace?: boolean;
+  auxiliaryLink?: {
+    href: string;
+    kicker: string;
+    label: string;
+  };
 }
 
 function getInitialOpenState(
@@ -58,6 +63,7 @@ export function LibrarySidebar({
   currentQuery,
   clearHref,
   reserveHeaderActionSpace = false,
+  auxiliaryLink,
 }: LibrarySidebarProps) {
   const initialState = getInitialOpenState(groups, selectedSlug);
   const [openGroups, setOpenGroups] = useState(initialState.groups);
@@ -86,6 +92,25 @@ export function LibrarySidebar({
           reserveHeaderActionSpace ? "pl-10" : ""
         }`}
       >
+        {auxiliaryLink ? (
+          <Link
+            href={auxiliaryLink.href}
+            className="mb-1.5 flex items-center justify-between gap-3 rounded-lg border border-line/55 bg-paper/45 px-3 py-2 text-left transition hover:border-brick/40 hover:bg-surface"
+          >
+            <span className="space-y-0.5">
+              <span className="block text-[0.68rem] uppercase tracking-[0.18em] text-ink-soft">
+                {auxiliaryLink.kicker}
+              </span>
+              <span className="block text-[0.82rem] font-medium text-ink">
+                {auxiliaryLink.label}
+              </span>
+            </span>
+            <span className="shrink-0 text-[0.72rem] uppercase tracking-[0.16em] text-brick">
+              Mở
+            </span>
+          </Link>
+        ) : null}
+
         <div className="flex items-center justify-end gap-1.5 text-ink-soft">
           <button
             type="button"
@@ -121,125 +146,128 @@ export function LibrarySidebar({
 
       <div>
         {groups.length ? (
-          <div className="space-y-1 px-1 py-1">
-            {groups.map((group) => {
-              const itemCount = group.volumes.reduce(
-                (count, volume) => count + volume.items.length,
-                0,
-              );
+          <div className="space-y-3 px-1 py-1">
+            <div className="space-y-1">
+              {groups.map((group) => {
+                const itemCount = group.volumes.reduce(
+                  (count, volume) => count + volume.items.length,
+                  0,
+                );
 
-              return (
-                <div
-                  key={group.id}
-                  className="rounded-lg border border-line/55 bg-paper/45"
-                >
-                  <button
-                    type="button"
-                    onClick={() =>
-                      setOpenGroups((currentState) => ({
-                        ...currentState,
-                        [group.id]: !currentState[group.id],
-                      }))
-                    }
-                    className="flex w-full items-center justify-between gap-2 px-2 py-2 text-left text-[0.79rem] font-medium text-ink"
-                    aria-expanded={openGroups[group.id]}
+                return (
+                  <div
+                    key={group.id}
+                    className="rounded-lg border border-line/55 bg-paper/45"
                   >
-                    <span className="text-[0.74rem] leading-4.5">
-                      {group.title}
-                    </span>
-                    <span className="text-[0.66rem] uppercase tracking-[0.14em] text-ink-soft">
-                      {itemCount}
-                    </span>
-                  </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        setOpenGroups((currentState) => ({
+                          ...currentState,
+                          [group.id]: !currentState[group.id],
+                        }))
+                      }
+                      className="flex w-full items-center justify-between gap-2 px-2 py-2 text-left text-[0.79rem] font-medium text-ink"
+                      aria-expanded={openGroups[group.id]}
+                    >
+                      <span className="text-[0.74rem] leading-4.5">
+                        {group.title}
+                      </span>
+                      <span className="text-[0.66rem] uppercase tracking-[0.14em] text-ink-soft">
+                        {itemCount}
+                      </span>
+                    </button>
 
-                  {openGroups[group.id] ? (
-                    <div className="space-y-1 border-t border-line/55 px-1 py-1">
-                      {group.volumes.map((volume) => (
-                        <div
-                          key={volume.id}
-                          className="rounded-md bg-surface/60"
-                        >
-                          <button
-                            type="button"
-                            onClick={() =>
-                              setOpenVolumes((currentState) => ({
-                                ...currentState,
-                                [volume.id]: !currentState[volume.id],
-                              }))
-                            }
-                            className="flex w-full items-center justify-between gap-2 px-2 py-1.5 text-left text-[0.74rem] text-ink"
-                            aria-expanded={openVolumes[volume.id]}
+                    {openGroups[group.id] ? (
+                      <div className="space-y-1 border-t border-line/55 px-1 py-1">
+                        {group.volumes.map((volume) => (
+                          <div
+                            key={volume.id}
+                            className="rounded-md bg-surface/60"
                           >
-                            <span className="text-[0.69rem] leading-4">
-                              {volume.title}
-                            </span>
-                            <span className="text-[0.62rem] uppercase tracking-[0.14em] text-ink-soft">
-                              {volume.items.length}
-                            </span>
-                          </button>
+                            <button
+                              type="button"
+                              onClick={() =>
+                                setOpenVolumes((currentState) => ({
+                                  ...currentState,
+                                  [volume.id]: !currentState[volume.id],
+                                }))
+                              }
+                              className="flex w-full items-center justify-between gap-2 px-2 py-1.5 text-left text-[0.74rem] text-ink"
+                              aria-expanded={openVolumes[volume.id]}
+                            >
+                              <span className="text-[0.69rem] leading-4">
+                                {volume.title}
+                              </span>
+                              <span className="text-[0.62rem] uppercase tracking-[0.14em] text-ink-soft">
+                                {volume.items.length}
+                              </span>
+                            </button>
 
-                          {openVolumes[volume.id] ? (
-                            <ul className="space-y-0.5 border-t border-line/45 px-1 py-1">
-                              {volume.items.length ? (
-                                volume.items.map((item) => {
-                                  const isSelected = item.slug === selectedSlug;
+                            {openVolumes[volume.id] ? (
+                              <ul className="space-y-0.5 border-t border-line/45 px-1 py-1">
+                                {volume.items.length ? (
+                                  volume.items.map((item) => {
+                                    const isSelected =
+                                      item.slug === selectedSlug;
 
-                                  return (
-                                    <li
-                                      key={`${volume.id}:${item.kind}:${item.slug}`}
-                                    >
-                                      <Link
-                                        href={buildReaderUrl(
-                                          currentQuery
-                                            ? { q: currentQuery }
-                                            : {},
-                                          {},
-                                          buildContentPath(item),
-                                        )}
-                                        className={`block rounded-md px-2 py-1.5 transition ${
-                                          isSelected
-                                            ? "reader-current-item"
-                                            : "text-ink-soft hover:bg-paper/80 hover:text-ink"
-                                        }`}
+                                    return (
+                                      <li
+                                        key={`${volume.id}:${item.kind}:${item.slug}`}
                                       >
-                                        <span className="flex items-start gap-2">
-                                          <BookText
-                                            className={`mt-0.5 h-3 w-3 shrink-0 ${
-                                              isSelected
-                                                ? "text-brick"
-                                                : "text-ink-soft/70"
-                                            }`}
-                                            aria-hidden="true"
-                                          />
-                                          <span className="min-w-0 flex-1">
-                                            <span className="block text-[0.76rem] leading-5">
-                                              {item.title}
-                                            </span>
-                                            <span className="block text-[0.62rem] uppercase tracking-[0.12em] text-ink-soft/80">
-                                              {item.kind === "poem"
-                                                ? "Thơ"
-                                                : "Đoạn văn"}
+                                        <Link
+                                          href={buildReaderUrl(
+                                            currentQuery
+                                              ? { q: currentQuery }
+                                              : {},
+                                            {},
+                                            buildContentPath(item),
+                                          )}
+                                          className={`block rounded-md px-2 py-1.5 transition ${
+                                            isSelected
+                                              ? "reader-current-item"
+                                              : "text-ink-soft hover:bg-paper/80 hover:text-ink"
+                                          }`}
+                                        >
+                                          <span className="flex items-start gap-2">
+                                            <BookText
+                                              className={`mt-0.5 h-3 w-3 shrink-0 ${
+                                                isSelected
+                                                  ? "text-brick"
+                                                  : "text-ink-soft/70"
+                                              }`}
+                                              aria-hidden="true"
+                                            />
+                                            <span className="min-w-0 flex-1">
+                                              <span className="block text-[0.76rem] leading-5">
+                                                {item.title}
+                                              </span>
+                                              <span className="block text-[0.62rem] uppercase tracking-[0.12em] text-ink-soft/80">
+                                                {item.kind === "poem"
+                                                  ? "Thơ"
+                                                  : "Đoạn văn"}
+                                              </span>
                                             </span>
                                           </span>
-                                        </span>
-                                      </Link>
-                                    </li>
-                                  );
-                                })
-                              ) : (
-                                <li className="px-2.5 py-1.5 text-[0.78rem] text-ink-soft">
-                                  Chưa có bài đọc.
-                                </li>
-                              )}
-                            </ul>
-                          ) : null}
-                        </div>
-                      ))}
-                    </div>
-                  ) : null}
-                </div>
-              );
-            })}
+                                        </Link>
+                                      </li>
+                                    );
+                                  })
+                                ) : (
+                                  <li className="px-2.5 py-1.5 text-[0.78rem] text-ink-soft">
+                                    Chưa có bài đọc.
+                                  </li>
+                                )}
+                              </ul>
+                            ) : null}
+                          </div>
+                        ))}
+                      </div>
+                    ) : null}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         ) : (
           <div className="rounded-lg border border-line/55 bg-paper/50 px-4 py-5 text-sm leading-7 text-ink-soft">

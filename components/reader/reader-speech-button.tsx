@@ -92,6 +92,33 @@ function getSpeechSupportSnapshot() {
   );
 }
 
+let hasHydrated = false;
+const hydrationListeners = new Set<() => void>();
+
+function subscribeToHydration(callback: () => void) {
+  hydrationListeners.add(callback);
+
+  queueMicrotask(() => {
+    if (hasHydrated) {
+      return;
+    }
+
+    hasHydrated = true;
+
+    for (const listener of hydrationListeners) {
+      listener();
+    }
+  });
+
+  return () => {
+    hydrationListeners.delete(callback);
+  };
+}
+
+function getHydrationSnapshot() {
+  return hasHydrated;
+}
+
 export function ReaderSpeechButton({
   title,
   authorName,
@@ -100,16 +127,18 @@ export function ReaderSpeechButton({
 }: ReaderSpeechButtonProps) {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const isSpeakingRef = useRef(false);
-  const isSupported = useSyncExternalStore(
+  const browserSupportsSpeech = useSyncExternalStore(
     subscribeToSpeechSupport,
     getSpeechSupportSnapshot,
     () => false,
   );
-  const tooltipText = !isSupported
-    ? "Trình duyệt không hỗ trợ đọc thành tiếng"
-    : isSpeaking
-      ? "Dừng đọc bài này"
-      : "Nghe bài này";
+  const hasMounted = useSyncExternalStore(
+    subscribeToHydration,
+    getHydrationSnapshot,
+    () => false,
+  );
+  const isSupported = hasMounted && browserSupportsSpeech;
+  const tooltipText = isSpeaking ? "Dừng đọc bài này" : "Nghe bài này";
 
   useEffect(() => {
     if (!isSupported) {
@@ -159,13 +188,10 @@ export function ReaderSpeechButton({
       className={`inline-flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/40 sm:h-10 sm:w-10 ${
         isSpeaking
           ? "border-brick bg-brick text-paper shadow-[0_10px_30px_rgba(140,75,47,0.28)] hover:bg-[#7a3f24]"
-          : isSupported
-            ? "border-brick/30 bg-[#f7e7dc] text-brick shadow-[0_8px_24px_rgba(140,75,47,0.14)] hover:border-brick/50 hover:bg-[#f2dccb]"
-            : "border-line bg-paper text-ink-soft opacity-70"
+          : "border-brick/30 bg-[#f7e7dc] text-brick shadow-[0_8px_24px_rgba(140,75,47,0.14)] hover:border-brick/50 hover:bg-[#f2dccb]"
       }`}
       aria-pressed={isSpeaking}
       aria-label={isSpeaking ? "Dừng đọc" : "Đọc bài"}
-      disabled={!isSupported}
       title={tooltipText}
     >
       {isSpeaking ? (

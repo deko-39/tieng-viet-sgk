@@ -8,6 +8,18 @@ export interface ChangelogEntry {
 
 export const changelogEntries: ChangelogEntry[] = [
   {
+    id: "2026-08-14-con-chuot-huenh-hoang-author-fix",
+    date: "2026-08-14",
+    title: "Tác giả bài Con chuột huênh hoang đã được chỉnh lại",
+    description:
+      "Một mục đọc trong Tiếng Việt 1 - Tập 2 đã được sửa lại thông tin tác giả cho đúng hơn.",
+    changes: [
+      "Bài Con chuột huênh hoang không còn ghi là Dân gian.",
+      "Thông tin tác giả được đổi thành Khuyết danh.",
+      "Các trang đọc dùng mục này giờ sẽ hiển thị lại phần tác giả theo bản đã chỉnh.",
+    ],
+  },
+  {
     id: "2026-08-14-share-preview-image",
     date: "2026-08-14",
     title: "Ảnh xem trước khi chia sẻ bài đọc rõ ràng hơn",

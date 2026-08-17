@@ -451,7 +451,7 @@ export const paragraphs: Paragraph[] = [
   createParagraph({
     slug: "con-chuot-huenh-hoang",
     title: "Con chuột huênh hoang",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Một con Chuột có tính huênh hoang.\nMột lần, Chuột rơi bộp xuống giữa một đàn Thỏ. Bọn Thỏ giật mình ba chân bốn cẳng bỏ chạy. Chuột tưởng Thỏ sợ mình. Nó lấy làm đắc ý lắm. Nó nghĩ: so với Thỏ thì Mèo nhỏ hơn. Chắc Mèo phải sợ nó.\nMột hôm, Chuột đến gần bồ thóc. Phía trên bồ thóc, một con Mèo đang kêu ngao, ngao. Chuột chẳng thèm để ý đến Mèo, định leo thẳng lên bồ thóc.\nBỗng huỵch một cái, Mèo nhảy phắt xuống, ngoạm ngay lấy Chuột.",
     excerpt:

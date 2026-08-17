@@ -12,7 +12,10 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+
+const DESKTOP_SIDEBAR_SCROLL_KEY = "reader-sidebar-scroll-top";
+const MOBILE_SIDEBAR_SCROLL_KEY = "reader-mobile-sidebar-scroll-top";
 
 function getStoredSidebarState() {
   if (typeof window === "undefined") {
@@ -51,11 +54,18 @@ export function ReaderShell({
   hasAside,
   lastDeploymentLabel,
 }: ReaderShellProps) {
+  const desktopSidebarRef = useRef<HTMLElement | null>(null);
+  const mobileSidebarRef = useRef<HTMLElement | null>(null);
+  const previousDesktopSidebarCollapsedRef = useRef(false);
   const [desktopSidebarCollapsed, setDesktopSidebarCollapsed] = useState(
     getStoredSidebarState,
   );
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [theme, setTheme] = useState<"paper" | "dusk">(getStoredTheme);
+
+  useEffect(() => {
+    previousDesktopSidebarCollapsedRef.current = getStoredSidebarState();
+  }, []);
 
   useEffect(() => {
     window.localStorage.setItem(
@@ -67,6 +77,74 @@ export function ReaderShell({
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
   }, [theme]);
+
+  useEffect(() => {
+    const desktopSidebar = desktopSidebarRef.current;
+    const wasCollapsed = previousDesktopSidebarCollapsedRef.current;
+
+    previousDesktopSidebarCollapsedRef.current = desktopSidebarCollapsed;
+
+    if (!desktopSidebar || desktopSidebarCollapsed) {
+      return;
+    }
+
+    if (wasCollapsed) {
+      desktopSidebar.scrollTop = 0;
+      window.sessionStorage.setItem(DESKTOP_SIDEBAR_SCROLL_KEY, "0");
+    } else {
+      const storedScrollTop = window.sessionStorage.getItem(
+        DESKTOP_SIDEBAR_SCROLL_KEY,
+      );
+
+      if (storedScrollTop) {
+        desktopSidebar.scrollTop = Number(storedScrollTop);
+      }
+    }
+
+    const handleScroll = () => {
+      window.sessionStorage.setItem(
+        DESKTOP_SIDEBAR_SCROLL_KEY,
+        String(desktopSidebar.scrollTop),
+      );
+    };
+
+    desktopSidebar.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      handleScroll();
+      desktopSidebar.removeEventListener("scroll", handleScroll);
+    };
+  }, [desktopSidebarCollapsed]);
+
+  useEffect(() => {
+    const mobileSidebar = mobileSidebarRef.current;
+
+    if (!mobileSidebar) {
+      return;
+    }
+
+    const storedScrollTop = window.sessionStorage.getItem(
+      MOBILE_SIDEBAR_SCROLL_KEY,
+    );
+
+    if (storedScrollTop) {
+      mobileSidebar.scrollTop = Number(storedScrollTop);
+    }
+
+    const handleScroll = () => {
+      window.sessionStorage.setItem(
+        MOBILE_SIDEBAR_SCROLL_KEY,
+        String(mobileSidebar.scrollTop),
+      );
+    };
+
+    mobileSidebar.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      handleScroll();
+      mobileSidebar.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   function toggleTheme() {
     const nextTheme = theme === "paper" ? "dusk" : "paper";
@@ -128,6 +206,7 @@ export function ReaderShell({
       <div className="flex-1">
         <div className="mx-auto flex max-w-[1640px] items-start gap-3 px-3 py-3 sm:px-4">
           <aside
+            ref={desktopSidebarRef}
             className={`reader-scrollbar reader-muted-panel hidden self-start rounded-xl lg:sticky lg:top-[3.75rem] lg:block lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto ${
               desktopSidebarCollapsed ? "w-11" : "w-[12rem] xl:w-[13rem]"
             } relative`}
@@ -190,6 +269,7 @@ export function ReaderShell({
         onClick={() => setMobileSidebarOpen(false)}
       />
       <aside
+        ref={mobileSidebarRef}
         className={`reader-scrollbar reader-muted-panel fixed inset-y-0 left-0 z-50 w-[min(18rem,calc(100vw-1.5rem))] overflow-y-auto border-r border-line shadow-[0_18px_48px_rgba(0,0,0,0.18)] transition-transform lg:hidden ${
           mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}

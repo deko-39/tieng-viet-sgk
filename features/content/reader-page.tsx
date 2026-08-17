@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpenText } from "lucide-react";
+import { SpellCheck } from "lucide-react";
 import { notFound } from "next/navigation";
 import { ExpandableReaderContent } from "@/components/reader/expandable-reader-content";
 import { ReaderActionButtonGroup } from "@/components/reader/reader-action-button-group";
@@ -182,12 +182,29 @@ export async function renderReaderPage({
       <ReaderShell
         lastDeploymentLabel={lastDeploymentLabel}
         desktopRail={
-          <div className="flex h-full flex-col items-center justify-between gap-1 px-1.5 pb-3 pt-10 text-ink-soft">
-            <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
-              Sách
-            </span>
-            <BookOpenText
-              className="h-3.5 w-3.5 text-brick"
+          <div className="flex h-full flex-col items-center justify-between gap-3 px-1.5 pb-3 pt-10 text-ink-soft">
+            <div className="flex flex-col items-center gap-2.5">
+              <span
+                className="inline-flex min-h-24 items-center justify-center rounded-lg border border-line/60 bg-paper/75 px-1.5 text-brick"
+                aria-current="page"
+              >
+                <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
+                  Sách
+                </span>
+              </span>
+              <Link
+                href="/bang-chu-cai"
+                className="inline-flex min-h-24 items-center justify-center rounded-lg border border-line/60 bg-paper/55 px-1.5 text-ink-soft transition hover:border-brick/40 hover:bg-surface hover:text-brick"
+                aria-label="Mở trang bảng chữ cái tiếng Việt"
+                title="Bảng chữ cái tiếng Việt"
+              >
+                <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
+                  ABC
+                </span>
+              </Link>
+            </div>
+            <SpellCheck
+              className="h-3.5 w-3.5 text-brick/85"
               aria-hidden="true"
             />
           </div>
@@ -209,6 +226,11 @@ export async function renderReaderPage({
             selectedSlug={selectedItem?.slug ?? null}
             currentQuery={query}
             clearHref={pathname}
+            auxiliaryLink={{
+              href: "/bang-chu-cai",
+              kicker: "Học chữ cái",
+              label: "Bảng chữ cái",
+            }}
           />
         }
         content={
