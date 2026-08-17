@@ -1,5 +1,4 @@
-import { ArrowLeft, LibraryBig, SpellCheck } from "lucide-react";
-import Link from "next/link";
+import { AlphabetIllustrationBrowser } from "@/components/reader/alphabet-illustration-browser";
 import { AlphabetSidebarNavigation } from "@/components/reader/alphabet-sidebar-navigation";
 import { ReaderShell } from "@/components/reader/reader-shell";
 import { SidebarCollapsedRail } from "@/components/reader/sidebar-collapsed-rail";
@@ -42,11 +41,6 @@ const ALPHABET_LETTERS = [
   { letter: "Y", example: "y tá", note: "Nhiều lúc làm nguyên âm giống I." },
 ] as const;
 
-const VOWELS = ["A", "Ă", "Â", "E", "Ê", "I", "O", "Ô", "Ơ", "U", "Ư", "Y"];
-const CONSONANTS = ALPHABET_LETTERS.filter(
-  ({ letter }) => !VOWELS.includes(letter),
-);
-
 export function generateMetadata() {
   return createMetadata({
     title: "Học bảng chữ cái tiếng Việt",
@@ -67,131 +61,8 @@ export default async function AlphabetPage() {
       desktopSidebar={<AlphabetSidebarNavigation />}
       mobileSidebar={<AlphabetSidebarNavigation />}
       content={
-        <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-5 py-6 sm:px-8 lg:px-10 lg:py-8">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            <div className="space-y-2">
-              <div className="inline-flex items-center gap-2 rounded-full border border-line/70 bg-paper/80 px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-brick">
-                <LibraryBig className="h-3.5 w-3.5" aria-hidden="true" />
-                <span>Bảng chữ cái</span>
-              </div>
-              <div className="space-y-1.5">
-                <h1 className="font-serif text-3xl text-ink sm:text-4xl">
-                  Học 29 chữ cái tiếng Việt
-                </h1>
-                <p className="max-w-3xl text-sm leading-7 text-ink-soft sm:text-base">
-                  Trang này dành để làm quen với bảng chữ cái tiếng Việt theo
-                  cách đơn giản: nhìn mặt chữ, đọc ví dụ ngắn và ghi nhớ điểm
-                  khác nhau giữa các chữ dễ nhầm.
-                </p>
-              </div>
-            </div>
-            <Link
-              href="/"
-              className="inline-flex h-11 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 text-sm font-semibold text-ink transition hover:border-brick/45 hover:text-brick"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              <span>Về trang chủ</span>
-            </Link>
-          </div>
-
-          <section
-            id="tom-tat"
-            className="paper-card rounded-[1.2rem] px-4 py-4 sm:px-5"
-          >
-            <div className="flex flex-wrap items-start justify-between gap-4">
-              <div>
-                <p className="text-[0.72rem] uppercase tracking-[0.18em] text-ink-soft">
-                  Tóm tắt nhanh
-                </p>
-                <h2 className="mt-2 font-serif text-2xl text-ink">
-                  Bảng chữ cái tiếng Việt có 29 chữ
-                </h2>
-              </div>
-              <div className="inline-flex items-center gap-2 rounded-full border border-line/70 bg-surface px-4 py-2 text-sm text-ink-soft">
-                <SpellCheck className="h-4 w-4 text-brick" aria-hidden="true" />
-                <span>12 nguyên âm, 17 phụ âm</span>
-              </div>
-            </div>
-            <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-xl border border-line/60 bg-paper/70 px-4 py-4">
-                <p className="section-kicker">Nguyên âm</p>
-                <p className="mt-3 text-base leading-7 text-ink">
-                  {VOWELS.join(", ")}
-                </p>
-              </div>
-              <div className="rounded-xl border border-line/60 bg-paper/70 px-4 py-4">
-                <p className="section-kicker">Mẹo nhớ</p>
-                <p className="mt-3 text-sm leading-7 text-ink-soft">
-                  Chú ý các cặp dễ nhầm như A - Ă - Â, O - Ô - Ơ, U - Ư và D -
-                  Đ.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section id="toan-bo-chu-cai" className="space-y-4">
-            <div className="space-y-1">
-              <p className="section-kicker">Toàn bộ chữ cái</p>
-              <h2 className="font-serif text-2xl text-ink sm:text-[2rem]">
-                Nhìn chữ, đọc ví dụ, nhớ âm
-              </h2>
-            </div>
-
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-              {ALPHABET_LETTERS.map(({ letter, example, note }) => (
-                <article
-                  key={letter}
-                  className="paper-card rounded-[1.1rem] px-4 py-4"
-                >
-                  <div className="space-y-3">
-                    <div className="flex items-start justify-between gap-3">
-                      <span className="font-serif text-4xl leading-none text-brick">
-                        {letter}
-                      </span>
-                      <span className="rounded-full border border-line/60 bg-surface px-2.5 py-1 text-[0.7rem] uppercase tracking-[0.16em] text-ink-soft">
-                        Ví dụ
-                      </span>
-                    </div>
-                    <div className="space-y-1">
-                      <p className="text-base font-medium text-ink">
-                        {example}
-                      </p>
-                      <p className="text-sm leading-6 text-ink-soft">{note}</p>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </section>
-
-          <section className="grid gap-4 lg:grid-cols-2">
-            <article
-              id="phu-am"
-              className="paper-card rounded-[1.1rem] px-4 py-4 sm:px-5"
-            >
-              <p className="section-kicker">Phụ âm</p>
-              <h2 className="mt-2 font-serif text-2xl text-ink">
-                Các chữ còn lại là phụ âm
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-ink-soft">
-                {CONSONANTS.map(({ letter }) => letter).join(", ")}
-              </p>
-            </article>
-
-            <article
-              id="luyen-doc"
-              className="paper-card rounded-[1.1rem] px-4 py-4 sm:px-5"
-            >
-              <p className="section-kicker">Luyện đọc</p>
-              <h2 className="mt-2 font-serif text-2xl text-ink">
-                Đọc chậm theo nhóm dễ nhầm
-              </h2>
-              <p className="mt-3 text-sm leading-7 text-ink-soft">
-                A, Ă, Â · O, Ô, Ơ · U, Ư · D, Đ · S, X. Nhìn kỹ mặt chữ rồi đọc
-                thành tiếng để quen dần.
-              </p>
-            </article>
-          </section>
+        <div className="mx-auto flex w-full max-w-6xl flex-col px-5 py-6 sm:px-8 lg:px-10 lg:py-8">
+          <AlphabetIllustrationBrowser letters={ALPHABET_LETTERS} />
         </div>
       }
       hasAside={false}

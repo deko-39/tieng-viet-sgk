@@ -1,92 +1,49 @@
 "use client";
 
-import {
-  BookOpenText,
-  ChevronDown,
-  ChevronLeft,
-  ChevronRight,
-  FileText,
-} from "lucide-react";
+import { BookOpenText, ChevronRight, FileText } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
-
-const ALPHABET_SECTIONS = [
-  { id: "tom-tat", label: "Tóm tắt" },
-  { id: "toan-bo-chu-cai", label: "29 chữ cái" },
-  { id: "phu-am", label: "Phụ âm" },
-  { id: "luyen-doc", label: "Luyện đọc" },
-] as const;
 
 const ROOT_ITEMS = [
   {
     id: "books",
-    type: "link",
     href: "/thu-vien/tap-1",
     label: "Sách",
     icon: BookOpenText,
   },
   {
     id: "alphabet",
-    type: "button",
+    href: "/bang-chu-cai",
     label: "Bảng chữ cái",
     icon: FileText,
   },
 ] as const;
 
 export function AlphabetSidebarNavigation() {
-  const [mobileLevel, setMobileLevel] = useState<"root" | "content">("root");
-  const [desktopSectionsOpen, setDesktopSectionsOpen] = useState(true);
-
-  function renderRootMenu(mode: "desktop" | "mobile") {
-    const isOpen =
-      mode === "mobile" ? mobileLevel === "content" : desktopSectionsOpen;
-
+  function renderRootMenu() {
     return (
       <nav aria-label="Điều hướng cấp một" className="space-y-1">
         {ROOT_ITEMS.map((item) => {
           const Icon = item.icon;
-
-          if (item.type === "link") {
-            return (
-              <Link
-                key={item.id}
-                href={item.href}
-                className="group flex min-h-11 items-center justify-between gap-3 rounded-xl border border-line/45 bg-paper/45 px-3 py-2 text-left transition duration-150 hover:border-brick/28 hover:bg-paper/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
-              >
-                <span className="flex min-w-0 items-center gap-2.5">
-                  <span
-                    className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-line/50 bg-paper/70 text-ink-soft group-hover:border-brick/20 group-hover:text-brick"
-                    aria-hidden="true"
-                  >
-                    <Icon className="h-3.5 w-3.5" />
-                  </span>
-                  <span className="min-w-0 truncate text-[0.82rem] font-semibold leading-5 text-ink">
-                    {item.label}
-                  </span>
-                </span>
-                <span className="flex shrink-0 items-center text-brick">
-                  <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
-                </span>
-              </Link>
-            );
-          }
+          const isCurrent = item.id === "alphabet";
 
           return (
-            <button
+            <Link
               key={item.id}
-              type="button"
-              onClick={() =>
-                mode === "mobile"
-                  ? setMobileLevel("content")
-                  : setDesktopSectionsOpen((currentState) => !currentState)
-              }
-              className="reader-current-tab group flex min-h-11 w-full items-center justify-between gap-3 rounded-xl border px-3 py-2 text-left transition duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
-              aria-expanded={isOpen}
-              aria-current="page"
+              href={item.href}
+              className={`${
+                isCurrent
+                  ? "reader-current-tab"
+                  : "border-line/45 bg-paper/45 hover:border-brick/28 hover:bg-paper/85"
+              } group flex min-h-11 items-center justify-between gap-3 rounded-xl border px-3 py-2 text-left transition duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35`}
+              aria-current={isCurrent ? "page" : undefined}
             >
               <span className="flex min-w-0 items-center gap-2.5">
                 <span
-                  className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-brick/20 bg-brick/10 text-brick"
+                  className={`inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border ${
+                    isCurrent
+                      ? "border-brick/20 bg-brick/10 text-brick"
+                      : "border-line/50 bg-paper/70 text-ink-soft group-hover:border-brick/20 group-hover:text-brick"
+                  }`}
                   aria-hidden="true"
                 >
                   <Icon className="h-3.5 w-3.5" />
@@ -95,87 +52,27 @@ export function AlphabetSidebarNavigation() {
                   {item.label}
                 </span>
               </span>
-              <span className="flex shrink-0 items-center text-brick">
-                <ChevronDown
-                  className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                    isOpen ? "rotate-180" : "rotate-0"
-                  }`}
-                  aria-hidden="true"
-                />
+              <span
+                className={`flex shrink-0 items-center ${
+                  isCurrent
+                    ? "text-brick"
+                    : "text-ink-soft/75 group-hover:text-brick"
+                }`}
+              >
+                <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
               </span>
-            </button>
+            </Link>
           );
         })}
       </nav>
     );
   }
 
-  const sectionList = (
-    <nav aria-label="Các phần bảng chữ cái" className="space-y-1 px-2 py-2">
-      {ALPHABET_SECTIONS.map((section) => (
-        <a
-          key={section.id}
-          href={`#${section.id}`}
-          title={section.label}
-          className="group flex min-h-9 items-center gap-2 rounded-lg px-2.5 py-2 text-[0.76rem] text-ink-soft transition duration-150 hover:bg-paper/80 hover:text-ink focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
-        >
-          <FileText
-            className="h-3.5 w-3.5 shrink-0 text-ink-soft/75 group-hover:text-brick/80"
-            aria-hidden="true"
-          />
-          <span className="truncate">{section.label}</span>
-        </a>
-      ))}
-    </nav>
-  );
-
   return (
     <div className="flex flex-col">
-      <div className="lg:hidden">
-        {mobileLevel === "root" ? (
-          <div className="space-y-2 px-2 py-2.5">
-            {renderRootMenu("mobile")}
-          </div>
-        ) : (
-          <>
-            <div className="border-b border-line/70 px-1.5 py-1.5">
-              <button
-                type="button"
-                onClick={() => setMobileLevel("root")}
-                className="inline-flex h-8 items-center gap-1.5 rounded-md border border-line/60 bg-paper/70 px-3 text-[0.72rem] uppercase tracking-[0.14em] text-ink-soft transition hover:text-ink"
-              >
-                <ChevronLeft className="h-3.5 w-3.5" aria-hidden="true" />
-                <span>Quay lại</span>
-              </button>
-            </div>
-            {sectionList}
-          </>
-        )}
-      </div>
-
-      <div className="hidden lg:block">
-        <div className="border-b border-line/70 px-1.5 py-1.5 pl-10">
-          {renderRootMenu("desktop")}
-        </div>
-        <div
-          className="reader-sidebar-collapsible"
-          data-open={desktopSectionsOpen ? "true" : "false"}
-        >
-          <div>
-            <div className="ml-4 border-l border-line/55 pl-2.5">
-              <div className="border-b border-line/70 px-1.5 py-1.5">
-                <div>
-                  <p className="text-[0.64rem] uppercase tracking-[0.16em] text-ink-soft">
-                    Bảng chữ cái
-                  </p>
-                  <p className="text-[0.78rem] font-medium text-ink">
-                    Chọn phần học chữ cái
-                  </p>
-                </div>
-              </div>
-              {sectionList}
-            </div>
-          </div>
+      <div className="space-y-2 px-2 py-2.5 lg:px-1.5 lg:py-1.5 lg:pl-10">
+        <div className="lg:border-b lg:border-line/70 lg:pb-1.5">
+          {renderRootMenu()}
         </div>
       </div>
     </div>

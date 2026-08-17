@@ -403,36 +403,40 @@ export function LibrarySidebar({
   }
 
   function renderSidebarContent(isMobile: boolean) {
+    const shouldRenderHeader = isMobile || Boolean(currentQuery);
+
     return (
       <>
-        <div
-          className={`border-b border-line/70 px-1.5 py-1.5 ${
-            reserveHeaderActionSpace && !isMobile ? "pl-10" : ""
-          }`}
-        >
-          {isMobile ? (
-            <button
-              type="button"
-              onClick={() => setMobileLevel("root")}
-              className="mb-2 inline-flex h-8 items-center gap-1.5 rounded-md border border-line/60 bg-paper/70 px-3 text-[0.72rem] uppercase tracking-[0.14em] text-ink-soft transition hover:text-ink"
-            >
-              <ChevronLeft className="h-3.5 w-3.5" aria-hidden="true" />
-              <span>Quay lại</span>
-            </button>
-          ) : null}
-
-          {currentQuery ? (
-            <div className="flex items-center justify-between gap-2 rounded-lg border border-line/65 bg-paper/80 px-2.5 py-2 text-[0.75rem] text-ink-soft">
-              <span className="truncate">Từ khóa: {currentQuery}</span>
-              <Link
-                href={clearHref}
-                className="shrink-0 text-brick transition hover:text-ink"
+        {shouldRenderHeader ? (
+          <div
+            className={`border-b border-line/70 px-1.5 py-1.5 ${
+              reserveHeaderActionSpace && !isMobile ? "pl-10" : ""
+            }`}
+          >
+            {isMobile ? (
+              <button
+                type="button"
+                onClick={() => setMobileLevel("root")}
+                className="mb-2 inline-flex h-8 items-center gap-1.5 rounded-md border border-line/60 bg-paper/70 px-3 text-[0.72rem] uppercase tracking-[0.14em] text-ink-soft transition hover:text-ink"
               >
-                Xóa
-              </Link>
-            </div>
-          ) : null}
-        </div>
+                <ChevronLeft className="h-3.5 w-3.5" aria-hidden="true" />
+                <span>Quay lại</span>
+              </button>
+            ) : null}
+
+            {currentQuery ? (
+              <div className="flex items-center justify-between gap-2 rounded-lg border border-line/65 bg-paper/80 px-2.5 py-2 text-[0.75rem] text-ink-soft">
+                <span className="truncate">Từ khóa: {currentQuery}</span>
+                <Link
+                  href={clearHref}
+                  className="shrink-0 text-brick transition hover:text-ink"
+                >
+                  Xóa
+                </Link>
+              </div>
+            ) : null}
+          </div>
+        ) : null}
 
         {groups.length ? (
           renderSidebarTree()
