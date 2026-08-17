@@ -6,7 +6,6 @@ import {
   ChevronLeft,
   ChevronRight,
   FileText,
-  SpellCheck,
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -16,6 +15,22 @@ const ALPHABET_SECTIONS = [
   { id: "toan-bo-chu-cai", label: "29 chữ cái" },
   { id: "phu-am", label: "Phụ âm" },
   { id: "luyen-doc", label: "Luyện đọc" },
+] as const;
+
+const ROOT_ITEMS = [
+  {
+    id: "books",
+    type: "link",
+    href: "/thu-vien/tap-1",
+    label: "Sách",
+    icon: BookOpenText,
+  },
+  {
+    id: "alphabet",
+    type: "button",
+    label: "Bảng chữ cái",
+    icon: FileText,
+  },
 ] as const;
 
 export function AlphabetSidebarNavigation() {
@@ -28,69 +43,69 @@ export function AlphabetSidebarNavigation() {
 
     return (
       <nav aria-label="Điều hướng cấp một" className="space-y-1">
-        <button
-          type="button"
-          onClick={() =>
-            mode === "mobile"
-              ? setMobileLevel("content")
-              : setDesktopSectionsOpen((currentState) => !currentState)
-          }
-          className="reader-current-tab group flex min-h-11 w-full items-center justify-between gap-3 rounded-xl border px-3 py-2 text-left transition duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
-          aria-expanded={isOpen}
-          aria-current="page"
-        >
-          <span className="flex min-w-0 items-center gap-2.5">
-            <span
-              className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-brick/20 bg-brick/10 text-brick"
-              aria-hidden="true"
-            >
-              <SpellCheck className="h-3.5 w-3.5" />
-            </span>
-            <span className="min-w-0">
-              <span className="block truncate text-[0.82rem] font-semibold leading-5 text-ink">
-                Bảng chữ cái
-              </span>
-              <span className="block truncate text-[0.62rem] uppercase tracking-[0.14em] text-ink-soft">
-                Mục hiện tại
-              </span>
-            </span>
-          </span>
-          <span className="flex shrink-0 items-center gap-1.5 text-[0.64rem] uppercase tracking-[0.14em] text-brick">
-            <span>Đang ở đây</span>
-            <ChevronDown
-              className={`h-3.5 w-3.5 transition-transform duration-200 ${
-                isOpen ? "rotate-180" : "rotate-0"
-              }`}
-              aria-hidden="true"
-            />
-          </span>
-        </button>
+        {ROOT_ITEMS.map((item) => {
+          const Icon = item.icon;
 
-        <Link
-          href="/thu-vien/tap-1"
-          className="group flex min-h-11 items-center justify-between gap-3 rounded-xl border border-line/45 bg-paper/45 px-3 py-2 text-left transition duration-150 hover:border-brick/28 hover:bg-paper/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
-        >
-          <span className="flex min-w-0 items-center gap-2.5">
-            <span
-              className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-line/50 bg-paper/70 text-ink-soft group-hover:border-brick/20 group-hover:text-brick"
-              aria-hidden="true"
+          if (item.type === "link") {
+            return (
+              <Link
+                key={item.id}
+                href={item.href}
+                className="group flex min-h-11 items-center justify-between gap-3 rounded-xl border border-line/45 bg-paper/45 px-3 py-2 text-left transition duration-150 hover:border-brick/28 hover:bg-paper/85 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
+              >
+                <span className="flex min-w-0 items-center gap-2.5">
+                  <span
+                    className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-line/50 bg-paper/70 text-ink-soft group-hover:border-brick/20 group-hover:text-brick"
+                    aria-hidden="true"
+                  >
+                    <Icon className="h-3.5 w-3.5" />
+                  </span>
+                  <span className="min-w-0 truncate text-[0.82rem] font-semibold leading-5 text-ink">
+                    {item.label}
+                  </span>
+                </span>
+                <span className="flex shrink-0 items-center text-brick">
+                  <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
+                </span>
+              </Link>
+            );
+          }
+
+          return (
+            <button
+              key={item.id}
+              type="button"
+              onClick={() =>
+                mode === "mobile"
+                  ? setMobileLevel("content")
+                  : setDesktopSectionsOpen((currentState) => !currentState)
+              }
+              className="reader-current-tab group flex min-h-11 w-full items-center justify-between gap-3 rounded-xl border px-3 py-2 text-left transition duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
+              aria-expanded={isOpen}
+              aria-current="page"
             >
-              <BookOpenText className="h-3.5 w-3.5" />
-            </span>
-            <span className="min-w-0">
-              <span className="block truncate text-[0.82rem] font-semibold leading-5 text-ink">
-                Sách
+              <span className="flex min-w-0 items-center gap-2.5">
+                <span
+                  className="inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-md border border-brick/20 bg-brick/10 text-brick"
+                  aria-hidden="true"
+                >
+                  <Icon className="h-3.5 w-3.5" />
+                </span>
+                <span className="min-w-0 truncate text-[0.82rem] font-semibold leading-5 text-ink">
+                  {item.label}
+                </span>
               </span>
-              <span className="block truncate text-[0.62rem] uppercase tracking-[0.14em] text-ink-soft">
-                Quay lại thư viện
+              <span className="flex shrink-0 items-center text-brick">
+                <ChevronDown
+                  className={`h-3.5 w-3.5 transition-transform duration-200 ${
+                    isOpen ? "rotate-180" : "rotate-0"
+                  }`}
+                  aria-hidden="true"
+                />
               </span>
-            </span>
-          </span>
-          <span className="flex shrink-0 items-center gap-1 text-[0.64rem] uppercase tracking-[0.14em] text-brick">
-            <span>Đi tới</span>
-            <ChevronRight className="h-3.5 w-3.5" aria-hidden="true" />
-          </span>
-        </Link>
+            </button>
+          );
+        })}
       </nav>
     );
   }
@@ -139,7 +154,7 @@ export function AlphabetSidebarNavigation() {
       </div>
 
       <div className="hidden lg:block">
-        <div className="border-b border-line/70 px-1.5 py-1.5">
+        <div className="border-b border-line/70 px-1.5 py-1.5 pl-10">
           {renderRootMenu("desktop")}
         </div>
         <div

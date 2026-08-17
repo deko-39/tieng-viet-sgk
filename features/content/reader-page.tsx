@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { SpellCheck } from "lucide-react";
 import { notFound } from "next/navigation";
 import { ExpandableReaderContent } from "@/components/reader/expandable-reader-content";
 import { ReaderActionButtonGroup } from "@/components/reader/reader-action-button-group";
 import { ReaderNavigation } from "@/components/reader/reader-navigation";
 import { LibrarySidebar } from "@/components/reader/library-sidebar";
 import { ReaderShell } from "@/components/reader/reader-shell";
+import { SidebarCollapsedRail } from "@/components/reader/sidebar-collapsed-rail";
 import { SurroundingPagePrefetch } from "@/components/reader/surrounding-page-prefetch";
 import { ContentImage } from "@/components/ui/content-image";
 import { StructuredData } from "@/components/ui/structured-data";
@@ -181,34 +181,7 @@ export async function renderReaderPage({
       <SurroundingPagePrefetch hrefs={surroundingPageHrefs} />
       <ReaderShell
         lastDeploymentLabel={lastDeploymentLabel}
-        desktopRail={
-          <div className="flex h-full flex-col items-center justify-between gap-3 px-1.5 pb-3 pt-10 text-ink-soft">
-            <div className="flex flex-col items-center gap-2.5">
-              <span
-                className="inline-flex min-h-24 items-center justify-center rounded-lg border border-line/60 bg-paper/75 px-1.5 text-brick"
-                aria-current="page"
-              >
-                <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
-                  Sách
-                </span>
-              </span>
-              <Link
-                href="/bang-chu-cai"
-                className="inline-flex min-h-24 items-center justify-center rounded-lg border border-line/60 bg-paper/55 px-1.5 text-ink-soft transition hover:border-brick/40 hover:bg-surface hover:text-brick"
-                aria-label="Mở trang bảng chữ cái tiếng Việt"
-                title="Bảng chữ cái tiếng Việt"
-              >
-                <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
-                  ABC
-                </span>
-              </Link>
-            </div>
-            <SpellCheck
-              className="h-3.5 w-3.5 text-brick/85"
-              aria-hidden="true"
-            />
-          </div>
-        }
+        desktopRail={<SidebarCollapsedRail currentSection="books" />}
         desktopSidebar={
           <LibrarySidebar
             key="desktop-sidebar"

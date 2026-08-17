@@ -10,7 +10,6 @@ import {
   ChevronsUp,
   FileText,
   FolderOpen,
-  SpellCheck,
 } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
@@ -118,7 +117,7 @@ export function LibrarySidebar({
     item: NonNullable<LibrarySidebarProps["rootItems"]>[number],
     mode: "desktop" | "mobile",
   ) {
-    const Icon = item.id === "alphabet" ? SpellCheck : BookOpenText;
+    const Icon = item.id === "alphabet" ? FileText : BookOpenText;
     const isExpandable = Boolean(item.isCurrent);
     const isOpen =
       mode === "mobile" ? mobileLevel === "content" : desktopContentOpen;
@@ -140,17 +139,11 @@ export function LibrarySidebar({
           >
             <Icon className="h-3.5 w-3.5" />
           </span>
-          <span className="min-w-0">
-            <span className="block truncate text-[0.82rem] font-semibold leading-5 text-ink">
-              {item.label}
-            </span>
-            <span className="block truncate text-[0.62rem] uppercase tracking-[0.14em] text-ink-soft">
-              {item.kicker}
-            </span>
+          <span className="min-w-0 truncate text-[0.82rem] font-semibold leading-5 text-ink">
+            {item.label}
           </span>
         </span>
-        <span className="flex shrink-0 items-center gap-1.5 text-[0.64rem] uppercase tracking-[0.14em] text-brick">
-          <span>{isExpandable ? "Đang ở đây" : "Đi tới"}</span>
+        <span className="flex shrink-0 items-center text-brick">
           {isExpandable ? (
             <ChevronDown
               className={`h-3.5 w-3.5 transition-transform duration-200 ${
@@ -384,6 +377,31 @@ export function LibrarySidebar({
     );
   }
 
+  function renderDesktopOutlineControls() {
+    return (
+      <div className="absolute left-1.5 top-10 z-10 hidden flex-col gap-1.5 lg:flex">
+        <button
+          type="button"
+          onClick={() => setAllOpen(true)}
+          className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 text-ink-soft transition hover:text-ink"
+          aria-label="Mở hết mục lục"
+          title="Mở hết mục lục"
+        >
+          <ChevronsDown className="h-3.5 w-3.5" aria-hidden="true" />
+        </button>
+        <button
+          type="button"
+          onClick={() => setAllOpen(false)}
+          className="inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 text-ink-soft transition hover:text-ink"
+          aria-label="Thu gọn mục lục"
+          title="Thu gọn mục lục"
+        >
+          <ChevronsUp className="h-3.5 w-3.5" aria-hidden="true" />
+        </button>
+      </div>
+    );
+  }
+
   function renderSidebarContent(isMobile: boolean) {
     return (
       <>
@@ -403,39 +421,8 @@ export function LibrarySidebar({
             </button>
           ) : null}
 
-          <div className="flex items-center justify-between gap-2">
-            <div>
-              <p className="text-[0.64rem] uppercase tracking-[0.16em] text-ink-soft">
-                Mục sách
-              </p>
-              <p className="text-[0.78rem] font-medium text-ink">
-                Chọn sách và bài đọc
-              </p>
-            </div>
-            <div className="flex items-center gap-1.5 text-ink-soft">
-              <button
-                type="button"
-                onClick={() => setAllOpen(true)}
-                className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-line/60 bg-paper/70 transition hover:text-ink"
-                aria-label="Mở hết mục lục"
-                title="Mở hết mục lục"
-              >
-                <ChevronsDown className="h-3.5 w-3.5" aria-hidden="true" />
-              </button>
-              <button
-                type="button"
-                onClick={() => setAllOpen(false)}
-                className="inline-flex h-8 w-8 items-center justify-center rounded-md border border-line/60 bg-paper/70 transition hover:text-ink"
-                aria-label="Thu gọn mục lục"
-                title="Thu gọn mục lục"
-              >
-                <ChevronsUp className="h-3.5 w-3.5" aria-hidden="true" />
-              </button>
-            </div>
-          </div>
-
           {currentQuery ? (
-            <div className="mt-2 flex items-center justify-between gap-2 rounded-lg border border-line/65 bg-paper/80 px-2.5 py-2 text-[0.75rem] text-ink-soft">
+            <div className="flex items-center justify-between gap-2 rounded-lg border border-line/65 bg-paper/80 px-2.5 py-2 text-[0.75rem] text-ink-soft">
               <span className="truncate">Từ khóa: {currentQuery}</span>
               <Link
                 href={clearHref}
@@ -465,6 +452,7 @@ export function LibrarySidebar({
 
     return (
       <>
+        {renderDesktopOutlineControls()}
         <div
           className={`border-b border-line/70 px-1.5 py-1.5 ${
             reserveHeaderActionSpace ? "pl-10" : ""
@@ -478,6 +466,16 @@ export function LibrarySidebar({
         >
           <div>
             <div className="ml-4 border-l border-line/55 pl-2.5">
+              <div className="border-b border-line/70 px-1.5 py-1.5">
+                <div>
+                  <p className="text-[0.64rem] uppercase tracking-[0.16em] text-ink-soft">
+                    Sách
+                  </p>
+                  <p className="text-[0.78rem] font-medium text-ink">
+                    Chọn sách và bài đọc
+                  </p>
+                </div>
+              </div>
               {renderSidebarContent(false)}
             </div>
           </div>

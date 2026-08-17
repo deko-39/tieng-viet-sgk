@@ -2,6 +2,7 @@ import { ArrowLeft, LibraryBig, SpellCheck } from "lucide-react";
 import Link from "next/link";
 import { AlphabetSidebarNavigation } from "@/components/reader/alphabet-sidebar-navigation";
 import { ReaderShell } from "@/components/reader/reader-shell";
+import { SidebarCollapsedRail } from "@/components/reader/sidebar-collapsed-rail";
 import { createMetadata } from "@/lib/metadata";
 import { getLastDeploymentLabel } from "@/lib/site";
 
@@ -62,34 +63,7 @@ export default async function AlphabetPage() {
   return (
     <ReaderShell
       lastDeploymentLabel={lastDeploymentLabel}
-      desktopRail={
-        <div className="flex h-full flex-col items-center justify-between gap-3 px-1.5 pb-3 pt-10 text-ink-soft">
-          <div className="flex flex-col items-center gap-2.5">
-            <Link
-              href="/thu-vien/tap-1"
-              className="inline-flex min-h-24 items-center justify-center rounded-lg border border-line/60 bg-paper/55 px-1.5 text-ink-soft transition hover:border-brick/40 hover:bg-surface hover:text-brick"
-              aria-label="Mở thư viện sách"
-              title="Sách"
-            >
-              <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
-                Sách
-              </span>
-            </Link>
-            <span
-              className="inline-flex min-h-24 items-center justify-center rounded-lg border border-line/60 bg-paper/75 px-1.5 text-brick"
-              aria-current="page"
-            >
-              <span className="[writing-mode:vertical-rl] rotate-180 text-[0.62rem] uppercase tracking-[0.22em]">
-                ABC
-              </span>
-            </span>
-          </div>
-          <SpellCheck
-            className="h-3.5 w-3.5 text-brick/85"
-            aria-hidden="true"
-          />
-        </div>
-      }
+      desktopRail={<SidebarCollapsedRail currentSection="alphabet" />}
       desktopSidebar={<AlphabetSidebarNavigation />}
       mobileSidebar={<AlphabetSidebarNavigation />}
       content={
