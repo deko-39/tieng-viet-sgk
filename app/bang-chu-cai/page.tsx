@@ -1,5 +1,6 @@
 import { ArrowLeft, LibraryBig, SpellCheck } from "lucide-react";
 import Link from "next/link";
+import { AlphabetSidebarNavigation } from "@/components/reader/alphabet-sidebar-navigation";
 import { ReaderShell } from "@/components/reader/reader-shell";
 import { createMetadata } from "@/lib/metadata";
 import { getLastDeploymentLabel } from "@/lib/site";
@@ -45,13 +46,6 @@ const CONSONANTS = ALPHABET_LETTERS.filter(
   ({ letter }) => !VOWELS.includes(letter),
 );
 
-const ALPHABET_SECTIONS = [
-  { id: "tom-tat", label: "Tóm tắt" },
-  { id: "toan-bo-chu-cai", label: "29 chữ cái" },
-  { id: "phu-am", label: "Phụ âm" },
-  { id: "luyen-doc", label: "Luyện đọc" },
-] as const;
-
 export function generateMetadata() {
   return createMetadata({
     title: "Học bảng chữ cái tiếng Việt",
@@ -60,35 +54,6 @@ export function generateMetadata() {
     pathname: "/bang-chu-cai",
     keywords: ["bảng chữ cái tiếng Việt", "học chữ cái", "a b c tiếng Việt"],
   });
-}
-
-function AlphabetSidebarNavigation() {
-  return (
-    <div className="flex flex-col">
-      <div className="border-b border-line/70 px-1.5 py-1.5">
-        <div className="rounded-lg border border-line/55 bg-paper/45 px-3 py-2">
-          <p className="text-[0.68rem] uppercase tracking-[0.18em] text-ink-soft">
-            Bảng chữ cái
-          </p>
-          <p className="mt-1 text-[0.8rem] leading-5 text-ink-soft">
-            Điều hướng nhanh các phần học chữ cái tiếng Việt.
-          </p>
-        </div>
-      </div>
-
-      <div className="space-y-1 px-1 py-1">
-        {ALPHABET_SECTIONS.map((section) => (
-          <a
-            key={section.id}
-            href={`#${section.id}`}
-            className="block rounded-lg border border-line/55 bg-paper/45 px-3 py-2 text-[0.8rem] text-ink transition hover:border-brick/40 hover:bg-surface hover:text-brick"
-          >
-            {section.label}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
 }
 
 export default async function AlphabetPage() {

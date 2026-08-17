@@ -208,7 +208,7 @@ export function ReaderShell({
           <aside
             ref={desktopSidebarRef}
             className={`reader-scrollbar reader-muted-panel hidden self-start rounded-xl lg:sticky lg:top-[3.75rem] lg:block lg:max-h-[calc(100vh-6rem)] lg:overflow-y-auto ${
-              desktopSidebarCollapsed ? "w-11" : "w-[12rem] xl:w-[13rem]"
+              desktopSidebarCollapsed ? "w-11" : "w-[15.5rem] xl:w-[16.25rem]"
             } relative`}
           >
             <button
@@ -270,12 +270,12 @@ export function ReaderShell({
       />
       <aside
         ref={mobileSidebarRef}
-        className={`reader-scrollbar reader-muted-panel fixed inset-y-0 left-0 z-50 w-[min(18rem,calc(100vw-1.5rem))] overflow-y-auto border-r border-line shadow-[0_18px_48px_rgba(0,0,0,0.18)] transition-transform lg:hidden ${
+        className={`reader-scrollbar reader-muted-panel fixed inset-y-0 left-0 z-50 w-[min(22rem,calc(100vw-1rem))] max-w-full overflow-y-auto border-r border-line shadow-[0_18px_48px_rgba(0,0,0,0.18)] transition-transform sm:w-[min(24rem,calc(100vw-1.5rem))] lg:hidden ${
           mobileSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         aria-label="Mục lục sách giáo khoa"
       >
-        <div className="flex h-12 items-center justify-end border-b border-line px-4">
+        <div className="flex h-12 items-center justify-end border-b border-line px-3 sm:px-4">
           <button
             type="button"
             onClick={() => setMobileSidebarOpen(false)}

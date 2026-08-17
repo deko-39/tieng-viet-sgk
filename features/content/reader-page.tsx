@@ -217,6 +217,23 @@ export async function renderReaderPage({
             currentQuery={query}
             clearHref={pathname}
             reserveHeaderActionSpace
+            rootItems={[
+              {
+                id: "books",
+                href: pathname,
+                kicker: "Mục đang đọc",
+                label: "Sách",
+                description: "Mục lục bài đọc theo sách và tập.",
+                isCurrent: true,
+              },
+              {
+                id: "alphabet",
+                href: "/bang-chu-cai",
+                kicker: "Học chữ cái",
+                label: "Bảng chữ cái",
+                description: "Chuyển sang trang học 29 chữ cái tiếng Việt.",
+              },
+            ]}
           />
         }
         mobileSidebar={
@@ -226,11 +243,23 @@ export async function renderReaderPage({
             selectedSlug={selectedItem?.slug ?? null}
             currentQuery={query}
             clearHref={pathname}
-            auxiliaryLink={{
-              href: "/bang-chu-cai",
-              kicker: "Học chữ cái",
-              label: "Bảng chữ cái",
-            }}
+            rootItems={[
+              {
+                id: "books",
+                href: pathname,
+                kicker: "Mục đang đọc",
+                label: "Sách",
+                description: "Mở mục lục bài đọc theo sách và tập.",
+                isCurrent: true,
+              },
+              {
+                id: "alphabet",
+                href: "/bang-chu-cai",
+                kicker: "Học chữ cái",
+                label: "Bảng chữ cái",
+                description: "Chuyển sang trang học 29 chữ cái tiếng Việt.",
+              },
+            ]}
           />
         }
         content={
