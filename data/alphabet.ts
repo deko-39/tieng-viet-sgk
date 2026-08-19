@@ -79,7 +79,7 @@ export const alphabetLetters: AlphabetLetter[] = [
     lowercaseForm: "b",
     uppercaseForm: "B",
     uppercaseWritingForm: "B",
-    imageCaption: "B - em bé",
+    imageCaption: "B - con bò",
   }),
   createAlphabetLetter({
     slug: "chu-c",
