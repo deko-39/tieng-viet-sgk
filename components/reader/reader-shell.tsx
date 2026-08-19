@@ -12,17 +12,76 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 
 const DESKTOP_SIDEBAR_SCROLL_KEY = "reader-sidebar-scroll-top";
 const MOBILE_SIDEBAR_SCROLL_KEY = "reader-mobile-sidebar-scroll-top";
+const SIDEBAR_COLLAPSED_STORAGE_KEY = "reader-sidebar-collapsed";
+const THEME_STORAGE_KEY = "reader-theme";
+
+const sidebarCollapsedListeners = new Set<() => void>();
+const themeListeners = new Set<() => void>();
+
+function subscribeToSidebarCollapsed(onStoreChange: () => void) {
+  sidebarCollapsedListeners.add(onStoreChange);
+
+  if (typeof window === "undefined") {
+    return () => {
+      sidebarCollapsedListeners.delete(onStoreChange);
+    };
+  }
+
+  const handleStorage = (event: StorageEvent) => {
+    if (event.key === SIDEBAR_COLLAPSED_STORAGE_KEY) {
+      onStoreChange();
+    }
+  };
+
+  window.addEventListener("storage", handleStorage);
+
+  return () => {
+    sidebarCollapsedListeners.delete(onStoreChange);
+    window.removeEventListener("storage", handleStorage);
+  };
+}
+
+function subscribeToTheme(onStoreChange: () => void) {
+  themeListeners.add(onStoreChange);
+
+  if (typeof window === "undefined") {
+    return () => {
+      themeListeners.delete(onStoreChange);
+    };
+  }
+
+  const handleStorage = (event: StorageEvent) => {
+    if (event.key === THEME_STORAGE_KEY) {
+      onStoreChange();
+    }
+  };
+
+  window.addEventListener("storage", handleStorage);
+
+  return () => {
+    themeListeners.delete(onStoreChange);
+    window.removeEventListener("storage", handleStorage);
+  };
+}
+
+function emitSidebarCollapsedChange() {
+  sidebarCollapsedListeners.forEach((listener) => listener());
+}
+
+function emitThemeChange() {
+  themeListeners.forEach((listener) => listener());
+}
 
 function getStoredSidebarState() {
   if (typeof window === "undefined") {
     return false;
   }
 
-  return window.localStorage.getItem("reader-sidebar-collapsed") === "true";
+  return window.localStorage.getItem(SIDEBAR_COLLAPSED_STORAGE_KEY) === "true";
 }
 
 function getStoredTheme(): "paper" | "dusk" {
@@ -30,9 +89,35 @@ function getStoredTheme(): "paper" | "dusk" {
     return "paper";
   }
 
-  return window.localStorage.getItem("reader-theme") === "dusk"
+  return window.localStorage.getItem(THEME_STORAGE_KEY) === "dusk"
     ? "dusk"
     : "paper";
+}
+
+function getServerSidebarState() {
+  return false;
+}
+
+function getServerTheme(): "paper" | "dusk" {
+  return "paper";
+}
+
+function setStoredSidebarState(collapsed: boolean) {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.setItem(SIDEBAR_COLLAPSED_STORAGE_KEY, String(collapsed));
+  emitSidebarCollapsedChange();
+}
+
+function setStoredTheme(theme: "paper" | "dusk") {
+  if (typeof window === "undefined") {
+    return;
+  }
+
+  window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+  emitThemeChange();
 }
 
 interface ReaderShellProps {
@@ -57,22 +142,17 @@ export function ReaderShell({
   const desktopSidebarRef = useRef<HTMLElement | null>(null);
   const mobileSidebarRef = useRef<HTMLElement | null>(null);
   const previousDesktopSidebarCollapsedRef = useRef(false);
-  const [desktopSidebarCollapsed, setDesktopSidebarCollapsed] = useState(
+  const desktopSidebarCollapsed = useSyncExternalStore(
+    subscribeToSidebarCollapsed,
     getStoredSidebarState,
+    getServerSidebarState,
   );
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
-  const [theme, setTheme] = useState<"paper" | "dusk">(getStoredTheme);
-
-  useEffect(() => {
-    previousDesktopSidebarCollapsedRef.current = getStoredSidebarState();
-  }, []);
-
-  useEffect(() => {
-    window.localStorage.setItem(
-      "reader-sidebar-collapsed",
-      String(desktopSidebarCollapsed),
-    );
-  }, [desktopSidebarCollapsed]);
+  const theme = useSyncExternalStore(
+    subscribeToTheme,
+    getStoredTheme,
+    getServerTheme,
+  );
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -148,8 +228,7 @@ export function ReaderShell({
 
   function toggleTheme() {
     const nextTheme = theme === "paper" ? "dusk" : "paper";
-    window.localStorage.setItem("reader-theme", nextTheme);
-    setTheme(nextTheme);
+    setStoredTheme(nextTheme);
   }
 
   return (
@@ -213,9 +292,7 @@ export function ReaderShell({
           >
             <button
               type="button"
-              onClick={() =>
-                setDesktopSidebarCollapsed((currentState) => !currentState)
-              }
+              onClick={() => setStoredSidebarState(!desktopSidebarCollapsed)}
               className="absolute left-1.5 top-1.5 z-10 inline-flex h-7 w-7 items-center justify-center rounded-md border border-line/60 bg-paper/70 text-ink transition hover:bg-surface"
               aria-label={
                 desktopSidebarCollapsed ? "Hiện mục lục" : "Thu gọn mục lục"

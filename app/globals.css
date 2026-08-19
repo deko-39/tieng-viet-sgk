@@ -193,6 +193,20 @@ html[data-theme="dusk"] .reading-surface {
 }
 
 @media (max-width: 640px) {
+  .alphabet-handwriting-lowercase {
+    transform: translateY(-0.4em);
+  }
+
+  .alphabet-handwriting-uppercase {
+    transform: translateY(-0em);
+  }
+
+  .alphabet-lowercase {
+    transform: translateY(-0em);
+  }
+}
+
+@media (max-width: 640px) {
   .poem-lines {
     font-size: 0.98rem;
     line-height: 2.02;
