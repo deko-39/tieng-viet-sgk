@@ -8,15 +8,16 @@ export interface ChangelogEntry {
 
 export const changelogEntries: ChangelogEntry[] = [
   {
-    id: "2026-08-14-con-chuot-huenh-hoang-author-fix",
-    date: "2026-08-14",
-    title: "Tác giả bài Con chuột huênh hoang đã được chỉnh lại",
+    id: "2026-08-19-alphabet-browser-expanded",
+    date: "2026-08-19",
+    title: "Bảng chữ cái được thêm và nâng cấp",
     description:
-      "Một mục đọc trong Tiếng Việt 1 - Tập 2 đã được sửa lại thông tin tác giả cho đúng hơn.",
+      "Trang bảng chữ cái giờ có thêm nhiều nhóm âm ghép, điều hướng nhanh ở đầu trang và thư mục minh họa đầy đủ hơn để tiếp tục bổ sung hình ảnh.",
     changes: [
-      "Bài Con chuột huênh hoang không còn ghi là Dân gian.",
-      "Thông tin tác giả được đổi thành Khuyết danh.",
-      "Các trang đọc dùng mục này giờ sẽ hiển thị lại phần tác giả theo bản đã chỉnh.",
+      "Bổ sung thêm nhiều nguyên âm ghép mới như ai, ao, âu, oa, oai, ươi và ươu.",
+      "Nhóm phụ âm ghép và nguyên âm ghép được tách rõ hơn trong phần hiển thị và phần dữ liệu nền.",
+      "Các chip chọn nhanh ở đầu trang có thể bấm để nhảy đến đúng nhóm nội dung.",
+      "Đã tạo thêm các thư mục minh họa còn thiếu cho những mục chữ cái mới để tiện cập nhật ảnh sau này.",
     ],
   },
   {
