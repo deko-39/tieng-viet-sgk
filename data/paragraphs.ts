@@ -27,7 +27,7 @@ function createParagraph(seed: ParagraphSeed): Paragraph {
   };
 }
 
-export const paragraphs: Paragraph[] = [
+const paragraphTiengViet1Tap2: Paragraph[] = [
   createParagraph({
     slug: "truong-em",
     title: "Trường em",
@@ -602,6 +602,9 @@ export const paragraphs: Paragraph[] = [
     source: "Theo Xu-khôm-lin-xki.",
     addedAt: "2026-08-14",
   }),
+];
+
+const paragraphTiengViet2Tap1: Paragraph[] = [
   createParagraph({
     slug: "tren-duong-ve-que",
     title: "Trên đường về quê",
@@ -624,6 +627,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-03",
   }),
+];
+
+const paragraphTiengViet2Tap2: Paragraph[] = [
   createParagraph({
     slug: "cay-gao-goi-xuan",
     title: "Cây gạo gọi xuân",
@@ -646,6 +652,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-04",
   }),
+];
+
+const paragraphTiengViet3Tap1: Paragraph[] = [
   createParagraph({
     slug: "tieng-doc-bai-buoi-som",
     title: "Tiếng đọc bài buổi sớm",
@@ -667,6 +676,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-05",
   }),
+];
+
+const paragraphTiengViet3Tap2: Paragraph[] = [
   createParagraph({
     slug: "mui-giay-moi",
     title: "Mùi giấy mới",
@@ -689,6 +701,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-06",
   }),
+];
+
+const paragraphTiengViet4Tap1: Paragraph[] = [
   createParagraph({
     slug: "mot-buoi-cho-que",
     title: "Một buổi chợ quê",
@@ -710,6 +725,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-07",
   }),
+];
+
+const paragraphTiengViet4Tap2: Paragraph[] = [
   createParagraph({
     slug: "chiec-khan-cua-ba",
     title: "Chiếc khăn của bà",
@@ -732,6 +750,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-08",
   }),
+];
+
+const paragraphTiengViet5Tap1: Paragraph[] = [
   createParagraph({
     slug: "con-duong-den-lop-nam-xua",
     title: "Con đường đến lớp năm xưa",
@@ -753,6 +774,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-09",
   }),
+];
+
+const paragraphTiengViet5Tap2: Paragraph[] = [
   createParagraph({
     slug: "con-mua-tren-mai-ngoi",
     title: "Cơn mưa trên mái ngói",
@@ -774,6 +798,9 @@ export const paragraphs: Paragraph[] = [
     source: "Đoạn văn mô phỏng cho thư viện demo.",
     addedAt: "2026-08-10",
   }),
+];
+
+const paragraphNguVan6Tap1: Paragraph[] = [
   createParagraph({
     slug: "toi-di-hoc-trich",
     title: "Tôi đi học (trích)",
@@ -798,6 +825,9 @@ export const paragraphs: Paragraph[] = [
     featured: true,
     addedAt: "2026-08-11",
   }),
+];
+
+const paragraphNguVan6Tap2: Paragraph[] = [
   createParagraph({
     slug: "song-nuoc-ca-mau-trich",
     title: "Sông nước Cà Mau (trích)",
@@ -821,6 +851,9 @@ export const paragraphs: Paragraph[] = [
     featured: true,
     addedAt: "2026-08-12",
   }),
+];
+
+const paragraphNguVan7Tap1: Paragraph[] = [
   createParagraph({
     slug: "mot-buoi-sang-thang-ba",
     title: "Một buổi sáng tháng ba",
@@ -841,6 +874,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 1",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan7Tap2: Paragraph[] = [
   createParagraph({
     slug: "buoi-chieu-song-hong",
     title: "Buổi chiều sông Hồng",
@@ -861,6 +897,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan8Tap1: Paragraph[] = [
   createParagraph({
     slug: "trang-vo-cua-mua-khai-truong",
     title: "Trang vở của mùa khai trường",
@@ -882,6 +921,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 1",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan8Tap2: Paragraph[] = [
   createParagraph({
     slug: "ngo-nho-sau-con-mua",
     title: "Ngõ nhỏ sau cơn mưa",
@@ -902,6 +944,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan9Tap1: Paragraph[] = [
   createParagraph({
     slug: "bep-lua-chieu-dong",
     title: "Bếp lửa chiều đông",
@@ -922,6 +967,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 1",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan9Tap2: Paragraph[] = [
   createParagraph({
     slug: "dong-nhat-ky-tuoi-muoi-lam",
     title: "Dòng nhật ký tuổi mười lăm",
@@ -943,6 +991,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan10Tap1: Paragraph[] = [
   createParagraph({
     slug: "mot-chieu-thanh-pho-cu",
     title: "Một chiều thành phố cũ",
@@ -964,6 +1015,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 1",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan10Tap2: Paragraph[] = [
   createParagraph({
     slug: "nguoi-ganh-hang-hoa",
     title: "Người gánh hàng hoa",
@@ -984,6 +1038,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan11Tap1: Paragraph[] = [
   createParagraph({
     slug: "trang-sach-va-o-cua-lop",
     title: "Trang sách và ô cửa lớp",
@@ -1005,6 +1062,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 1",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan11Tap2: Paragraph[] = [
   createParagraph({
     slug: "buoi-hoc-cuoi-mua-mua",
     title: "Buổi học cuối mùa mưa",
@@ -1026,6 +1086,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan12Tap1: Paragraph[] = [
   createParagraph({
     slug: "con-duong-ra-ga",
     title: "Con đường ra ga",
@@ -1047,6 +1110,9 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 1",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+const paragraphNguVan12Tap2: Paragraph[] = [
   createParagraph({
     slug: "anh-den-on-thi",
     title: "Ánh đèn ôn thi",
@@ -1069,4 +1135,30 @@ export const paragraphs: Paragraph[] = [
     volume: "Tập 2",
     source: "Đoạn văn mô phỏng cho thư viện demo.",
   }),
+];
+
+export const paragraphs: Paragraph[] = [
+  ...paragraphTiengViet1Tap2,
+  ...paragraphTiengViet2Tap1,
+  ...paragraphTiengViet2Tap2,
+  ...paragraphTiengViet3Tap1,
+  ...paragraphTiengViet3Tap2,
+  ...paragraphTiengViet4Tap1,
+  ...paragraphTiengViet4Tap2,
+  ...paragraphTiengViet5Tap1,
+  ...paragraphTiengViet5Tap2,
+  ...paragraphNguVan6Tap1,
+  ...paragraphNguVan6Tap2,
+  ...paragraphNguVan7Tap1,
+  ...paragraphNguVan7Tap2,
+  ...paragraphNguVan8Tap1,
+  ...paragraphNguVan8Tap2,
+  ...paragraphNguVan9Tap1,
+  ...paragraphNguVan9Tap2,
+  ...paragraphNguVan10Tap1,
+  ...paragraphNguVan10Tap2,
+  ...paragraphNguVan11Tap1,
+  ...paragraphNguVan11Tap2,
+  ...paragraphNguVan12Tap1,
+  ...paragraphNguVan12Tap2,
 ];

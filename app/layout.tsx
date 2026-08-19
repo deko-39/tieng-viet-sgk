@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import { Be_Vietnam_Pro, Noto_Serif } from "next/font/google";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
@@ -13,6 +14,25 @@ const readingFont = Noto_Serif({
   variable: "--font-reading",
   subsets: ["latin", "vietnamese"],
   weight: ["400", "500", "700"],
+});
+
+const handwritingFont = localFont({
+  variable: "--font-handwriting",
+  src: [
+    {
+      path: "./fonts/tieu-hoc/HP001_5_hang_normal.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/tieu-hoc/HP001_5_hang_bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  display: "swap",
+  fallback: ["Times New Roman", "serif"],
+  adjustFontFallback: "Times New Roman",
 });
 
 export const metadata: Metadata = {
@@ -82,7 +102,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="vi"
-      className={`${bodyFont.variable} ${readingFont.variable} h-full scroll-smooth antialiased`}
+      className={`${bodyFont.variable} ${readingFont.variable} ${handwritingFont.variable} h-full scroll-smooth antialiased`}
     >
       <body className="min-h-full bg-paper text-ink">
         <div className="grain-overlay" aria-hidden="true" />

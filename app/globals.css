@@ -44,6 +44,7 @@ html[data-theme="dusk"] {
   --color-gold: var(--gold);
   --font-sans: var(--font-body);
   --font-serif: var(--font-reading);
+  --font-hand: var(--font-handwriting);
 }
 
 * {
@@ -172,6 +173,23 @@ html[data-theme="dusk"] .reading-surface {
   font-family: var(--font-reading), serif;
   font-size: clamp(1.05rem, 0.96rem + 0.26vw, 1.16rem);
   line-height: 2.12;
+}
+
+.alphabet-handwriting {
+  display: inline-block;
+  font-family: var(--font-handwriting), var(--font-reading), serif;
+}
+
+.alphabet-handwriting-lowercase {
+  transform: translateY(-0.4em);
+}
+
+.alphabet-handwriting-uppercase {
+  transform: translateY(-0.4em);
+}
+
+.alphabet-lowercase {
+  transform: translateY(-0.35em);
 }
 
 @media (max-width: 640px) {

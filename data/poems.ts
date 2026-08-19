@@ -27,7 +27,7 @@ function createPoem(seed: PoemSeed): Poem {
   };
 }
 
-export const poems: Poem[] = [
+const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "be-ngu-trua",
     title: "Bé ngủ trưa",
@@ -722,6 +722,9 @@ export const poems: Poem[] = [
     source: "Bài thơ do người dùng bổ sung cho thư viện.",
     addedAt: "2026-08-13",
   }),
+];
+
+const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "nai",
     title: "Nai",
@@ -1584,6 +1587,9 @@ export const poems: Poem[] = [
     source: "Bài thơ do người dùng bổ sung cho thư viện.",
     addedAt: "2026-08-13",
   }),
+];
+
+const poemTiengViet2Tap1: Poem[] = [
   createPoem({
     slug: "goi-ban-den-lop",
     title: "Gọi bạn đến lớp",
@@ -1607,6 +1613,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-03",
   }),
+];
+
+const poemTiengViet2Tap2: Poem[] = [
   createPoem({
     slug: "hat-gao-lang-ta",
     title: "Hạt gạo làng ta",
@@ -1631,6 +1640,9 @@ export const poems: Poem[] = [
     featured: true,
     addedAt: "2026-08-04",
   }),
+];
+
+const poemTiengViet3Tap1: Poem[] = [
   createPoem({
     slug: "san-truong-mua-thu",
     title: "Sân trường mùa thu",
@@ -1654,6 +1666,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-05",
   }),
+];
+
+const poemTiengViet3Tap2: Poem[] = [
   createPoem({
     slug: "dong-song-sau-luy-tre",
     title: "Dòng sông sau lũy tre",
@@ -1677,6 +1692,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-06",
   }),
+];
+
+const poemTiengViet4Tap1: Poem[] = [
   createPoem({
     slug: "canh-dieu-tuoi-nho",
     title: "Cánh diều tuổi nhỏ",
@@ -1700,6 +1718,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-07",
   }),
+];
+
+const poemTiengViet4Tap2: Poem[] = [
   createPoem({
     slug: "hoa-phuong-cuoi-san",
     title: "Hoa phượng cuối sân",
@@ -1723,6 +1744,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-08",
   }),
+];
+
+const poemTiengViet5Tap1: Poem[] = [
   createPoem({
     slug: "khuc-hat-trua-he",
     title: "Khúc hát trưa hè",
@@ -1746,6 +1770,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-09",
   }),
+];
+
+const poemTiengViet5Tap2: Poem[] = [
   createPoem({
     slug: "mau-muc-tim",
     title: "Màu mực tím",
@@ -1769,6 +1796,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-10",
   }),
+];
+
+const poemNguVan6Tap1: Poem[] = [
   createPoem({
     slug: "tre-viet-nam",
     title: "Tre Việt Nam",
@@ -1792,6 +1822,9 @@ export const poems: Poem[] = [
     featured: true,
     addedAt: "2026-08-11",
   }),
+];
+
+const poemNguVan6Tap2: Poem[] = [
   createPoem({
     slug: "dem-nay-bac-khong-ngu",
     title: "Đêm nay Bác không ngủ",
@@ -1814,6 +1847,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-12",
   }),
+];
+
+const poemNguVan7Tap1: Poem[] = [
   createPoem({
     slug: "viet-bac-trich",
     title: "Việt Bắc (trích)",
@@ -1836,6 +1872,9 @@ export const poems: Poem[] = [
     source: "Bài thơ mô phỏng cho thư viện demo.",
     addedAt: "2026-08-13",
   }),
+];
+
+const poemNguVan7Tap2: Poem[] = [
   createPoem({
     slug: "chieu-song-hong",
     title: "Chiều sông Hồng",
@@ -1857,6 +1896,9 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan8Tap1: Poem[] = [
   createPoem({
     slug: "mua-thu-truoc-ngo",
     title: "Mùa thu trước ngõ",
@@ -1878,6 +1920,9 @@ export const poems: Poem[] = [
     volume: "Tập 1",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan8Tap2: Poem[] = [
   createPoem({
     slug: "la-thu-gui-ban",
     title: "Lá thư gửi bạn",
@@ -1900,6 +1945,9 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan9Tap1: Poem[] = [
   createPoem({
     slug: "khuc-hat-nguoi-linh-tre",
     title: "Khúc hát người lính trẻ",
@@ -1921,6 +1969,9 @@ export const poems: Poem[] = [
     volume: "Tập 1",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan9Tap2: Poem[] = [
   createPoem({
     slug: "bien-goi-mua-thi",
     title: "Biển gọi mùa thi",
@@ -1936,6 +1987,9 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan10Tap1: Poem[] = [
   createPoem({
     slug: "song-nui-trong-trang-sach",
     title: "Sông núi trong trang sách",
@@ -1951,6 +2005,9 @@ export const poems: Poem[] = [
     volume: "Tập 1",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan10Tap2: Poem[] = [
   createPoem({
     slug: "mua-tren-mai-dinh",
     title: "Mưa trên mái đình",
@@ -1972,6 +2029,9 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan11Tap1: Poem[] = [
   createPoem({
     slug: "tieng-goi-thang-ba",
     title: "Tiếng gọi tháng ba",
@@ -1987,6 +2047,9 @@ export const poems: Poem[] = [
     volume: "Tập 1",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan11Tap2: Poem[] = [
   createPoem({
     slug: "dat-nuoc-nhin-tu-san-truong",
     title: "Đất nước nhìn từ sân trường",
@@ -2009,6 +2072,9 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan12Tap1: Poem[] = [
   createPoem({
     slug: "mua-lua-chin-ben-song",
     title: "Mùa lúa chín bên sông",
@@ -2030,6 +2096,9 @@ export const poems: Poem[] = [
     volume: "Tập 1",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+const poemNguVan12Tap2: Poem[] = [
   createPoem({
     slug: "ngay-tro-ve-duoi-tan-bang",
     title: "Ngày trở về dưới tán bàng",
@@ -2052,4 +2121,31 @@ export const poems: Poem[] = [
     volume: "Tập 2",
     source: "Bài thơ mô phỏng cho thư viện demo.",
   }),
+];
+
+export const poems: Poem[] = [
+  ...poemTiengViet1Tap1,
+  ...poemTiengViet1Tap2,
+  ...poemTiengViet2Tap1,
+  ...poemTiengViet2Tap2,
+  ...poemTiengViet3Tap1,
+  ...poemTiengViet3Tap2,
+  ...poemTiengViet4Tap1,
+  ...poemTiengViet4Tap2,
+  ...poemTiengViet5Tap1,
+  ...poemTiengViet5Tap2,
+  ...poemNguVan6Tap1,
+  ...poemNguVan6Tap2,
+  ...poemNguVan7Tap1,
+  ...poemNguVan7Tap2,
+  ...poemNguVan8Tap1,
+  ...poemNguVan8Tap2,
+  ...poemNguVan9Tap1,
+  ...poemNguVan9Tap2,
+  ...poemNguVan10Tap1,
+  ...poemNguVan10Tap2,
+  ...poemNguVan11Tap1,
+  ...poemNguVan11Tap2,
+  ...poemNguVan12Tap1,
+  ...poemNguVan12Tap2,
 ];

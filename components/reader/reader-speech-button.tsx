@@ -8,6 +8,9 @@ interface ReaderSpeechButtonProps {
   authorName: string;
   content: string;
   fullContent?: string;
+  idleClassName?: string;
+  activeClassName?: string;
+  ringClassName?: string;
 }
 
 function normalizeSpeechText(value: string) {
@@ -124,6 +127,9 @@ export function ReaderSpeechButton({
   authorName,
   content,
   fullContent,
+  idleClassName,
+  activeClassName,
+  ringClassName,
 }: ReaderSpeechButtonProps) {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const isSpeakingRef = useRef(false);
@@ -185,10 +191,12 @@ export function ReaderSpeechButton({
     <button
       type="button"
       onClick={handleToggleSpeech}
-      className={`inline-flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/40 sm:h-10 sm:w-10 ${
+      className={`inline-flex h-9 w-9 items-center justify-center rounded-full border shadow-sm transition focus-visible:outline-none focus-visible:ring-2 ${ringClassName ?? "focus-visible:ring-brick/40"} sm:h-10 sm:w-10 ${
         isSpeaking
-          ? "border-brick bg-brick text-paper shadow-[0_10px_30px_rgba(140,75,47,0.28)] hover:bg-[#7a3f24]"
-          : "border-brick/30 bg-[#f7e7dc] text-brick shadow-[0_8px_24px_rgba(140,75,47,0.14)] hover:border-brick/50 hover:bg-[#f2dccb]"
+          ? (activeClassName ??
+            "border-brick bg-brick text-paper shadow-[0_10px_30px_rgba(140,75,47,0.28)] hover:bg-[#7a3f24]")
+          : (idleClassName ??
+            "border-brick/30 bg-[#f7e7dc] text-brick shadow-[0_8px_24px_rgba(140,75,47,0.14)] hover:border-brick/50 hover:bg-[#f2dccb]")
       }`}
       aria-pressed={isSpeaking}
       aria-label={isSpeaking ? "Dừng đọc" : "Đọc bài"}
