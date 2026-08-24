@@ -113,6 +113,118 @@ textarea {
   opacity: 0;
 }
 
+.home-illustration-shell {
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.home-illustration-gradient {
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--paper) 10%, transparent) 0%,
+      color-mix(in srgb, var(--paper) 28%, transparent) 16%,
+      color-mix(in srgb, var(--paper) 92%, transparent) 58%,
+      var(--paper) 100%
+    ),
+    radial-gradient(
+      circle at 20% 14%,
+      color-mix(in srgb, var(--gold) 16%, transparent) 0%,
+      transparent 38%
+    ),
+    radial-gradient(
+      circle at 80% 22%,
+      color-mix(in srgb, var(--moss) 12%, transparent) 0%,
+      transparent 34%
+    );
+}
+
+.home-illustration-marquee {
+  position: absolute;
+  left: -8rem;
+  width: max-content;
+  transform: rotate(-4deg);
+  opacity: 0.2;
+}
+
+.home-illustration-track {
+  display: flex;
+  width: max-content;
+  gap: 1.25rem;
+  will-change: transform;
+}
+
+.home-illustration-track-slow {
+  animation: home-illustration-scroll-right 120s linear infinite;
+}
+
+.home-illustration-track-fast {
+  animation: home-illustration-scroll-right 70s linear infinite;
+}
+
+.home-illustration-tile {
+  position: relative;
+  width: clamp(10rem, 17vw, 18rem);
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  border-radius: 1.4rem;
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  box-shadow: 0 20px 34px rgba(0, 0, 0, 0.08);
+}
+
+html[data-theme="dusk"] .home-illustration-marquee {
+  opacity: 0.18;
+}
+
+html[data-theme="dusk"] .home-illustration-gradient {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(19, 19, 19, 0.1) 0%,
+      rgba(19, 19, 19, 0.24) 18%,
+      rgba(19, 19, 19, 0.9) 58%,
+      var(--paper) 100%
+    ),
+    radial-gradient(
+      circle at 24% 12%,
+      rgba(200, 168, 105, 0.12) 0%,
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 80% 22%,
+      rgba(138, 157, 125, 0.08) 0%,
+      transparent 30%
+    );
+}
+
+@keyframes home-illustration-scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 767px) {
+  .home-illustration-marquee {
+    left: -3rem;
+    transform: rotate(-6deg);
+    opacity: 0.2;
+  }
+
+  .home-illustration-track {
+    gap: 0.9rem;
+  }
+
+  .home-illustration-tile {
+    width: clamp(8rem, 34vw, 12rem);
+    border-radius: 1rem;
+  }
+}
+
 html[data-theme="dusk"] .grain-overlay {
   opacity: 0.08;
   background-image:

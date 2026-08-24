@@ -1,8 +1,76 @@
+import { promises as fs } from "fs";
+import path from "path";
 import { ArrowRight, BookOpenText, History, LibraryBig } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
+import { connection } from "next/server";
 import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import { ThemeToggleButton } from "@/components/ui/theme-toggle-button";
+
+const IMAGE_EXTENSIONS = new Set([
+  ".png",
+  ".jpg",
+  ".jpeg",
+  ".webp",
+  ".gif",
+  ".avif",
+]);
+
+async function collectIllustrationImages(
+  directoryPath: string,
+  relativePath = "",
+): Promise<string[]> {
+  const entries = await fs.readdir(directoryPath, { withFileTypes: true });
+  const imagePaths = await Promise.all(
+    entries.map(async (entry) => {
+      const nextRelativePath = relativePath
+        ? path.posix.join(relativePath, entry.name)
+        : entry.name;
+      const nextDirectoryPath = path.join(directoryPath, entry.name);
+
+      if (entry.isDirectory()) {
+        return collectIllustrationImages(nextDirectoryPath, nextRelativePath);
+      }
+
+      if (IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) {
+        return [nextRelativePath];
+      }
+
+      return [];
+    }),
+  );
+
+  return imagePaths.flat();
+}
+
+function pickRandomItems<T>(items: T[], count: number) {
+  const shuffled = [...items];
+
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [
+      shuffled[swapIndex],
+      shuffled[index],
+    ];
+  }
+
+  return shuffled.slice(0, count);
+}
+
+async function getHomePageIllustrations() {
+  const illustrationsDirectory = path.join(
+    process.cwd(),
+    "public",
+    "illustrations",
+  );
+  const imagePaths = await collectIllustrationImages(illustrationsDirectory);
+
+  return pickRandomItems(imagePaths, 20).map((imagePath) => ({
+    alt: path.basename(imagePath, path.extname(imagePath)).replaceAll("-", " "),
+    src: `/illustrations/${imagePath}`,
+  }));
+}
 
 export function generateMetadata() {
   return createMetadata({
@@ -19,11 +87,65 @@ export function generateMetadata() {
 }
 
 export default async function HomePage() {
+  await connection();
+
   const startHref = "/thu-vien/tap-1";
+  const illustrations = await getHomePageIllustrations();
+  const topIllustrations = illustrations.slice(0, 10);
+  const bottomIllustrations = illustrations.slice(10, 20);
+  const marqueeIllustrations = [...topIllustrations, ...topIllustrations];
+  const secondaryMarqueeIllustrations = [
+    ...bottomIllustrations,
+    ...bottomIllustrations,
+  ];
 
   return (
-    <main className="min-h-screen bg-paper">
-      <div className="mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-12 sm:px-6 lg:px-8">
+    <main className="relative min-h-screen overflow-hidden bg-paper">
+      {topIllustrations.length > 0 || bottomIllustrations.length > 0 ? (
+        <div
+          aria-hidden="true"
+          className="home-illustration-shell absolute inset-0"
+        >
+          <div className="home-illustration-gradient absolute inset-0" />
+          <div className="home-illustration-marquee top-[-8%]">
+            <div className="home-illustration-track home-illustration-track-fast">
+              {marqueeIllustrations.map((illustration, index) => (
+                <div
+                  key={`${illustration.src}-${index}`}
+                  className="home-illustration-tile"
+                >
+                  <Image
+                    src={illustration.src}
+                    alt=""
+                    fill
+                    sizes="(min-width: 1280px) 19rem, (min-width: 768px) 24vw, 42vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="home-illustration-marquee top-[40%]">
+            <div className="home-illustration-track home-illustration-track-slow">
+              {secondaryMarqueeIllustrations.map((illustration, index) => (
+                <div
+                  key={`${illustration.src}-secondary-${index}`}
+                  className="home-illustration-tile"
+                >
+                  <Image
+                    src={illustration.src}
+                    alt=""
+                    fill
+                    sizes="(min-width: 1280px) 19rem, (min-width: 768px) 24vw, 42vw"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : null}
+      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-12 sm:px-6 lg:px-8">
         <section className="grid w-full gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(18rem,24rem)] lg:items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-line/70 bg-paper/80 px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-brick">
