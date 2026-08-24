@@ -4,6 +4,7 @@ import { ArrowRight, BookOpenText, History, LibraryBig } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { connection } from "next/server";
+import { StartReadingButton } from "@/components/home/start-reading-button";
 import { createMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 import { ThemeToggleButton } from "@/components/ui/theme-toggle-button";
@@ -100,7 +101,10 @@ export default async function HomePage() {
   ];
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-paper">
+    <main
+      data-home-page
+      className="home-page-shell relative min-h-screen overflow-hidden bg-paper"
+    >
       {topIllustrations.length > 0 || bottomIllustrations.length > 0 ? (
         <div
           aria-hidden="true"
@@ -145,7 +149,7 @@ export default async function HomePage() {
           </div>
         </div>
       ) : null}
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-12 sm:px-6 lg:px-8">
+      <div className="home-page-content relative z-10 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 py-12 sm:px-6 lg:px-8">
         <section className="grid w-full gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(18rem,24rem)] lg:items-center">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-line/70 bg-paper/80 px-3 py-1.5 text-[0.72rem] uppercase tracking-[0.18em] text-brick">
@@ -166,12 +170,12 @@ export default async function HomePage() {
             </div>
 
             <div className="flex flex-wrap items-center gap-3">
-              <Link
+              <StartReadingButton
                 href={startHref}
                 className="inline-flex h-12 items-center justify-center rounded-full bg-brick px-6 text-sm font-semibold text-paper shadow-[0_12px_28px_rgba(140,75,47,0.22)] transition hover:bg-[#7a3f24] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brick/35"
               >
                 Bắt đầu đọc
-              </Link>
+              </StartReadingButton>
               <Link
                 href="/changelog"
                 className="inline-flex h-12 items-center justify-center gap-2 rounded-full border border-line bg-surface px-5 text-sm font-semibold text-ink transition hover:border-brick/45 hover:text-brick"

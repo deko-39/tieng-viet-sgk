@@ -8,6 +8,19 @@ export interface ChangelogEntry {
 
 export const changelogEntries: ChangelogEntry[] = [
   {
+    id: "2026-08-24-home-carousel-transition",
+    date: "2026-08-24",
+    title: "Trang chủ có nền ảnh chạy và hiệu ứng bắt đầu đọc mới",
+    description:
+      "Phần mở đầu của thư viện giờ có hai dải ảnh minh họa chạy nền, đồng thời nút bắt đầu đọc chuyển trang theo cách gọn và rõ hơn.",
+    changes: [
+      "Trang chủ lấy ngẫu nhiên 20 ảnh từ thư mục minh họa để tạo hai dải ảnh chạy ngang ở nền.",
+      "Hai dải ảnh được tách thành hàng trên và hàng dưới với tốc độ di chuyển khác nhau để nền bớt tĩnh.",
+      "Khi bấm Bắt đầu đọc, nội dung chính của trang chủ ẩn đi, chỉ giữ lại hai dải ảnh rồi mới chuyển sang trang đọc.",
+      "Màn hình chờ chung của ứng dụng cũng được rút gọn thành một vòng tròn tải đơn giản hơn trước.",
+    ],
+  },
+  {
     id: "2026-08-19-alphabet-browser-expanded",
     date: "2026-08-19",
     title: "Bảng chữ cái được thêm và nâng cấp",
