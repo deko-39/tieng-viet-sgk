@@ -213,7 +213,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "ua",
     uppercaseForm: "UA",
     uppercaseWritingForm: "UA",
-    imageCaption: "Ua - mua quà",
+    imageCaption: "Ua - con cua",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-uo",
@@ -235,7 +235,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "ươ",
     uppercaseForm: "ƯƠ",
     uppercaseWritingForm: "ƯƠ",
-    imageCaption: "Ươ - con hươu",
+    imageCaption: "Ươ - con lươn",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-uye",
@@ -290,7 +290,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "ao",
     uppercaseForm: "AO",
     uppercaseWritingForm: "AO",
-    imageCaption: "Ao - cái ao",
+    imageCaption: "Ao - quả đào",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-au",
@@ -301,7 +301,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "au",
     uppercaseForm: "AU",
     uppercaseWritingForm: "AU",
-    imageCaption: "Au - rau xanh",
+    imageCaption: "Au - cây cau",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-ay",
@@ -323,7 +323,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "âu",
     uppercaseForm: "ÂU",
     uppercaseWritingForm: "ÂU",
-    imageCaption: "Âu - nhịp cầu",
+    imageCaption: "Âu - cần cẩu",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-a-mu-y",
@@ -334,7 +334,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "ây",
     uppercaseForm: "ÂY",
     uppercaseWritingForm: "ÂY",
-    imageCaption: "Ây - cái cây",
+    imageCaption: "Ây - đám mây",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-eo",
@@ -345,7 +345,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "eo",
     uppercaseForm: "EO",
     uppercaseWritingForm: "EO",
-    imageCaption: "Eo - eo biển",
+    imageCaption: "Eo - leo trèo",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-e-mu-u",
@@ -356,7 +356,7 @@ export const alphabetNguyenAmGhep: AlphabetLetter[] = [
     lowercaseForm: "êu",
     uppercaseForm: "ÊU",
     uppercaseWritingForm: "ÊU",
-    imageCaption: "Êu - thêu khăn",
+    imageCaption: "Êu - cây nêu",
   }),
   createAlphabetLetter({
     slug: "nguyen-am-ghep-iu",
@@ -862,7 +862,7 @@ export const alphabetPhuAmDoi: AlphabetLetter[] = [
     lowercaseForm: "tr",
     uppercaseForm: "TR",
     uppercaseWritingForm: "TR",
-    imageCaption: "Tr - trống trường",
+    imageCaption: "Tr - cây tre",
   }),
 ];
 
