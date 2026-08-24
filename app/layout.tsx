@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Be_Vietnam_Pro, Noto_Serif } from "next/font/google";
+import Script from "next/script";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -108,6 +109,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <div className="grain-overlay" aria-hidden="true" />
         <div className="relative min-h-screen">{children}</div>
       </body>
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-GT1C505XFD"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-GT1C505XFD');
+        `}
+      </Script>
     </html>
   );
 }
