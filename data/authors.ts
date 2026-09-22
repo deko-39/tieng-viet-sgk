@@ -37,6 +37,15 @@ export const authors: Author[] = [
     born: 1948,
   },
   {
+    id: "nguyen-dinh-thi",
+    slug: "nguyen-dinh-thi",
+    name: "Nguyễn Đình Thi",
+    bio: "Nhà thơ, nhà văn và nhạc sĩ nổi bật của văn học Việt Nam hiện đại, thường được nhắc đến với những tác phẩm giàu cảm hứng về đất nước và con người Việt Nam.",
+    hometown: "Hà Nội",
+    born: 1924,
+    died: 2003,
+  },
+  {
     id: "thanh-tinh",
     slug: "thanh-tinh",
     name: "Thanh Tịnh",
@@ -74,6 +83,18 @@ export const authors: Author[] = [
     died: 2002,
   },
   {
+    id: "to-ha",
+    slug: "to-ha",
+    name: "Tô Hà",
+    bio: "Tác giả gắn với những bài thơ thiếu nhi gần gũi, giàu hình ảnh mái ấm gia đình và nhịp điệu trong sáng.",
+  },
+  {
+    id: "p-vo-ron-co",
+    slug: "p-vo-ron-co",
+    name: "P. Vô-rôn-cô",
+    bio: "Tác giả của những bài thơ thiếu nhi hóm hỉnh, gần lời kể và giàu chất đối thoại, thường được giới thiệu qua các bản dịch dành cho học sinh nhỏ tuổi.",
+  },
+  {
     id: "bang-son",
     slug: "bang-son",
     name: "Băng Sơn",
@@ -81,13 +102,6 @@ export const authors: Author[] = [
     hometown: "Hà Nội",
     born: 1932,
     died: 2018,
-  },
-  {
-    id: "dan-gian",
-    slug: "dan-gian",
-    name: "Dân gian",
-    bio: "Nguồn cảm hứng chung của ca dao, đồng dao và những câu thơ truyền miệng quen thuộc trong đời sống Việt Nam.",
-    featured: true,
   },
   {
     id: "pham-ho",
@@ -103,6 +117,16 @@ export const authors: Author[] = [
     slug: "thach-quy",
     name: "Thạch Quỳ",
     bio: "Nhà thơ có nhiều sáng tác gần gũi với thiếu nhi, giàu nhạc điệu và hình ảnh đời sống quen thuộc.",
+  },
+  {
+    id: "ho-chi-minh",
+    slug: "ho-chi-minh",
+    name: "Hồ Chí Minh",
+    bio: "Lãnh tụ, nhà văn và nhà thơ với nhiều sáng tác ngắn gọn, mộc mạc mà giàu tình cảm, thường được học sinh biết đến qua những bài thơ gửi thiếu nhi và lời nhắn về học tập, rèn luyện.",
+    hometown: "Nghệ An",
+    born: 1890,
+    died: 1969,
+    featured: true,
   },
   {
     id: "xuan-quynh",
@@ -148,6 +172,15 @@ export const authors: Author[] = [
     hometown: "Phú Thọ",
     born: 1948,
     died: 1988,
+  },
+  {
+    id: "luu-trong-lu",
+    slug: "luu-trong-lu",
+    name: "Lưu Trọng Lư",
+    bio: "Nhà thơ tiêu biểu của phong trào Thơ mới, nổi bật với những vần thơ giàu nhạc tính, cảm thức mùa thu và nỗi niềm lãng mạn.",
+    hometown: "Quảng Bình",
+    born: 1911,
+    died: 1991,
   },
   {
     id: "nguyen-nhat-anh",

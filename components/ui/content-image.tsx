@@ -19,6 +19,8 @@ export function ContentImage({
   ...props
 }: ContentImageProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const shouldBypassOptimization =
+    typeof props.src === "string" && props.src.startsWith("/illustration/");
 
   return (
     <div
@@ -41,6 +43,7 @@ export function ContentImage({
         {...props}
         alt={alt}
         loading={loading ?? "lazy"}
+        unoptimized={shouldBypassOptimization}
         className={[className, isLoaded ? "opacity-100" : "opacity-0"]
           .filter(Boolean)
           .join(" ")}

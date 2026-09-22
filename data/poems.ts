@@ -21,7 +21,6 @@ function createPoem(seed: PoemSeed): Poem {
             seed.imageCaption ?? `<${seed.title}>`,
             seed.textbook,
             seed.volume,
-            seed.title,
           )
         : seed.image,
   };
@@ -158,7 +157,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do",
     title: "Đố",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Không sơn mà đỏ\nKhông gõ mà kêu\nKhông khều mà rụng.",
     excerpt:
       "Bài thơ đố ngắn, giàu nhịp điệu và gợi tò mò, phù hợp với mạch đọc lớp 1.",
@@ -179,7 +178,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "du-ai-noi-nga-noi-nghieng",
     title: "Dù ai nói ngả nói nghiêng",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Dù ai nói ngả nói nghiêng\nLòng ta vẫn vững như kiềng ba chân.",
     excerpt:
       "Câu thơ ngắn, chắc nhịp và giàu tính nhắc nhớ, phù hợp với mạch đọc lớp 1 về lời hay ý đẹp.",
@@ -200,7 +199,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do-2",
     title: "Đố 2",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Không có chân có cánh\nSao gọi là con sông?\nKhông có lá có cành\nSao gọi là ngọn gió?",
     excerpt:
@@ -222,7 +221,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do-3",
     title: "Đố 3",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Cái gì cao lớn lênh khênh\nĐứng mà không tựa, ngã kềnh ngay ra?",
     excerpt:
       "Bài thơ đố ngắn, nhịp chắc và gợi hình rõ, phù hợp với mạch đọc lớp 1 về quan sát và suy đoán.",
@@ -361,7 +360,7 @@ const poemTiengViet1Tap1: Poem[] = [
     content:
       "Trong vòm lá mới chồi non\nChùm cam bà giữ vẫn còn đung đưa\nQuả ngon dành tận cuối mùa\nChờ con, phần cháu bà chưa trảy vào.",
     fullContent:
-      "Trong vòm lá mới chồi non\nChùm cam bà giữ vẫn còn đung đưa\nQuả ngon dành tận cuối mùa\nChờ con, phần cháu bà chưa trảy vào\nGiêng, hai rét cứa như dao\nNghe tiếng chào mào chống gậy ra trông\nNom đoài rồi lại ngắm đông\nBề lo sương táp, bề phòng chim ăn\nQuả vàng nằm giữa cành xuân\nMải mê góp mật, chuyên cần toả hương\nBà ơi! Thương mấy là thương\nVắng con, xa cháu tóc sương da mồi\nBà như quả ngọt chín rồi\nCàng thêm tuổi tác, càng tươi lòng vàng.",
+      "Trong vòm lá mới chồi non\nChùm cam bà giữ vẫn còn đung đưa\nQuả ngon dành tận cuối mùa\nChờ con, phần cháu bà chưa trảy vào\n\nGiêng, hai rét cứa như dao\nNghe tiếng chào mào chống gậy ra trông\nNom đoài rồi lại ngắm đông\nBề lo sương táp, bề phòng chim ăn\n\nQuả vàng nằm giữa cành xuân\nMải mê góp mật, chuyên cần toả hương\nBà ơi! Thương mấy là thương\nVắng con, xa cháu tóc sương da mồi\nBà như quả ngọt chín rồi\nCàng thêm tuổi tác, càng tươi lòng vàng.",
     excerpt:
       "Bài thơ gia đình dịu và ấm, phù hợp với mạch đọc lớp 1 về bà và tình thân trong đời sống hằng ngày.",
     tags: [
@@ -429,7 +428,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do-6",
     title: "Đố 6",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Con gì mào đỏ\nLông mượt như tơ\nSáng sớm tinh mơ\nGọi người thức dậy?",
     excerpt:
@@ -527,7 +526,7 @@ const poemTiengViet1Tap1: Poem[] = [
     content:
       "Đi đến nơi nào\nLời chào đi trước\nLời chào dẫn bước\nChẳng sợ lạc nhà\nLời chào kết bạn\nCon đường bớt xa.",
     fullContent:
-      "Đi đến nơi nào\nLời chào đi trước\nLời chào dẫn bước\nChẳng sợ lạc nhà\nLời chào kết bạn\nCon đường bớt xa\nLời chào là hoa\nNở từ lòng tốt\nLà cơn gió mát\nBuổi sáng đầu ngày\nNhư một bàn tay\nChân thành cởi mở\n\nAi ai cũng có\nChẳng nặng là bao\nBạn ơi, đi đâu\nNhớ mang đi nhé!",
+      "Đi đến nơi nào\nLời chào đi trước\nLời chào dẫn bước\nChẳng sợ lạc nhà\nLời chào kết bạn\nCon đường bớt xa\n\nLời chào là hoa\nNở từ lòng tốt\nLà cơn gió mát\nBuổi sáng đầu ngày\nNhư một bàn tay\nChân thành cởi mở\n\nAi ai cũng có\nChẳng nặng là bao\nBạn ơi, đi đâu\nNhớ mang đi nhé!",
     excerpt:
       "Bài thơ ngắn, rõ ý và giàu tính nhắc nhớ, phù hợp với mạch đọc lớp 1 về lễ phép và cách ứng xử hằng ngày.",
     tags: [
@@ -639,7 +638,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do-7",
     title: "Đố 7",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Con gì có cánh\nMà lại biết bơi\nNgày xuống ao chơi\nĐêm về đẻ trứng?",
     excerpt:
@@ -661,7 +660,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "con-meo-ma-treo-cay-cau",
     title: "Con mèo mà trèo cây cau",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Con Mèo mà trèo cây cau\nHỏi thăm chú Chuột đi đâu vắng nhà\nChú Chuột đi chợ đường xa\nMua mắm, mua muối giỗ cha con Mèo.",
     excerpt:
@@ -683,7 +682,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do-4",
     title: "Đố 4",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Da cóc mà bọc bột lọc\nBột lọc mà bọc hòn than.",
     excerpt:
       "Bài thơ đố ngắn, vui tai và giàu hình dung dân gian, phù hợp với mạch đọc lớp 1 về câu đố quen thuộc.",
@@ -704,7 +703,7 @@ const poemTiengViet1Tap1: Poem[] = [
   createPoem({
     slug: "do-5",
     title: "Đố 5",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Một đàn cò trắng phau phau\nĂn no tắm mát rủ nhau đi nằm.",
     excerpt:
       "Bài thơ đố ngắn với nhịp vui và hình ảnh dân dã, phù hợp với mạch đọc lớp 1 về câu đố quen thuộc.",
@@ -726,12 +725,14 @@ const poemTiengViet1Tap1: Poem[] = [
 
 const poemTiengViet1Tap2: Poem[] = [
   createPoem({
-    slug: "nai",
-    title: "Nai",
+    slug: "tieng-thu",
+    title: "Tiếng Thu",
     authorSlug: "luu-trong-lu",
     content: "Lá thu kêu xào xạc\nCon nai vàng ngơ ngác\nĐạp trên lá vàng khô.",
+    fullContent:
+      "Em không nghe mùa thu\ndưới trăng mờ thổn thức?\nEm không nghe rạo rực\nhình ảnh kẻ chinh phu\ntrong lòng người cô phụ?\nEm không nghe rừng thu.\nlá thu kêu xào xạc,\ncon nai vàng ngơ ngác\nđạp trên lá vàng khô?",
     excerpt:
-      "Bài thơ ngắn, giàu nhạc điệu và hình ảnh mùa thu, phù hợp với mạch đọc lớp 1 về thiên nhiên và cảm nhận cảnh sắc.",
+      "Bài thơ giàu nhạc điệu và sắc thu, nổi bật với hình ảnh con nai vàng ngơ ngác và không khí thổn thức rất riêng của mùa thu.",
     tags: [
       "tieng-viet-1-tap-2",
       "tho",
@@ -743,13 +744,13 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Lưu Trọng Lư.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "chuon-chuon",
     title: "Chuồn chuồn",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Chuồn chuồn bay thấp\nMưa ngập bờ ao\nChuồn chuồn bay cao\nMưa rào lại tạnh.",
     excerpt:
@@ -771,7 +772,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "may",
     title: "Mây",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Đám mây xốp trắng như bông\nNgủ quên dưới đáy hồ trong lúc nào\nNghe con cá đớp ngôi sao\nGiật mình mây thức bay vào rừng xa.",
     excerpt:
@@ -793,7 +794,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "viet-nam",
     title: "Việt Nam",
-    authorSlug: "dan-gian",
+    authorSlug: "nguyen-dinh-thi",
     content:
       "Việt Nam đất nước ta ơi\nMênh mông biển lúa đâu trời đẹp hơn\nCánh cò bay lả dập dờn\nMây mờ che đỉnh Trường Sơn sớm chiều.",
     fullContent:
@@ -811,13 +812,13 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Nguyễn Đình Thi.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "dua",
     title: "Dừa",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Tiếng dừa làm dịu nắng trưa\nGọi đàn gió đến cùng dừa múa reo\nTrời trong đầy tiếng rì rào\nĐàn cò đánh nhịp bay vào bay ra.",
     excerpt:
@@ -839,7 +840,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "duoi-bat",
     title: "Đuổi bắt",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Nhanh tay thì được\nChậm tay thì thua\nChân giậm giả vờ\nCướp cờ mà chạy.",
     excerpt:
@@ -907,7 +908,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "hoa",
     title: "Hoa",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Hoa ban xoè cánh trắng\nLan tươi màu nắng vàng\nCành hồng khoe nụ thắm\nBay làn hương dịu dàng.",
     excerpt:
@@ -929,7 +930,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "lam-nong",
     title: "Làm nông",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Tháng chạp là tháng trồng khoai,\nTháng giêng trồng đậu, tháng hai trồng cà.\nTháng ba cày vỡ ruộng ra,\nTháng tư làm mạ mưa sa đầy đồng.",
     excerpt:
@@ -975,7 +976,7 @@ const poemTiengViet1Tap2: Poem[] = [
     title: "Ò ó o",
     authorSlug: "tran-dang-khoa",
     content:
-      "Ò... ó... o...\n\nÒ... ó... o...\n\nTiếng gà\n\nTiếng gà\n\nGiục quả na\n\nMở mắt\n\nTròn xoe\n\nGiục hàng tre\n\nĐâm măng\n\nNhọn hoắt\n\nGiục buồng chuối\n\nThơm lừng\n\nTrứng cuốc\n\nGiục hạt đậu\n\nNảy mầm\n\nGiục bông lúa\n\nUốn câu\n\nGiục con trâu\n\nRa đồng\n\nGiục đàn sao\n\nTrên trời\n\nChạy trốn\n\nGọi ông trời\n\nNhô lên\n\nRửa mặt\n\nÔi bốn bề\n\nBát ngát\n\nTiếng gà\n\nÒ... ó... o\n\nÒ... ó... o.",
+      "Ò... ó... o...\nÒ... ó... o...\nTiếng gà\n\nTiếng gà\nGiục quả na\nMở mắt\nTròn xoe\n\nGiục hàng tre\nĐâm măng\nNhọn hoắt\n\nGiục buồng chuối\nThơm lừng\nTrứng cuốc\n\nGiục hạt đậu\nNảy mầm\nGiục bông lúa\nUốn câu\nGiục con trâu\nRa đồng\n\nGiục đàn sao\nTrên trời\nChạy trốn\nGọi ông trời\nNhô lên\nRửa mặt\n\nÔi bốn bề\nBát ngát\nTiếng gà\nÒ... ó... o\nÒ... ó... o.",
     excerpt:
       "Bài thơ giàu nhịp điệu và sức gọi thức dậy của buổi sớm, phù hợp với mạch đọc lớp 1 về làng quê, thiên nhiên và âm thanh quen thuộc.",
     tags: [
@@ -1017,7 +1018,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "do-8",
     title: "Đố",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Nhỏ như cái kẹo\nDẻo như bánh giầy\nỞ đâu mực đầy\nCó em là sạch.",
     excerpt:
@@ -1083,7 +1084,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "xia-ca-me",
     title: "Xỉa cá mè",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Xỉa cá mè\nĐè cá chép\nTay nào đẹp\nĐi bẻ ngô\nTay nào to\n\nĐi dỡ củ\nTay nào nhỏ\nHái đậu đen\nTay nhọ nhem\nRửa cho sạch.",
     excerpt:
@@ -1105,7 +1106,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "ong-em",
     title: "Ông em",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Ông em tóc bạc\nTrắng muốt như tơ\nÔng em kể chuyện\nNgày xửa ngày xưa\nChuyện vui như Tết\nChuyện đẹp như mơ\nEm ngồi nghe chuyện\nMê mải say sưa...",
     excerpt:
@@ -1127,7 +1128,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "khon-ngoan",
     title: "Khôn ngoan",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content: "Khôn ngoan đối đáp người ngoài\nGà cùng một mẹ chớ hoài đá nhau.",
     excerpt:
       "Bài thơ ngắn mang nhịp ca dao và lời nhắc ứng xử, phù hợp với mạch đọc lớp 1 về tình thân và cách sống với nhau.",
@@ -1172,7 +1173,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "hoa-dao-hoa-mai",
     title: "Hoa đào hoa mai",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Hoa đào ưa rét\nLấm tấm mưa bay\nHoa mai chỉ say\nNắng pha chút gió\nHoa đào thắm đỏ\nHoa mai dát vàng.",
     excerpt:
@@ -1218,7 +1219,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "me",
     title: "Mẹ",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Nơi ấy ngôi sao khuya\nSoi vào trong giấc ngủ\nNgọn đèn khuya bóng mẹ\nSáng một vùng trên sân.",
     excerpt:
@@ -1234,9 +1235,11 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "chim-en",
     title: "Chim én",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
-      "Chim én bạn đi đâu\nHôm nay về mở hội\nLượn bay như dàn lối\nRủ mùa xuân cùng về.",
+      "Chim én bận đi đâu\nHôm nay về mở hội\nLượn bay như dàn lối\nRủ mùa xuân cùng về.",
+    fullContent:
+      "Chim én bận đi đâu\nHôm nay về mở hội\nLượn bay như dẫn lối\nRủ mùa xuân cùng về.\n\nCỏ mọc xanh chân đê\nRau xum xuê nương bãi\nCây cam vàng thêm trái\nHoa khoe sắc nơi nơi.\n\nTrời rắc bụi mưa rơi\nMầm non vươn đứng dậy\nÉn bay chao cánh vẫy\nMừng vui rồi lại đi.\n\nChim ơi, chim nói gì\nKhi lớn thêm một tuổi?",
     excerpt:
       "Bài thơ ngắn, tươi và giàu không khí mùa xuân, phù hợp với mạch đọc lớp 1 về chim én và cảnh sắc đầu năm.",
     tags: [
@@ -1256,9 +1259,11 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "trang",
     title: "Trăng",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Những đêm nào trăng khuyết\nTrông giống con thuyền trôi\nEm đi, trăng theo bước\nNhư muốn cùng đi chơi.",
+    fullContent:
+      "Sân nhà em sáng quá\nNhờ ánh trăng sáng ngời.\nTrăng tròn như cái đĩa,\nLơ lửng mà không rơi.\n\nNhững hôm nào trăng khuyết,\nTrông giống con thuyền trôi.\nEm đi, trăng theo bước\nNhư muốn cùng đi chơi.",
     excerpt:
       "Bài thơ ngắn, nhẹ và giàu hình ảnh, phù hợp với mạch đọc lớp 1 về trăng đêm và liên tưởng tuổi thơ.",
     tags: [
@@ -1278,7 +1283,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "thuyen",
     title: "Thuyền",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Sóng nâng thuyền\nLao hối hả\nLưới tung tròn\nKhoang đầy cá\nGió lên rồi\nCánh buồm ơi.",
     excerpt:
@@ -1300,7 +1305,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "tang-chau",
     title: "Tặng cháu",
-    authorSlug: "dan-gian",
+    authorSlug: "ho-chi-minh",
     content:
       "Vở này ta tặng cháu yêu ta\nTỏ chút lòng yêu cháu gọi là\nMong cháu ra công mà học tập\nMai sau cháu giúp nước non nhà.",
     excerpt:
@@ -1316,13 +1321,13 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Hồ Chí Minh.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "cai-bong",
     title: "Cái Bống",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Cái Bống là cái bống bang\nKhéo sảy, khéo sàng cho mẹ nấu cơm.\nMẹ Bống đi chợ đường trơn\nBống ra gánh đỡ chạy cơn mưa ròng.",
     excerpt:
@@ -1366,7 +1371,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "me-va-co",
     title: "Mẹ và cô",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Buổi sáng bé chào mẹ,\nChạy tới ôm cô cô,\nBuổi chiều bé chào cô,\nRồi sà vào lòng mẹ.\n\nMặt trời mọc rồi lặn\nTrên đôi chân lon ton.\nHai chân trời của con\nLà mẹ và cô giáo.",
     excerpt:
@@ -1388,9 +1393,9 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "me-co-biet",
     title: "Mẹ có biết",
-    authorSlug: "dan-gian",
+    authorSlug: "to-ha",
     content:
-      "- Mẹ có biết ở lớp\n\nBạn Hoa không học bài\n\nSáng nay cô giáo gọi\n\nĐứng dậy đỏ bừng tai...\n\n- Mẹ có biết ở lớp\n\nBạn Hùng cứ trêu con\n\nBạn Mai tay đầy mực\n\nCòn bôi bẩn ra bàn...\n\nVuốt tóc con, mẹ bảo:\n\n- Mẹ chẳng nhớ nổi đâu\n\nNói mẹ nghe ở lớp\n\nCon đã ngoan thế nào?",
+      "- Mẹ có biết ở lớp\nBạn Hoa không học bài\nSáng nay cô giáo gọi\nĐứng dậy đỏ bừng tai...\n\n- Mẹ có biết ở lớp\nBạn Hùng cứ trêu con\nBạn Mai tay đầy mực\nCòn bôi bẩn ra bàn...\n\nVuốt tóc con, mẹ bảo:\n- Mẹ chẳng nhớ nổi đâu\nNói mẹ nghe ở lớp\nCon đã ngoan thế nào?",
     excerpt:
       "Bài thơ ngắn, dí dỏm và gần lời nói trẻ nhỏ, phù hợp với mạch đọc lớp 1 về mẹ, lớp học và bài học tự nhìn lại mình.",
     tags: [
@@ -1405,13 +1410,13 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Tô Hà.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "quyen-vo-cua-em",
     title: "Quyền vở của em",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Quyển vở này mở ra\nBao nhiêu trang giấy trắng\nTừng dòng kẻ ngay ngắn\nNhư chúng em xếp hàng.\n\nLật từng trang, từng trang\nGiấy trắng sờ mát rượi\nThơm tho mùi giấy mới\nNắn nót bàn tay xinh.\n\nÔi quyển vở mới tinh\nEm viết cho sạch, đẹp\nChữ đẹp là tính nết\nCủa những người trò ngoan.",
     excerpt:
@@ -1433,7 +1438,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "ngoi-nha",
     title: "Ngôi nhà",
-    authorSlug: "dan-gian",
+    authorSlug: "to-ha",
     content:
       "Em yêu nhà em\nHàng xoan trước ngõ\nHoa xao xuyến nở\nNhư mây từng chùm.\n\nEm yêu tiếng chim\nĐầu hồi lảnh lót\nMái vàng thơm phức\nRạ đầy sân phơi.\n\nEm yêu ngôi nhà\nGỗ, tre mộc mạc\nNhư yêu đất nước\nBốn mùa chim ca.",
     excerpt:
@@ -1475,9 +1480,9 @@ const poemTiengViet1Tap2: Poem[] = [
     addedAt: "2026-08-13",
   }),
   createPoem({
-    slug: "coc-coc-coc",
-    title: "Cốc, cốc, cốc",
-    authorSlug: "dan-gian",
+    slug: "moi-vao",
+    title: "Mời vào",
+    authorSlug: "vo-quang",
     content:
       "Cốc, cốc, cốc!\n- Ai gọi đó?\n- Tôi là Thỏ.\n- Nếu là Thỏ\nCho xem tai.\n\nCốc, cốc, cốc!\n- Ai gọi đó?\n- Tôi là Nai.\n- Thật là Nai\nCho xem gạc.\n\nCốc, cốc, cốc!\n- Ai gọi đó?\n- Tôi là Gió.\n- Xin mời vào\n\nKiễng chân cao\nVào trong cửa.\nCùng soạn sửa\nĐón trăng lên\n\nQuạt mát thêm\nHơi biển cả\nReo hoa lá\nĐẩy buồm thuyền...\nĐi khắp miền\nLàm việc tốt.",
     excerpt:
@@ -1500,9 +1505,9 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "meo-di-hoc",
     title: "Mèo đi học",
-    authorSlug: "dan-gian",
+    authorSlug: "p-vo-ron-co",
     content:
-      "Mèo con buồn bực\n\nMai phải đến trường\n\nBèn kiếm cớ luôn:\n\n- Cái đuôi tôi ốm.\n\nCừu mới be toáng:\n\n- Tôi sẽ chữa lành\n\nNhưng muốn cho nhanh\n\nCắt đuôi khỏi hết!\n\n- Cắt đuôi? Ấy chết...!\n\nTôi đi học thôi!",
+      "Mèo con buồn bực\nMai phải đến trường\nBèn kiếm cớ luôn:\n- Cái đuôi tôi ốm.\n\nCừu mới be toáng:\n- Tôi sẽ chữa lành\nNhưng muốn cho nhanh\nCắt đuôi khỏi hết!\n\n- Cắt đuôi? Ấy chết...!\nTôi đi học thôi!",
     excerpt:
       "Bài thơ ngắn, hóm hỉnh và giàu đối thoại, phù hợp với mạch đọc lớp 1 về chuyện đi học và cách trẻ nhỏ tìm cớ rồi tự đổi ý.",
     tags: [
@@ -1517,13 +1522,13 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo P. Vô-rôn-cô.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "nguong-cua",
     title: "Ngưỡng cửa",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Nơi này ai cũng quen\nNgay từ thời tấm bé\nKhi tay bà, tay mẹ\nCòn dắt vòng đi men.\n\nNơi bố mẹ ngày đêm\nLúc nào qua cũng vội,\nNơi bạn bè chạy tới\nThường lúc nào cũng vui.\n\nNơi này đã đưa tôi\nBuổi đầu tiên đến lớp\nNay con đường xa tắp,\nVẫn đang chờ tôi đi.",
     excerpt:
@@ -1546,7 +1551,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "ke-cho-be-nghe",
     title: "Kể cho bé nghe",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Hay nói ầm ĩ\nLà con vịt bầu.\n\nHay hỏi đâu đâu\nLà con chó vện.\n\nHay chăng dây điện\nLà con nhện con.\n\nĂn no quay tròn\nLà cối xay lúa.\n\nMồm thở ra gió\nLà cái quạt hòm.\n\nKhông thèm cỏ non\nLà con trâu sắt.\n\nRồng phun nước bạc\nLà chiếc máy bơm.\n\nDùng miệng nấu cơm\nLà cua, là cáy...",
     excerpt:
@@ -1568,7 +1573,7 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "luy-tre",
     title: "Lũy tre",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Mỗi sớm mai thức dậy\nLuỹ tre xanh rì rào\nNgọn tre cong gọng vó\nKéo mặt trời lên cao.\n\nNhững trưa đồng đầy nắng\nTrâu nằm nhai bóng râm\nTre bần thần nhớ gió\nChợt về đầy tiếng chim.",
     excerpt:
@@ -1595,7 +1600,7 @@ const poemTiengViet2Tap1: Poem[] = [
     title: "Ngày hôm qua đâu rồi?",
     authorSlug: "be-kien-quoc",
     content:
-      "Em cầm tờ lịch cũ:\n\n- Ngày hôm qua đâu rồi?\n\nRa ngoài sân hỏi bố\n\nXoa đầu em, bố cười.\n- Ngày hôm qua ở lại\n\nTrên cành hoa trong vườn\n\nNụ hồng lớn lên mãi\n\nĐợi đến ngày tỏa hương.\n- Ngày hôm qua ở lại\n\nTrong hạt lúa mẹ trồng\n\nCánh đồng chờ gặt hái\n\nChín vàng màu ước mong.\n- Ngày hôm qua ở lại\n\nTrong vở hồng của con\n\nCon học hành chăm chỉ\n\nLà ngày qua vẫn còn.",
+      "Em cầm tờ lịch cũ:\n- Ngày hôm qua đâu rồi?\nRa ngoài sân hỏi bố\nXoa đầu em, bố cười.\n\n- Ngày hôm qua ở lại\nTrên cành hoa trong vườn\nNụ hồng lớn lên mãi\nĐợi đến ngày tỏa hương.\n\n- Ngày hôm qua ở lại\nTrong hạt lúa mẹ trồng\nCánh đồng chờ gặt hái\nChín vàng màu ước mong.\n\n- Ngày hôm qua ở lại\nTrong vở hồng của con\nCon học hành chăm chỉ\nLà ngày qua vẫn còn.",
     excerpt:
       "Bài thơ thiếu nhi quen thuộc, gợi cách ngày hôm qua ở lại trong hoa, lúa và việc học chăm chỉ của em.",
     tags: [
@@ -1618,7 +1623,7 @@ const poemTiengViet2Tap1: Poem[] = [
     title: "Gọi bạn",
     authorSlug: "dinh-hai",
     content:
-      'Tự xa xưa thuở nào\n\nTrong rừng xanh sâu thẳm\n\nĐôi bạn sống bên nhau\n\nBê Vàng và Dê Trắng.\n\nMột năm, trời hạn hán\n\nSuối cạn, cỏ héo khô\n\nLấy gì nuôi đôi bạn\n\nChờ mưa đến bao giờ?\n\nBê Vàng đi tìm cỏ\n\nLang thang quên đường về\n\nDê Trắng thương bạn quá\n\nChạy khắp nẻo tìm Bê\n\nĐến bây giờ Dê Trắng\n\nVẫn gọi hoài: "Bê! Bê!"',
+      'Tự xa xưa thuở nào\nTrong rừng xanh sâu thẳm\nĐôi bạn sống bên nhau\nBê Vàng và Dê Trắng.\n\nMột năm, trời hạn hán\nSuối cạn, cỏ héo khô\nLấy gì nuôi đôi bạn\nChờ mưa đến bao giờ?\n\nBê Vàng đi tìm cỏ\nLang thang quên đường về\nDê Trắng thương bạn quá\nChạy khắp nẻo tìm Bê\n\nĐến bây giờ Dê Trắng\nVẫn gọi hoài: "Bê! Bê!"',
     excerpt:
       "Bài thơ quen thuộc về tình bạn của Bê Vàng và Dê Trắng, phù hợp với mạch đọc lớp 2 về con vật và tình bạn thủy chung.",
     tags: [
@@ -1641,7 +1646,7 @@ const poemTiengViet2Tap1: Poem[] = [
     title: "Cái trống trường em",
     authorSlug: "thanh-hao",
     content:
-      "Mùa hè cũng nghỉ\n\nSuốt ba tháng liền\n\nTrống nằm ngẫm nghĩ.\n\nBuồn không hả trống\n\nTrong những ngày hè\n\nBọn mình đi vắng\n\nChỉ còn tiếng ve?\n\nCái trống lặng im\n\nNghiêng đầu trên giá\n\nChắc thấy chúng em\n\nNó mừng vui quá!\n\nKìa trống đang gọi:\n\nTùng! Tùng! Tùng! Tùng!\n\nVào năm học mới\n\nGiọng vang tưng bừng.",
+      "Cái trống trường em\nMùa hè cũng nghỉ\nSuốt ba tháng liền\nTrống nằm ngẫm nghĩ.\n\nBuồn không hả trống\nTrong những ngày hè\nBọn mình đi vắng\nChỉ còn tiếng ve?\n\nCái trống lặng im\nNghiêng đầu trên giá\nChắc thấy chúng em\nNó mừng vui quá!\n\nKìa trống đang gọi:\nTùng! Tùng! Tùng! Tùng!\nVào năm học mới\nGiọng vang tưng bừng.",
     excerpt:
       "Bài thơ học đường quen thuộc, gợi âm thanh rộn rã của ngày tựu trường và niềm vui gặp lại bạn bè sau hè.",
     tags: [
@@ -1664,7 +1669,7 @@ const poemTiengViet2Tap1: Poem[] = [
     title: "Cô giáo lớp em",
     authorSlug: "nguyen-xuan-sanh",
     content:
-      'Sáng nào em đến lớp\n\nCũng thấy cô đến rồi\n\nĐáp lời "Chào cô ạ!"\n\nCô mỉm cười thật tươi.\n\nCô dạy em tập viết\n\nGió đưa thoảng hương nhài\n\nNắng ghé vào cửa lớp\n\nXem chúng em học bài.\n\nNhững lời cô giáo giảng\n\nẤm trang vở thơm tho\n\nYêu thương em ngắm mãi\n\nNhững điểm mười cô cho.',
+      'Sáng nào em đến lớp\nCũng thấy cô đến rồi\nĐáp lời "Chào cô ạ!"\nCô mỉm cười thật tươi.\n\nCô dạy em tập viết\nGió đưa thoảng hương nhài\nNắng ghé vào cửa lớp\nXem chúng em học bài.\n\nNhững lời cô giáo giảng\nẤm trang vở thơm tho\nYêu thương em ngắm mãi\nNhững điểm mười cô cho.',
     excerpt:
       "Bài thơ dịu và sáng về cô giáo, lớp học và niềm vui đến trường, phù hợp với mạch đọc đầu năm của Tiếng Việt 2.",
     tags: [
@@ -1756,7 +1761,7 @@ const poemTiengViet2Tap1: Poem[] = [
     title: "Tiếng võng kêu",
     authorSlug: "tran-dang-khoa",
     content:
-      "*(Trích)*\n\nKẽo cà kẽo kẹt\n\nKẽo cà kẽo kẹt\n\nTay em đưa đều\n\nBa gian nhà nhỏ\n\nĐầy tiếng võng kêu.\n\nKẽo cà kẽo kẹt\n\nBé Giang ngủ rồi\n\nTóc bay phơ phất\n\nVương vương nụ cười.\n\nTrong giấc mơ em\n\nCó gặp con cò\n\nLặn lội bờ sông?\n\nCó gặp cánh bướm\n\nMênh mông, mênh mông?\n\nEm ơi cứ ngủ\n\nTay anh đưa đều\n\nBa gian nhà nhỏ\n\nĐầy tiếng võng kêu\n\nKẽo cà kẽo kẹt\n\nKẽo cà kẽo kẹt\n\nKẽo cà\n\nKẽo kẹt...",
+      "Kẽo cà kẽo kẹt\nKẽo cà kẽo kẹt\nTay em đưa đều\nBa gian nhà nhỏ\nĐầy tiếng võng kêu.\n\nKẽo cà kẽo kẹt\nBé Giang ngủ rồi\nTóc bay phơ phất\nVương vương nụ cười.\n\nTrong giấc mơ em\nCó gặp con cò\nLặn lội bờ sông?\nCó gặp cánh bướm\nMênh mông, mênh mông?\n\nEm ơi cứ ngủ\nTay anh đưa đều\nBa gian nhà nhỏ\nĐầy tiếng võng kêu\n\nKẽo cà kẽo kẹt\nKẽo cà kẽo kẹt\nKẽo cà\nKẽo kẹt...",
     excerpt:
       "Bài thơ giàu nhạc điệu về tiếng võng và giấc ngủ em bé, phù hợp với mạch đọc lớp 2 về gia đình, lời ru và nhịp sống thân thuộc.",
     tags: [
@@ -1779,7 +1784,7 @@ const poemTiengViet2Tap1: Poem[] = [
     title: "Đàn gà mới nở",
     authorSlug: "pham-ho",
     content:
-      "Lông vàng mát dịu\n\nMắt đen sáng ngời\n\nÔi! Chú gà ơi!\n\nTa yêu chú lắm!\n\nMẹ dang đôi cánh\n\nCon biến vào trong\n\nMẹ ngẩng đầu trông\n\nBọn diều, bọn quạ.\n\nBây giờ thong thả\n\nMẹ đi lên đầu\n\nĐàn con bé tí\n\nLíu ríu chạy sau.\n\nCon mẹ đẹp sao\n\nNhững hòn tơ nhỏ\n\nChạy như lăn tròn\n\nTrên sân, trên cỏ.\n\nVườn trưa gió mát\n\nBướm bay dập dờn\n\nQuanh đôi chân mẹ\n\nMột rừng chân con.",
+      "Lông vàng mát dịu\nMắt đen sáng ngời\nÔi! Chú gà ơi!\nTa yêu chú lắm!\n\nMẹ dang đôi cánh\nCon biến vào trong\nMẹ ngẩng đầu trông\nBọn diều, bọn quạ.\n\nBây giờ thong thả\nMẹ đi lên đầu\nĐàn con bé tí\nLíu ríu chạy sau.\n\nCon mẹ đẹp sao\nNhững hòn tơ nhỏ\nChạy như lăn tròn\nTrên sân, trên cỏ.\n\nVườn trưa gió mát\nBướm bay dập dờn\nQuanh đôi chân mẹ\nMột rừng chân con.",
     excerpt:
       "Bài thơ trong sáng về đàn gà con và gà mẹ, phù hợp với mạch đọc lớp 2 về con vật, khu vườn và tình cảm dịu dàng trong thế giới tuổi thơ.",
     tags: [
@@ -1800,9 +1805,9 @@ const poemTiengViet2Tap1: Poem[] = [
   createPoem({
     slug: "trau-oi",
     title: "Trâu ơi!",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
-      "Trâu ơi, ta bảo trâu này\n\nTrâu ra ngoài ruộng trâu cày với ta\n\nCấy cày vốn nghiệp nông gia\n\nTa đây trâu đấy, ai mà quản công\n\nBao giờ cây lúa còn bông\n\nThì còn ngọn cỏ ngoài đồng trâu ăn.",
+      "Trâu ơi, ta bảo trâu này\nTrâu ra ngoài ruộng trâu cày với ta\nCấy cày vốn nghiệp nông gia\nTa đây trâu đấy, ai mà quản công\nBao giờ cây lúa còn bông\nThì còn ngọn cỏ ngoài đồng trâu ăn.",
     excerpt:
       "Bài ca dao mộc mạc về con trâu và nghề nông, phù hợp với mạch đọc lớp 2 về đồng quê, lao động và hình ảnh thân thuộc của làng quê Việt Nam.",
     tags: [
@@ -1879,7 +1884,7 @@ const poemTiengViet3Tap2: Poem[] = [
   createPoem({
     slug: "dong-song-sau-luy-tre",
     title: "Dòng sông sau lũy tre",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Dòng sông nép dưới hàng tre\nChở mây về bến, chở hè qua thôn\n\nLũ trẻ đứng đếm hoàng hôn\nNghe con nước kể một vùng quê xa.",
     excerpt:
@@ -1983,7 +1988,7 @@ const poemTiengViet5Tap2: Poem[] = [
   createPoem({
     slug: "mau-muc-tim",
     title: "Màu mực tím",
-    authorSlug: "dan-gian",
+    authorSlug: "khuyet-danh",
     content:
       "Mực tím nghiêng qua một góc bàn\nĐọng trên nhãn vở mùi thời gian\n\nMai này lớn giữa bao con chữ\nVẫn nhớ ngày đầu tập viết ngoan.",
     excerpt:

@@ -69,6 +69,14 @@ interface LoadedReaderData {
   isPathSelection: boolean;
 }
 
+function isSameContentItem(left: ContentItem, right: ContentItem) {
+  return (
+    left.slug === right.slug &&
+    left.textbook === right.textbook &&
+    left.volume === right.volume
+  );
+}
+
 export async function generateReaderMetadata({
   pathname,
   searchParams,
@@ -426,13 +434,15 @@ async function loadReaderData({
     selectedFromPath ?? matchedItems[0] ?? orderedItems[0] ?? null;
   const navigationItems = query ? matchedItems : orderedItems;
   const selectedIndex = selectedItem
-    ? navigationItems.findIndex((item) => item.slug === selectedItem.slug)
+    ? navigationItems.findIndex((item) => isSameContentItem(item, selectedItem))
     : -1;
   const surroundingPageHrefs =
     selectedIndex >= 0
       ? navigationItems
           .slice(Math.max(0, selectedIndex - 5), selectedIndex + 6)
-          .filter((item) => item.slug !== selectedItem?.slug)
+          .filter((item) =>
+            selectedItem ? !isSameContentItem(item, selectedItem) : true,
+          )
           .map((item) =>
             buildReaderUrl(
               query ? { q: query } : {},

@@ -7,10 +7,9 @@ export function createPlaceholderImage(
   caption?: string,
   textbook?: string,
   volume?: string,
-  title?: string,
 ): ContentImage {
   const textbookBase = textbook?.replace(/\s*-\s*Tập\s*[12]$/u, "") ?? slug;
-  const imageFolder = [textbookBase, volume, title]
+  const imageFolder = [textbookBase, volume, slug]
     .filter(Boolean)
     .map((segment) => slugify(segment ?? ""))
     .join("/");

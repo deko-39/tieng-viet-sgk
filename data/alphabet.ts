@@ -42,7 +42,6 @@ function createAlphabetLetter(seed: AlphabetLetterSeed): AlphabetLetter {
           `Vị trí minh họa cho ${placeholderSubject} đang chờ bổ sung hình ảnh.`,
         "Bảng chữ cái",
         seed.slug,
-        "minh họa",
       ),
   };
 }
