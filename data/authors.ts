@@ -420,6 +420,12 @@ export const authors: Author[] = [
     bio: "Nguồn truyện cười dân gian quen thuộc với những tình huống ngây ngô, dí dỏm, thường gợi tiếng cười nhẹ nhàng từ đời sống thường ngày.",
   },
   {
+    id: "ngu-ngon-viet-nam",
+    slug: "ngu-ngon-viet-nam",
+    name: "Ngụ ngôn Việt Nam",
+    bio: "Nguồn truyện ngụ ngôn quen thuộc với những câu chuyện ngắn gọn, giàu ý nghĩa, thường gợi bài học về đoàn kết, chăm chỉ và cách sống.",
+  },
+  {
     id: "ho-phuong",
     slug: "ho-phuong",
     name: "Hồ Phương",
@@ -454,6 +460,54 @@ export const authors: Author[] = [
     slug: "tran-hoai-duong",
     name: "Trần Hoài Dương",
     bio: "Tác giả của những câu chuyện thiếu nhi giàu hơi ấm gia đình, thường gợi tình bà cháu và những lựa chọn đặt yêu thương lên trên vật chất.",
+  },
+  {
+    id: "duy-khanh",
+    slug: "duy-khanh",
+    name: "Duy Khánh",
+    bio: "Tác giả của những trang viết thiếu nhi gần gũi, giàu quan sát và tình cảm gia đình, thường làm nổi bật niềm vui từ những món quà bình dị của tuổi thơ.",
+  },
+  {
+    id: "la-mac-tin",
+    slug: "la-mac-tin",
+    name: "La-mác-tin",
+    bio: "Tác giả của những câu chuyện giàu tình cảm gia đình và bài học ứng xử, thường được nhắc đến qua các bản kể lại gần gũi với học sinh nhỏ tuổi.",
+  },
+  {
+    id: "viet-tam",
+    slug: "viet-tam",
+    name: "Việt Tâm",
+    bio: "Tác giả của những câu chuyện thiếu nhi ấm áp, gần gũi với đời sống gia đình và những rung động hồn nhiên của trẻ nhỏ.",
+  },
+  {
+    id: "tran-manh-thuong",
+    slug: "tran-manh-thuong",
+    name: "Trần Mạnh Thường",
+    bio: "Tác giả của những câu chuyện thiếu nhi gần gũi, dí dỏm và giàu không khí sinh hoạt gia đình thường ngày.",
+  },
+  {
+    id: "thuy-ha",
+    slug: "thuy-ha",
+    name: "Thuỷ Hà",
+    bio: "Tác giả của những câu chuyện thiếu nhi nhẹ nhàng, thường gợi tình bạn giữa trẻ nhỏ với loài vật và hơi ấm của đời sống gia đình.",
+  },
+  {
+    id: "nguyen-dong-chi",
+    slug: "nguyen-dong-chi",
+    name: "Nguyễn Đổng Chi",
+    bio: "Tác giả gắn với nhiều truyện kể dân gian và cổ tích Việt Nam, thường mang đến những câu chuyện giàu tình nghĩa, mưu trí và màu sắc kì ảo.",
+  },
+  {
+    id: "truyen-vui-nuoc-ngoai",
+    slug: "truyen-vui-nuoc-ngoai",
+    name: "Truyện vui nước ngoài",
+    bio: "Nguồn truyện vui ngắn gọn với những tình huống hóm hỉnh, thường gợi tiếng cười từ cách nghĩ ngộ nghĩnh và hồn nhiên của nhân vật nhỏ tuổi.",
+  },
+  {
+    id: "truyen-co-viet-nam",
+    slug: "truyen-co-viet-nam",
+    name: "Truyện cổ Việt Nam",
+    bio: "Nguồn truyện cổ quen thuộc với những câu chuyện giàu yếu tố dân gian, thường gửi gắm bài học về chăm chỉ, nết ở và cách sống.",
   },
   {
     id: "xu-khom-lin-xki",

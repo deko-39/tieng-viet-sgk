@@ -1479,7 +1479,7 @@ const poemTiengViet1Tap2: Poem[] = [
     title: "Cốc, cốc, cốc",
     authorSlug: "dan-gian",
     content:
-      "Cốc, cốc, cốc!\n\n- Ai gọi đó?\n- Tôi là Thỏ.\n- Nếu là Thỏ\n\nCho xem tai.\n\nCốc, cốc, cốc!\n\n- Ai gọi đó?\n- Tôi là Nai.\n- Thật là Nai\n\nCho xem gạc.\n\nCốc, cốc, cốc!\n\n- Ai gọi đó?\n- Tôi là Gió.\n- Xin mời vào\n\nKiễng chân cao\n\nVào trong cửa.\n\nCùng soạn sửa\n\nĐón trăng lên\n\nQuạt mát thêm\n\nHơi biển cả\n\nReo hoa lá\n\nĐẩy buồm thuyền...\n\nĐi khắp miền\n\nLàm việc tốt.",
+      "Cốc, cốc, cốc!\n- Ai gọi đó?\n- Tôi là Thỏ.\n- Nếu là Thỏ\nCho xem tai.\n\nCốc, cốc, cốc!\n- Ai gọi đó?\n- Tôi là Nai.\n- Thật là Nai\nCho xem gạc.\n\nCốc, cốc, cốc!\n- Ai gọi đó?\n- Tôi là Gió.\n- Xin mời vào\n\nKiễng chân cao\nVào trong cửa.\nCùng soạn sửa\nĐón trăng lên\n\nQuạt mát thêm\nHơi biển cả\nReo hoa lá\nĐẩy buồm thuyền...\nĐi khắp miền\nLàm việc tốt.",
     excerpt:
       "Bài thơ đối thoại ngắn, giàu nhịp điệu và tưởng tượng, phù hợp với mạch đọc lớp 1 về con vật, gió và những liên tưởng hồn nhiên của trẻ nhỏ.",
     tags: [
@@ -1750,6 +1750,75 @@ const poemTiengViet2Tap1: Poem[] = [
     volume: "Tập 1",
     source: "Theo Trần Quốc Minh.",
     addedAt: "2026-09-11",
+  }),
+  createPoem({
+    slug: "tieng-vong-keu",
+    title: "Tiếng võng kêu",
+    authorSlug: "tran-dang-khoa",
+    content:
+      "*(Trích)*\n\nKẽo cà kẽo kẹt\n\nKẽo cà kẽo kẹt\n\nTay em đưa đều\n\nBa gian nhà nhỏ\n\nĐầy tiếng võng kêu.\n\nKẽo cà kẽo kẹt\n\nBé Giang ngủ rồi\n\nTóc bay phơ phất\n\nVương vương nụ cười.\n\nTrong giấc mơ em\n\nCó gặp con cò\n\nLặn lội bờ sông?\n\nCó gặp cánh bướm\n\nMênh mông, mênh mông?\n\nEm ơi cứ ngủ\n\nTay anh đưa đều\n\nBa gian nhà nhỏ\n\nĐầy tiếng võng kêu\n\nKẽo cà kẽo kẹt\n\nKẽo cà kẽo kẹt\n\nKẽo cà\n\nKẽo kẹt...",
+    excerpt:
+      "Bài thơ giàu nhạc điệu về tiếng võng và giấc ngủ em bé, phù hợp với mạch đọc lớp 2 về gia đình, lời ru và nhịp sống thân thuộc.",
+    tags: [
+      "tieng-viet-2-tap-1",
+      "tho",
+      "gia-dinh",
+      "am-thanh",
+      "loi-ru",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Gia đình"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 1",
+    volume: "Tập 1",
+    source: "Theo Trần Đăng Khoa.",
+    addedAt: "2026-09-15",
+  }),
+  createPoem({
+    slug: "dan-ga-moi-no",
+    title: "Đàn gà mới nở",
+    authorSlug: "pham-ho",
+    content:
+      "Lông vàng mát dịu\n\nMắt đen sáng ngời\n\nÔi! Chú gà ơi!\n\nTa yêu chú lắm!\n\nMẹ dang đôi cánh\n\nCon biến vào trong\n\nMẹ ngẩng đầu trông\n\nBọn diều, bọn quạ.\n\nBây giờ thong thả\n\nMẹ đi lên đầu\n\nĐàn con bé tí\n\nLíu ríu chạy sau.\n\nCon mẹ đẹp sao\n\nNhững hòn tơ nhỏ\n\nChạy như lăn tròn\n\nTrên sân, trên cỏ.\n\nVườn trưa gió mát\n\nBướm bay dập dờn\n\nQuanh đôi chân mẹ\n\nMột rừng chân con.",
+    excerpt:
+      "Bài thơ trong sáng về đàn gà con và gà mẹ, phù hợp với mạch đọc lớp 2 về con vật, khu vườn và tình cảm dịu dàng trong thế giới tuổi thơ.",
+    tags: [
+      "tieng-viet-2-tap-1",
+      "tho",
+      "con-vat",
+      "thien-nhien",
+      "me-con",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 1",
+    volume: "Tập 1",
+    source: "Theo Phạm Hổ.",
+    addedAt: "2026-09-15",
+  }),
+  createPoem({
+    slug: "trau-oi",
+    title: "Trâu ơi!",
+    authorSlug: "dan-gian",
+    content:
+      "Trâu ơi, ta bảo trâu này\n\nTrâu ra ngoài ruộng trâu cày với ta\n\nCấy cày vốn nghiệp nông gia\n\nTa đây trâu đấy, ai mà quản công\n\nBao giờ cây lúa còn bông\n\nThì còn ngọn cỏ ngoài đồng trâu ăn.",
+    excerpt:
+      "Bài ca dao mộc mạc về con trâu và nghề nông, phù hợp với mạch đọc lớp 2 về đồng quê, lao động và hình ảnh thân thuộc của làng quê Việt Nam.",
+    tags: [
+      "tieng-viet-2-tap-1",
+      "tho",
+      "ca-dao",
+      "lao-dong",
+      "dong-que",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Ca dao"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 1",
+    volume: "Tập 1",
+    source: "Ca dao.",
+    addedAt: "2026-09-15",
   }),
 ];
 
