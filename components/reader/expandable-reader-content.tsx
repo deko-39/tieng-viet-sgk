@@ -10,15 +10,52 @@ interface ExpandableReaderContentProps {
   fullContent?: string;
 }
 
+interface ReaderContentBlock {
+  kind: "text" | "blockquote";
+  value: string;
+}
+
+function parseReaderContentBlocks(content?: string): ReaderContentBlock[] {
+  const blocks: ReaderContentBlock[] = [];
+  const safeContent = content ?? "";
+  const blockquotePattern = /<blockquote>([\s\S]*?)<\/blockquote>/gi;
+  let lastIndex = 0;
+
+  for (const match of safeContent.matchAll(blockquotePattern)) {
+    const matchIndex = match.index ?? 0;
+    const leadingText = safeContent.slice(lastIndex, matchIndex);
+
+    if (leadingText) {
+      blocks.push({ kind: "text", value: leadingText });
+    }
+
+    blocks.push({ kind: "blockquote", value: (match[1] ?? "").trim() });
+    lastIndex = matchIndex + match[0].length;
+  }
+
+  const trailingText = safeContent.slice(lastIndex);
+
+  if (trailingText || blocks.length === 0) {
+    blocks.push({ kind: "text", value: trailingText });
+  }
+
+  return blocks;
+}
+
 export function ExpandableReaderContent({
   kind,
   content,
   fullContent,
 }: ExpandableReaderContentProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const normalizedContent = content ?? "";
+  const normalizedFullContent = fullContent ?? "";
   const hasFullContent =
-    Boolean(fullContent?.trim()) && fullContent?.trim() !== content.trim();
-  const displayContent = hasFullContent && isExpanded ? fullContent : content;
+    Boolean(normalizedFullContent.trim()) &&
+    normalizedFullContent.trim() !== normalizedContent.trim();
+  const displayContent =
+    hasFullContent && isExpanded ? normalizedFullContent : normalizedContent;
+  const contentBlocks = parseReaderContentBlocks(displayContent);
 
   return (
     <div
@@ -28,7 +65,22 @@ export function ExpandableReaderContent({
           : "paragraph-body text-left text-ink"
       }
     >
-      <div>{displayContent}</div>
+      <div className="reader-content-flow">
+        {contentBlocks.map((block, index) =>
+          block.kind === "blockquote" ? (
+            <blockquote
+              key={`blockquote-${index}`}
+              className="reader-content-blockquote"
+            >
+              {block.value}
+            </blockquote>
+          ) : (
+            <div key={`text-${index}`} className="reader-content-fragment">
+              {block.value}
+            </div>
+          ),
+        )}
+      </div>
       {hasFullContent ? (
         <div className="mt-5 flex justify-center">
           <button

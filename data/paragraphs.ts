@@ -1439,7 +1439,7 @@ const paragraphTiengViet2Tap2: Paragraph[] = [
     title: "Thư trung thu",
     authorSlug: "ho-chi-minh",
     content:
-      "Mỗi năm, đến Tết Trung thu, Bác càng nhớ các cháu.\nCác cháu gửi thư cho Bác nhiều lắm, Bác rất vui. Nhưng vì Bác bận quá, không trả lời riêng cho từng cháu được. Nhân dịp Tết Trung thu, Bác gửi các cháu thư này:\nAi yêu các nhi đồng\nBằng Bác Hồ Chí Minh?\nTính các cháu ngoan ngoãn,\nMặt các cháu xinh xinh.\nMong các cháu cố gắng\nThi đua học và hành.\nTuổi nhỏ làm việc nhỏ\nTùy theo sức của mình,\nĐể tham gia kháng chiến,\nĐể gìn giữ hòa bình.\nCác cháu hãy xứng đáng\nCháu Bác Hồ Chí Minh.",
+      "Mỗi năm, đến Tết Trung thu, Bác càng nhớ các cháu.\nCác cháu gửi thư cho Bác nhiều lắm, Bác rất vui. Nhưng vì Bác bận quá, không trả lời riêng cho từng cháu được. Nhân dịp Tết Trung thu, Bác gửi các cháu thư này:\n<blockquote>Ai yêu các nhi đồng\nBằng Bác Hồ Chí Minh?\nTính các cháu ngoan ngoãn,\nMặt các cháu xinh xinh.\nMong các cháu cố gắng\nThi đua học và hành.\nTuổi nhỏ làm việc nhỏ\nTùy theo sức của mình,\nĐể tham gia kháng chiến,\nĐể gìn giữ hòa bình.\nCác cháu hãy xứng đáng\nCháu Bác Hồ Chí Minh.</blockquote>",
     excerpt:
       "Bài thư ngắn của Bác Hồ dành cho thiếu nhi, phù hợp với mạch đọc lớp 2 về Trung thu, học tập, rèn luyện và tình cảm dành cho các cháu nhỏ.",
     tags: [
@@ -1554,7 +1554,7 @@ const paragraphTiengViet2Tap2: Paragraph[] = [
     title: "Thông báo của thư viện vườn chim",
     authorSlug: "khuyet-danh",
     content:
-      "Giờ mở cửa:\n- Buổi sáng: từ 7 giờ đến 10 giờ.\n- Buổi chiều: từ 15 giờ đến 17 giờ.\n- Các ngày nghỉ: mở cửa buổi sáng.\nCấp thẻ mượn sách:\nMời các bạn chưa có thẻ mượn sách đến làm thẻ vào sáng thứ năm hằng tuần.\nSách mới về:\n- Khi đại bàng vỗ cánh\n- Đà điểu trên sa mạc, tập 1\n- Khúc nhạc của rừng xanh\n- Tập bay\n- Tình bạn của Vạc và Bồ Nông\n- Chuyện lạ về thế giới loài chim\nPhụ trách thư viện\nVÀNG ANH",
+      "Giờ mở cửa:\n- Buổi sáng: từ 7 giờ đến 10 giờ.\n- Buổi chiều: từ 15 giờ đến 17 giờ.\n- Các ngày nghỉ: mở cửa buổi sáng.\nCấp thẻ mượn sách:\nMời các bạn chưa có thẻ mượn sách đến làm thẻ vào sáng thứ năm hằng tuần.\nSách mới về:\n<blockquote>- Khi đại bàng vỗ cánh\n- Đà điểu trên sa mạc, tập 1\n- Khúc nhạc của rừng xanh\n- Tập bay\n- Tình bạn của Vạc và Bồ Nông\n- Chuyện lạ về thế giới loài chim</blockquote>\nPhụ trách thư viện\nVÀNG ANH",
     excerpt:
       "Văn bản thông báo ngắn gọn về giờ mở cửa, làm thẻ và sách mới, phù hợp với mạch đọc lớp 2 về thư viện, đọc hiểu thông tin và nề nếp sinh hoạt.",
     tags: [
@@ -1669,7 +1669,7 @@ const paragraphTiengViet2Tap2: Paragraph[] = [
     title: "Nội quy đảo khỉ",
     authorSlug: "nguyen-trung",
     content:
-      "Sau một lần đi chơi xa, Khỉ Nâu về quê nhà. Cảnh vật nhiều thay đổi. Thấy một tấm biển lớn ngay bến tàu, Khỉ Nâu bèn theo mấy khách du lịch đến xem.\n\nNỘI QUY ĐẢO KHỈ\nĐảo Khỉ là khu vực bảo tồn loài khỉ.\nKhách đến tham quan Đảo Khỉ cần thực hiện những điều quy định dưới đây:\n1. Mua vé tham quan trước khi lên đảo.\n2. Không trêu chọc thú nuôi trong chuồng.\n3. Không cho thú ăn các loại thức ăn lạ.\n4. Giữ gìn vệ sinh chung trên đảo.\nNgày 15 tháng 1 năm 1990\nBAN QUẢN LÍ ĐIỂM DU LỊCH ĐẢO KHỈ\n\nĐọc xong, Khỉ Nâu cười khành khạch tỏ vẻ khoái chí.",
+      "Sau một lần đi chơi xa, Khỉ Nâu về quê nhà. Cảnh vật nhiều thay đổi. Thấy một tấm biển lớn ngay bến tàu, Khỉ Nâu bèn theo mấy khách du lịch đến xem.\n<blockquote>NỘI QUY ĐẢO KHỈ\nĐảo Khỉ là khu vực bảo tồn loài khỉ.\nKhách đến tham quan Đảo Khỉ cần thực hiện những điều quy định dưới đây:\n1. Mua vé tham quan trước khi lên đảo.\n2. Không trêu chọc thú nuôi trong chuồng.\n3. Không cho thú ăn các loại thức ăn lạ.\n4. Giữ gìn vệ sinh chung trên đảo.\nNgày 15 tháng 1 năm 1990\nBAN QUẢN LÍ ĐIỂM DU LỊCH ĐẢO KHỈ</blockquote>Đọc xong, Khỉ Nâu cười khành khạch tỏ vẻ khoái chí.",
     excerpt:
       "Văn bản nội quy ngắn gọn, phù hợp với mạch đọc lớp 2 về đọc hiểu thông báo, quy định nơi công cộng và ý thức giữ gìn chung.",
     tags: [

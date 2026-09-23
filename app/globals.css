@@ -329,6 +329,33 @@ html[data-theme="dusk"] .reading-surface {
   line-height: 2.12;
 }
 
+.reader-content-flow {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.reader-content-fragment,
+.reader-content-blockquote {
+  white-space: pre-wrap;
+}
+
+.reader-content-blockquote {
+  margin: 0;
+  border: 1px solid color-mix(in srgb, var(--line-strong) 72%, transparent);
+  border-left: 0.38rem solid
+    color-mix(in srgb, var(--line-strong) 88%, transparent);
+  border-radius: 1rem;
+  background: var(--paper);
+  padding: 1rem 1.1rem 1rem 1.2rem;
+  color: var(--ink);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.05);
+  font-style: italic;
+}
+
+html[data-theme="dusk"] .reader-content-blockquote {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.24);
+}
+
 .alphabet-handwriting {
   display: inline-block;
   font-family: var(--font-handwriting), var(--font-reading), serif;
@@ -369,6 +396,15 @@ html[data-theme="dusk"] .reading-surface {
   .paragraph-body {
     font-size: 0.96rem;
     line-height: 1.96;
+  }
+
+  .reader-content-flow {
+    gap: 1rem;
+  }
+
+  .reader-content-blockquote {
+    border-radius: 0.9rem;
+    padding: 0.9rem 0.95rem 0.9rem 1rem;
   }
 }
 
