@@ -496,7 +496,7 @@ const paragraphTiengViet1Tap2: Paragraph[] = [
     title: "Quyển sách mới",
     authorSlug: "khuyet-danh",
     content:
-      "Năm học sắp kết thúc. Hôm nay, Khánh Linh được phát sách Tiếng Việt 2. Em mở ngay sách ra xem. Sách có rất nhiều tranh ảnh đẹp. Em thích quá. Tan học, vừa về đến nhà, em đã khoe ngay sách với bà.",
+      "Năm học sắp kết thúc. Hôm nay, Khánh Linh được phát sách Tiếng Việt  Em mở ngay sách ra xem. Sách có rất nhiều tranh ảnh đẹp. Em thích quá. Tan học, vừa về đến nhà, em đã khoe ngay sách với bà.",
     excerpt:
       "Đoạn văn ngắn, sáng và gần không khí cuối năm học, phù hợp với mạch đọc lớp 1 về sách mới, niềm vui học tập và tình cảm gia đình.",
     tags: [
@@ -611,7 +611,7 @@ const paragraphTiengViet2Tap1: Paragraph[] = [
     content:
       "Ngày xưa có một cậu bé làm việc gì cũng mau chán. Mỗi khi cầm quyển sách, cậu chỉ đọc vài dòng đã ngáp ngắn ngáp dài, rồi bỏ dở. Những lúc tập viết, cậu cũng chỉ nắn nót được mấy chữ đầu, rồi lại viết nguệch ngoạc, trông rất xấu.\nMột hôm trong lúc đi chơi, cậu nhìn thấy một bà cụ tay cầm thỏi sắt mải miết mài vào tảng đá ven đường. Thấy lạ, cậu bèn hỏi:\n- Bà ơi, bà làm gì thế?\nBà cụ trả lời:\n- Bà mài thỏi sắt này thành một chiếc kim để khâu vá quần áo.\nCậu bé ngạc nhiên:\n- Thỏi sắt to như thế, làm sao bà mài thành kim được?\nBà cụ ôn tồn giảng giải:\n- Mỗi ngày mài thỏi sắt nhỏ đi một tí, sẽ có ngày nó thành kim. Giống như cháu đi học, mỗi ngày cháu học một ít, sẽ có ngày cháu thành tài.\nCậu bé hiểu ra, quay về nhà học bài.",
     excerpt:
-      "Truyện ngụ ngôn quen thuộc về sự kiên trì, phù hợp với mạch đọc đầu cấp của Tiếng Việt 2.",
+      "Truyện ngụ ngôn quen thuộc về sự kiên trì, phù hợp với mạch đọc đầu cấp của Tiếng Việt ",
     tags: [
       "tieng-viet-2-tap-1",
       "doan-van",
@@ -675,7 +675,7 @@ const paragraphTiengViet2Tap1: Paragraph[] = [
   createParagraph({
     slug: "mit-lam-tho",
     title: "Mít làm thơ",
-    authorSlug: "no-xop",
+    authorSlug: "lo-mo-no-xop",
     content:
       "Ở thành phố Tí Hon, nổi tiếng nhất là Mít. Người ta gọi cậu như vậy vì cậu chẳng biết gì.\nTuy thế, dạo này Mít lại ham học hỏi. Một lần, cậu đến thi sĩ Hoa Giấy để học làm thơ. Hoa Giấy hỏi:\n- Cậu có biết thế nào là vần thơ không?\n- Vần thơ là cái gì?\n- Hai từ có phần cuối giống nhau thì gọi là vần. Ví dụ: *vịt - thịt, cáo - gáo*. Bây giờ cậu hãy tìm một từ vần với bé.\n- Phé! - Mít đáp.\n- Phé là gì? Vần thì vần nhưng phải có nghĩa chứ.\n- Mình hiểu rồi. Thật kì diệu! - Mít kêu lên.\nVề đến nhà, Mít bắt tay ngay vào việc. Cậu đi đi lại lại, vò đầu bứt tai. Đến tối thì bài thơ hoàn thành.\n*(Còn nữa)*",
     excerpt:
@@ -698,7 +698,7 @@ const paragraphTiengViet2Tap1: Paragraph[] = [
   createParagraph({
     slug: "mit-lam-tho-2",
     title: "Mít làm thơ 2",
-    authorSlug: "no-xop",
+    authorSlug: "lo-mo-no-xop",
     content:
       "Mít gọi Biết Tuốt, Nhanh Nhảu, Ngộ Nhỡ đến, tặng mỗi bạn mấy câu thơ. Thoạt tiên là thơ về Biết Tuốt:\n*Một hôm đi dạo qua dòng suối*\n*Biết Tuốt nhảy qua con cá chuối.*\nBiết Tuốt la lên:\n- Tớ nhảy qua con cá chuối bao giờ?\n- Nói cho có vần thôi! - Mít giải thích.\n- Muốn cho có vần thì được nói sai sự thật à? Cậu hãy đọc thơ về những bạn khác xem nào!\n- Đây là thơ tặng Nhanh Nhảu:\n*Nhanh Nhảu đói, thật tội*\n*Nuốt chửng bàn là nguội.*\n- Còn đây là thơ về Ngộ Nhỡ:\n*Có cái bánh nhân mỡ*\n*Dưới gối cậu Ngộ Nhỡ.*\nBa cậu bạn nghe xong cùng hét toáng lên. Họ cho là Mít chế giễu họ và dọa không chơi với Mít nữa.\nĐó là lần đầu tiên Mít làm thơ.",
     excerpt:
@@ -738,7 +738,7 @@ const paragraphTiengViet2Tap1: Paragraph[] = [
     grade: "Lớp 2",
     textbook: "Tiếng Việt 2 - Tập 1",
     volume: "Tập 1",
-    source: "Theo Văn lớp 3. (Trung tâm Công nghệ giáo dục).",
+    source: "Theo Văn lớp  (Trung tâm Công nghệ giáo dục).",
     addedAt: "2026-09-11",
   }),
   createParagraph({
@@ -976,7 +976,7 @@ const paragraphTiengViet2Tap1: Paragraph[] = [
     title: "Sáng kiến của bé Hà",
     authorSlug: "ho-phuong",
     content:
-      'Ở lớp cũng như ở nhà, bé Hà được coi là một cây sáng kiến.\nMột hôm, Hà hỏi bố:\n- Bố ơi, sao không có ngày của ông bà, bố nhỉ?\nThấy bố ngạc nhiên, Hà bèn giải thích:\n- Con đã có ngày 1 tháng 6. Bố là công nhân, có ngày 1 tháng 5. Mẹ có ngày 8 tháng 3. Còn ông bà thì chưa có ngày lễ nào cả.\nHai bố con bàn nhau lấy ngày lập đông hằng năm làm "ngày ông bà", vì khi trời bắt đầu rét, mọi người cần chăm lo sức khoẻ cho các cụ già.\nNgày lập đông đến gần. Hà suy nghĩ mãi mà chưa biết nên chuẩn bị quà gì biếu ông bà.\nBố khẽ nói vào tai Hà điều gì đó. Hà ngả đầu vào vai bố:\n- Con sẽ cố gắng, bố ạ.\nĐến ngày lập đông, các cô, các chú đều về chúc thọ ông bà. Ông bà cảm động lắm. Bà bảo:\n- Con cháu đông vui, hiếu thảo thế này, ông bà sẽ sống trăm tuổi.\nÔng thì ôm lấy bé Hà, nói:\n- Món quà ông thích nhất hôm nay là chùm điểm mười của cháu đấy.',
+      'Ở lớp cũng như ở nhà, bé Hà được coi là một cây sáng kiến.\nMột hôm, Hà hỏi bố:\n- Bố ơi, sao không có ngày của ông bà, bố nhỉ?\nThấy bố ngạc nhiên, Hà bèn giải thích:\n- Con đã có ngày 1 tháng  Bố là công nhân, có ngày 1 tháng  Mẹ có ngày 8 tháng  Còn ông bà thì chưa có ngày lễ nào cả.\nHai bố con bàn nhau lấy ngày lập đông hằng năm làm "ngày ông bà", vì khi trời bắt đầu rét, mọi người cần chăm lo sức khoẻ cho các cụ già.\nNgày lập đông đến gần. Hà suy nghĩ mãi mà chưa biết nên chuẩn bị quà gì biếu ông bà.\nBố khẽ nói vào tai Hà điều gì đó. Hà ngả đầu vào vai bố:\n- Con sẽ cố gắng, bố ạ.\nĐến ngày lập đông, các cô, các chú đều về chúc thọ ông bà. Ông bà cảm động lắm. Bà bảo:\n- Con cháu đông vui, hiếu thảo thế này, ông bà sẽ sống trăm tuổi.\nÔng thì ôm lấy bé Hà, nói:\n- Món quà ông thích nhất hôm nay là chùm điểm mười của cháu đấy.',
     excerpt:
       "Câu chuyện ấm áp về bé Hà nghĩ ra ngày ông bà và món quà hiếu thảo, phù hợp với mạch đọc lớp 2 về gia đình và lòng kính yêu ông bà.",
     tags: [
@@ -1389,26 +1389,395 @@ const paragraphTiengViet2Tap1: Paragraph[] = [
 
 const paragraphTiengViet2Tap2: Paragraph[] = [
   createParagraph({
-    slug: "cay-gao-goi-xuan",
-    title: "Cây gạo gọi xuân",
-    authorSlug: "bang-son",
+    slug: "chuyen-bon-mua",
+    title: "Chuyện bốn mùa",
+    authorSlug: "tu-nguyen-tinh",
     content:
-      "Cuối mùa đông, cây gạo bắt đầu nhóm màu đỏ trên nền trời còn nhạt. Lũ học trò đi ngang thường dừng lại thêm một chút, như thể mùa xuân vừa cất tiếng từ đầu cành cao nhất. Một bông hoa gạo nở đúng lúc cũng đủ làm cả con đường làng trở nên khác hẳn.",
+      "Một ngày đầu năm, bốn nàng tiên Xuân, Hạ, Thu, Đông gặp nhau. Đông cầm tay Xuân, bảo:\n- Chị là người sung sướng nhất đấy! Ai cũng yêu chị. Chị về, vườn cây nào cũng đâm chồi nảy lộc.\nXuân nói:\n- Nhưng phải có nắng của em Hạ, cây trong vườn mới đơm trái ngọt. Có em Hạ, các cô cậu học trò mới được nghỉ hè.\nCô nàng Hạ tinh nghịch xen vào:\n- Thế mà thiếu nhi lại thích em Thu nhất. Không có Thu, làm sao có vườn bưởi chín vàng, có đêm trăng rằm rước đèn, phá cỗ...\nĐông, giọng buồn buồn:\n- Chỉ có em là chẳng ai yêu.\nThu đặt tay lên vai Đông, thủ thỉ:\n- Có em mới có bập bùng bếp lửa nhà sàn, có giấc ngủ ấm trong chăn. Sao lại có người không thích em được?\nBốn nàng tiên mải chuyện trò, không biết bà Đất đã đến bên cạnh từ lúc nào. Bà vui vẻ góp chuyện:\n- Các cháu mỗi người một vẻ. Xuân làm cho cây lá tươi tốt. Hạ cho trái ngọt, hoa thơm. Thu làm cho trời xanh cao, cho học sinh nhớ ngày tựu trường. Còn cháu Đông, ai mà ghét cháu được! Cháu có công ấp ủ mầm sống để xuân về cây cối đâm chồi nảy lộc. Các cháu đều có ích, đều đáng yêu.",
     excerpt:
-      "Đoạn văn miêu tả thiên nhiên phù hợp cho Tiếng Việt 2 học kỳ hai.",
+      "Đoạn văn giàu hình ảnh bốn mùa và lời đối thoại sinh động, phù hợp với mạch đọc lớp 2 về thiên nhiên, mùa vụ và vẻ đẹp riêng của mỗi mùa.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "thien-nhien",
+      "bon-mua",
+      "hoi-thoai",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Từ Nguyên Tĩnh.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "la-thu-nham-dia-chi",
+    title: "Lá thư nhầm địa chỉ",
+    authorSlug: "hao-minh",
+    content:
+      "Mai đang giúp mẹ treo tranh Tết, chợt nghe tiếng bác đưa thư:\n- Nhà 58 có thư nhé!\nCầm phong thư trên tay, Mai ngạc nhiên:\n- Mẹ ơi, nhà mình có ai tên là Tường không nhỉ?\nMẹ dừng tay:\n- Nhà chỉ có ba người, làm gì còn ai tên là Tường nữa!\n- Nhưng đúng là thư gửi cho nhà mình mà.\nMẹ cầm phong thư xem rồi bảo:\n- Có lẽ người gửi đã ghi nhầm số nhà. Con đừng bóc thư, để trả lại bưu điện. À, hay là con đi hỏi bác Nga xem bác có biết ai là Tường không, chuyển giúp cho họ.\nCầm lá thư đi, Mai thầm mong bác tổ trưởng biết ông Tường để lá thư này không phải vòng về Hải Phòng xa xôi nữa.",
+    excerpt:
+      "Đoạn văn kể chuyện gần gũi về một lá thư gửi nhầm, phù hợp với mạch đọc lớp 2 về sự cẩn thận, thật thà và lòng tốt trong đời sống hằng ngày.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "gia-dinh",
+      "doi-song",
+      "hoi-thoai",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Hào Minh.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "thu-trung-thu",
+    title: "Thư trung thu",
+    authorSlug: "ho-chi-minh",
+    content:
+      "Mỗi năm, đến Tết Trung thu, Bác càng nhớ các cháu.\nCác cháu gửi thư cho Bác nhiều lắm, Bác rất vui. Nhưng vì Bác bận quá, không trả lời riêng cho từng cháu được. Nhân dịp Tết Trung thu, Bác gửi các cháu thư này:\nAi yêu các nhi đồng\nBằng Bác Hồ Chí Minh?\nTính các cháu ngoan ngoãn,\nMặt các cháu xinh xinh.\nMong các cháu cố gắng\nThi đua học và hành.\nTuổi nhỏ làm việc nhỏ\nTùy theo sức của mình,\nĐể tham gia kháng chiến,\nĐể gìn giữ hòa bình.\nCác cháu hãy xứng đáng\nCháu Bác Hồ Chí Minh.",
+    excerpt:
+      "Bài thư ngắn của Bác Hồ dành cho thiếu nhi, phù hợp với mạch đọc lớp 2 về Trung thu, học tập, rèn luyện và tình cảm dành cho các cháu nhỏ.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "trung-thu",
+      "hoc-tap",
+      "thi-nhi",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thư từ"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Hồ Chí Minh.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "ong-manh-thang-than-gio",
+    title: "Ông Mạnh thắng thần Gió",
+    authorSlug: "hoang-anh",
+    content:
+      "Ngày xưa, loài người chưa biết làm nhà, phải ở hang núi. Về sau, nhiều người về đồng bằng và ven biển sinh sống. Đây là nơi Thần Gió hoành hành.\nMột hôm, Thần Gió gặp một người tên là Mạnh. Thần xô ông Mạnh ngã lăn quay. Ông lồm cồm bò dậy, nổi giận, quát:\n- Thật độc ác!\nThần Gió bay đi với tiếng cười ngạo nghễ.\nTừ đó, ông Mạnh quyết chống trả. Ông vào rừng lấy gỗ dựng nhà. Cả ba lần, nhà đều bị quật đổ. Cuối cùng, ông quyết định dựng một ngôi nhà thật vững chãi. Ông đẵn những cây gỗ lớn nhất làm cột, chọn những viên đá thật to làm tường.\nNgôi nhà đã làm xong. Đêm ấy, Thần Gió lại đến đập cửa, thét:\n- Mở cửa ra!\n- Không! Sáng mai ta sẽ mở cửa mời ông vào.\nSáng hôm sau, mặt trời lên, ông Mạnh mở cửa, thấy cây cối xung quanh đổ rạp. Rõ ràng đêm qua Thần Gió đã giận dữ, lồng lộn mà không thể xô đổ ngôi nhà.\nMấy tháng sau, Thần Gió đến nhà ông Mạnh, vẻ ăn năn. Ông Mạnh an ủi và mời Thần thỉnh thoảng tới chơi. Từ đó, Thần Gió thường đến thăm ông, đem cho ngôi nhà không khí mát lành từ biển cả và hương thơm ngào ngạt của các loài hoa.",
+    excerpt:
+      "Đoạn văn kể chuyện giàu kịch tính về ông Mạnh và Thần Gió, phù hợp với mạch đọc lớp 2 về ý chí, sự bền bỉ và cách con người chế ngự thiên nhiên.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "co-tich",
+      "thien-nhien",
+      "nghi-luc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Hoàng Ánh.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "mua-xuan-den",
+    title: "Mùa xuân đến",
+    authorSlug: "nguyen-kien",
+    content:
+      "Hoa mận vừa tàn thì mùa xuân đến. Bầu trời ngày thêm xanh. Nắng vàng ngày càng rực rỡ. Vườn cây lại đâm chồi, nảy lộc. Rồi vườn cây ra hoa. Hoa bưởi nồng nàn. Hoa nhãn ngọt. Hoa cau thoảng qua. Vườn cây lại đầy tiếng chim và bóng chim bay nhảy. Những thím chích choè nhanh nhảu. Những chú khướu lắm điều. Những anh chào mào đỏm dáng. Những bác cu gáy trầm ngâm.\nChú chim sâu vui cùng vườn cây và các loài chim bạn. Nhưng trong trí thơ ngây của chú còn mãi sáng ngời hình ảnh một cành hoa mận trắng, biết nở cuối đông để báo trước mùa xuân tới.",
+    excerpt:
+      "Đoạn văn miêu tả mùa xuân trong trẻo và giàu âm thanh, phù hợp với mạch đọc lớp 2 về cây cối, chim chóc và tín hiệu đổi mùa.",
     tags: [
       "tieng-viet-2-tap-2",
       "doan-van",
       "mua-xuan",
       "thien-nhien",
+      "chim-muon",
       "van-hoc-thieu-nhi",
     ],
-    categories: ["Miêu tả", "Tản văn"],
+    categories: ["Thiếu nhi", "Miêu tả"],
     grade: "Lớp 2",
     textbook: "Tiếng Việt 2 - Tập 2",
     volume: "Tập 2",
-    source: "Đoạn văn mô phỏng cho thư viện demo.",
-    addedAt: "2026-08-04",
+    source: "Theo Nguyễn Kiên.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "mua-nuoc-noi",
+    title: "Mùa nước nổi",
+    authorSlug: "nguyen-quang-sang",
+    content:
+      "Mùa này, người làng tôi gọi là mùa nước nổi, không gọi là mùa nước lũ, vì nước lên hiền hoà. Nước mỗi ngày một dâng lên. Mưa dầm dề, mưa suốt mướt ngày này qua ngày khác.\nRồi đến rằm tháng bảy, “Rằm tháng bảy nước nhảy lên bờ”. Dòng sông Cửu Long đã no đầy, lại tràn qua bờ. Nước trong ao hồ, trong đồng ruộng của mùa mưa hoà lẫn với nước dòng sông Cửu Long.\nĐồng ruộng, vườn tược và cây cỏ như biết giữ lại hạt phù sa ở quanh mình, nước lại trong dần. Ngồi trong nhà, ta thấy cả những đàn cá ròng ròng, từng đàn, từng đàn theo cá mẹ xuôi theo dòng nước, vào tận đồng sâu.",
+    excerpt:
+      "Đoạn văn giàu không khí sông nước Nam Bộ, phù hợp với mạch đọc lớp 2 về mùa nước nổi, thiên nhiên và đời sống miền quê.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "song-nuoc",
+      "thien-nhien",
+      "nam-bo",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Miêu tả"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Quang Sáng.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "chim-son-ca-va-bong-cuc-trang",
+    title: "Chim sơn ca và bông cúc trắng",
+    authorSlug: "an-dec-xen",
+    content:
+      "Bên bờ rào, giữa đám cỏ dại, có bông cúc trắng. Một chú sơn ca sà xuống, hót rằng:\n- Cúc ơi! Cúc xinh xắn làm sao!\nCúc sung sướng khôn tả. Chim véo von mãi rồi mới bay về bầu trời xanh thẳm.\nNhưng sáng hôm sau, khi vừa xoè cánh đón bình minh, bông cúc đã nghe thấy tiếng sơn ca buồn thảm. Thì ra, sơn ca đã bị nhốt trong lồng.\nBông cúc muốn cứu chim nhưng chẳng làm gì được.\nBỗng có hai cậu bé đi vào vườn, cắt cả đám cỏ lẫn bông cúc đem về bỏ vào lồng sơn ca. Con chim bị cầm tù, họng khô bỏng vì khát, rúc mỏ vặt đám cỏ ẩm ướt. Cúc toả hương thơm ngào ngạt an ủi chim. Sơn ca dù khát, phải vặt hết nắm cỏ, vẫn không đụng đến bông hoa.\nTối rồi, chẳng ai cho con chim khốn khổ một giọt nước. Đêm ấy, sơn ca lìa đời. Bông cúc héo lả đi vì thương xót.\nSáng hôm sau, thấy sơn ca đã chết, hai cậu bé đặt con chim vào một chiếc hộp rất đẹp và chôn cất thật long trọng. Tội nghiệp con chim! Khi nó còn sống và ca hát, các cậu đã để mặc nó chết vì đói khát. Còn bông hoa, giá các cậu đừng ngắt nó thì hôm nay chắc nó vẫn đang tắm nắng mặt trời.",
+    excerpt:
+      "Đoạn văn kể chuyện buồn và giàu lòng thương về chim sơn ca với bông cúc trắng, phù hợp với mạch đọc lớp 2 về tình yêu sự sống và cách đối xử nhân hậu với muôn loài.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "truyen-ke",
+      "con-vat",
+      "hoa-la",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo An-đéc-xen.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "thong-bao-cua-thu-vien-vuon-chim",
+    title: "Thông báo của thư viện vườn chim",
+    authorSlug: "khuyet-danh",
+    content:
+      "Giờ mở cửa:\n- Buổi sáng: từ 7 giờ đến 10 giờ.\n- Buổi chiều: từ 15 giờ đến 17 giờ.\n- Các ngày nghỉ: mở cửa buổi sáng.\nCấp thẻ mượn sách:\nMời các bạn chưa có thẻ mượn sách đến làm thẻ vào sáng thứ năm hằng tuần.\nSách mới về:\n- Khi đại bàng vỗ cánh\n- Đà điểu trên sa mạc, tập 1\n- Khúc nhạc của rừng xanh\n- Tập bay\n- Tình bạn của Vạc và Bồ Nông\n- Chuyện lạ về thế giới loài chim\nPhụ trách thư viện\nVÀNG ANH",
+    excerpt:
+      "Văn bản thông báo ngắn gọn về giờ mở cửa, làm thẻ và sách mới, phù hợp với mạch đọc lớp 2 về thư viện, đọc hiểu thông tin và nề nếp sinh hoạt.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "thong-bao",
+      "thu-vien",
+      "loai-chim",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thông báo"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Tác giả khuyết danh.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "mot-tri-khon-hon-tram-tri-khon",
+    title: "Một trí khôn hơn trăm trí khôn",
+    authorSlug: "truyen-doc-1-1994",
+    content:
+      "Gà Rừng và Chồn là đôi bạn thân nhưng Chồn vẫn ngầm coi thường bạn. Một hôm, Chồn hỏi Gà Rừng:\n- Cậu có bao nhiêu trí khôn?\n- Mình chỉ có một thôi.\n- Ít thế sao? Mình thì có hàng trăm.\nMột buổi sáng, đôi bạn dạo chơi trên cánh đồng. Chợt thấy một người thợ săn, chúng cuống quýt nấp vào một cái hang. Nhưng người thợ săn đã thấy dấu chân của chúng. Ông reo lên: “Có mà trốn đằng trời!” Nói rồi, ông lấy gậy thọc vào hang.\nGà Rừng thấy nguy quá, bảo Chồn:\n- Cậu có trăm trí khôn, nghĩ kế gì đi!\nChồn buồn bã:\n- Lúc này, trong đầu mình chẳng còn một trí khôn nào cả.\nĐắn đo một lúc, Gà Rừng nghĩ ra một mẹo, ghé tai Chồn:\n- Mình sẽ làm như thế, còn cậu cứ thế nhé!\nMọi chuyện xảy ra đúng như Gà Rừng đoán. Người thợ săn lôi Gà Rừng ra, thấy cứng đờ, tưởng Gà Rừng đã chết. Ông ta quăng nó xuống đám cỏ, rồi thọc gậy vào hang bắt Chồn. Thình lình, Gà Rừng vùng chạy. Người thợ săn đuổi theo. Chỉ chờ thế, Chồn vọt ra, chạy biến vào rừng.\nHôm sau, đôi bạn gặp lại nhau. Chồn bảo Gà Rừng:\n- Một trí khôn của cậu còn hơn cả trăm trí khôn của mình.",
+    excerpt:
+      "Đoạn văn kể chuyện sinh động về Gà Rừng và Chồn, phù hợp với mạch đọc lớp 2 về mưu trí, bình tĩnh và bài học đừng huênh hoang.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "truyen-ke",
+      "con-vat",
+      "tri-khon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Truyện đọc 1, 199",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "chim-rung-tay-nguyen",
+    title: "Chim rừng Tây Nguyên",
+    authorSlug: "thien-luong",
+    content:
+      "Những cơn gió nhẹ làm mặt nước hồ Y-rơ-pao rung động. Bầu trời trong xanh soi bóng xuống đáy hồ, mặt hồ càng xanh thêm và như rộng ra mênh mông.\nNơi đây cất lên những tiếng chim ríu rít. Chim đại bàng chân vàng mỏ đỏ đang chao lượn, bóng che rợp mặt đất. Mỗi lần đại bàng vỗ cánh lại phát ra những tiếng vi vu vi vút từ trên nền trời xanh thẳm, giống như có hàng trăm chiếc đàn cùng hoà âm. Bầy thiên nga trắng muốt đang bơi lội. Những con chim kơ púc mình đỏ chót và nhỏ như quả ớt có rướn cặp mỏ thanh mảnh của mình hót lên lanh lảnh nghe như tiếng sáo.\nHọ nhà chim đủ các loài, đủ các màu sắc ríu rít bay đến đậu ở những bụi cây quanh hồ, tiếng hót rộn vang cả mặt nước.",
+    excerpt:
+      "Đoạn văn miêu tả giàu màu sắc và âm thanh về thế giới chim rừng Tây Nguyên, phù hợp với mạch đọc lớp 2 về thiên nhiên và cảnh sắc núi rừng.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "tay-nguyen",
+      "loai-chim",
+      "thien-nhien",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Miêu tả"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Thiên Lương.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "co-va-cuoc",
+    title: "Cò và Cuốc",
+    authorSlug: "nguyen-dinh-quang",
+    content:
+      "Cò đang lội ruộng bắt tép. Cuốc thấy vậy từ trong bụi rậm lần ra, hỏi:\n- Chị bắt tép vất vả thế, chẳng sợ bùn bắn bẩn hết áo trắng sao?\nCò vui vẻ trả lời:\n- Khi làm việc, ngại gì bẩn hở chị?\nCuốc bảo:\n- Em sống trong bụi cây dưới đất, nhìn lên trời xanh, thấy các anh chị trắng phau phau, đôi cánh dập dờn như múa, không nghĩ cũng có lúc chị phải khó nhọc thế này.\nCò trả lời:\n- Phải có lúc vất vả lội bùn mới có khi được thảnh thơi bay lên trời cao. Còn áo bẩn muốn sạch thì khó gì!\nKiếm ăn xong, Cò tắm rửa, tấm áo lại trắng tinh, rồi cất cánh bay, đôi cánh dập dờn như múa.",
+    excerpt:
+      "Đoạn văn ngắn và sáng ý về Cò và Cuốc, phù hợp với mạch đọc lớp 2 về lao động, sự chăm chỉ và vẻ đẹp của thành quả sau vất vả.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "loai-chim",
+      "lao-dong",
+      "doi-song",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Đình Quảng.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "bac-si-soi",
+    title: "Bác sĩ Sói",
+    authorSlug: "la-phong-ten",
+    content:
+      "Thấy Ngựa đang ăn cỏ, Sói thèm rõ dãi. Nó toan xông đến ăn thịt Ngựa, nhưng lại sợ Ngựa chạy mất. Nó bèn kiếm một cặp kính đeo lên mắt, một ống nghe cặp vào cổ, một áo choàng khoác lên người, một chiếc mũ thêu chữ thập đỏ chụp lên đầu. Xong, nó khoan thai tiến về phía Ngựa.\nSói đến gần, Ngựa mới phát hiện ra. Biết là cuống lên thì chết, Ngựa bình tĩnh đợi xem Sói giở trò gì.\nSói đến gần Ngựa, giả giọng hiền lành, bảo:\n- Bên xóm mời ta sang khám bệnh. Ta đi ngang qua đây, nếu cậu có bệnh, ta chữa giúp cho.\nNgựa lễ phép:\n- Cảm ơn bác sĩ. Cháu đau chân quá. Ông làm ơn chữa giúp cho. Hết bao nhiêu tiền, cháu xin chịu.\nSói đáp:\n- Chà! Chà! Chữa làm phúc, tiền với nong gì. Đau thế nào? Lại đây ta xem.\n- Đau ở chân sau ấy ạ. Phiền ông xem giúp.\nSói mừng rơn, mon men lại phía sau, định lựa miếng đớp sâu vào đùi Ngựa cho Ngựa hết đường chạy.\nNgựa nhón nhón chân sau, vờ rên rỉ. Thấy Sói đã cúi xuống đúng tầm, nó tung vó đá một cú trời giáng, làm Sói bật ngửa, bốn cẳng huơ giữa trời, kính vỡ tan, mũ văng ra...",
+    excerpt:
+      "Đoạn văn kể chuyện hóm hỉnh về Sói và Ngựa, phù hợp với mạch đọc lớp 2 về bình tĩnh, mưu trí và cách tự bảo vệ mình trước kẻ xấu.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "truyen-ke",
+      "con-vat",
+      "tri-khon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo La Phông-ten.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "noi-quy-dao-khi",
+    title: "Nội quy đảo khỉ",
+    authorSlug: "nguyen-trung",
+    content:
+      "Sau một lần đi chơi xa, Khỉ Nâu về quê nhà. Cảnh vật nhiều thay đổi. Thấy một tấm biển lớn ngay bến tàu, Khỉ Nâu bèn theo mấy khách du lịch đến xem.\n\nNỘI QUY ĐẢO KHỈ\nĐảo Khỉ là khu vực bảo tồn loài khỉ.\nKhách đến tham quan Đảo Khỉ cần thực hiện những điều quy định dưới đây:\n1. Mua vé tham quan trước khi lên đảo.\n2. Không trêu chọc thú nuôi trong chuồng.\n3. Không cho thú ăn các loại thức ăn lạ.\n4. Giữ gìn vệ sinh chung trên đảo.\nNgày 15 tháng 1 năm 1990\nBAN QUẢN LÍ ĐIỂM DU LỊCH ĐẢO KHỈ\n\nĐọc xong, Khỉ Nâu cười khành khạch tỏ vẻ khoái chí.",
+    excerpt:
+      "Văn bản nội quy ngắn gọn, phù hợp với mạch đọc lớp 2 về đọc hiểu thông báo, quy định nơi công cộng và ý thức giữ gìn chung.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "noi-quy",
+      "con-vat",
+      "du-lich",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Nội quy"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Trung.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "su-tu-xuat-quan",
+    title: "Sư tử xuất quân",
+    authorSlug: "la-phong-ten",
+    content:
+      "Sư Tử bàn chuyện xuất quân\nMuốn sao cho khắp thần dân trổ tài\nNhỏ to, khoẻ yếu muôn loài\nAi ai cũng được tuỳ tài lập công:\nVoi vận tải trên lưng quân bị\nVào trận sao cho khoẻ như voi.\nCông đồn, Gấu phải kịp thời,\nCáo nhiều mưu kế tính bài quân cơ.\nMẹo lừa địch, phải nhờ chú Khỉ...\nBỗng có người nảy ý tâu Vua:\n“Người ta bảo ngốc như Lừa\nNhát như Thỏ Đế, xin chưa vội dùng.”\n“Không! - Vua phán - Trẫm dùng cả chứ!\nLoại họ ra, đội ngũ không yên\nAnh Lừa lo chuyện gạo tiền,\nGiấy tờ Thỏ chạy giao liên tài tình.”\nĐã rằng khiển tướng, điều binh\nNhìn người giao việc cho tinh mới tài.",
+    excerpt:
+      "Đoạn văn giàu nhịp điệu ngụ ngôn về cách dùng người, phù hợp với mạch đọc lớp 2 về tài năng riêng của mỗi người và việc giao đúng việc đúng chỗ.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "ngu-ngon",
+      "con-vat",
+      "tri-khon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo La Phông-ten.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "qua-tim-khi",
+    title: "Quả tim khỉ",
+    authorSlug: "truyen-doc-1-1994",
+    content:
+      "Một ngày nắng đẹp, đang leo trèo trên hàng dừa ven sông, Khỉ bỗng nghe một tiếng quẫy mạnh dưới nước. Một con vật da sần sùi, dài thượt, nhe hàm răng nhọn hoắt như một lưỡi cưa sắc, trườn lên bãi cát.\nNó nhìn Khỉ bằng cặp mắt ti hí với hai hàng nước mắt chảy dài. Khỉ ngạc nhiên:\n- Bạn là ai? Vì sao bạn khóc?\n- Tôi là Cá Sấu. Tôi khóc vì chả ai chơi với tôi.\nKhỉ nghe vậy, mời Cá Sấu kết bạn.\nTừ đó, ngày nào Cá Sấu cũng đến, ăn những hoa quả mà Khỉ hái cho.\nMột hôm, Cá Sấu mời Khỉ đến chơi nhà. Khỉ nhận lời, ngồi lên lưng Cá Sấu. Bơi đã xa bờ, Cá Sấu mới bảo:\n- Vua của chúng tôi ốm nặng, phải ăn một quả tim khỉ mới khỏi. Tôi cần quả tim của bạn.\nKhỉ nghe vậy hết sức hoảng sợ. Nhưng rồi trấn tĩnh lại, nó bảo:\n- Chuyện quan trọng vậy mà bạn chẳng báo trước. Quả tim tôi để ở nhà. Mau đưa tôi về, tôi sẽ lấy tim dâng lên vua của bạn.\nCá Sấu tưởng thật, liền đưa Khỉ trở lại bờ. Tới nơi, Khỉ đu vút lên cành cây, mắng:\n- Con vật bội bạc kia! Đi đi! Chẳng ai thèm kết bạn với những kẻ giả dối như mi đâu.\nCá Sấu tẽn tò, lặn sâu xuống nước, lủi mất.",
+    excerpt:
+      "Đoạn văn kể chuyện quen thuộc về Khỉ và Cá Sấu, phù hợp với mạch đọc lớp 2 về bình tĩnh, mưu trí và cách nhận ra kẻ giả dối.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "truyen-ke",
+      "con-vat",
+      "tri-khon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Truyện đọc 1, 199",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "gau-trang-la-chua-to-mo",
+    title: "Gấu trắng là chúa tò mò",
+    authorSlug: "le-quang-long",
+    content:
+      "Ở Bắc Cực, hầu hết các con vật đều có bộ lông trắng: chim ưng trắng, cú trắng, thỏ trắng, đến gấu cũng trắng nốt. Gấu trắng là con vật to khoẻ nhất. Nó cao gần 3 mét và nặng tới 800 ki-lô-gam.\nĐặc biệt, gấu trắng rất tò mò.\nCó lần, một thuỷ thủ rời tàu đi dạo. Trên đường trở về, thấy một con gấu trắng đang xông tới, anh khiếp đảm bỏ chạy. Gấu đuổi theo. Sực nhớ là con vật này có tính tò mò, anh ném lại cái mũ.\nThấy mũ, gấu dừng lại, đánh hơi, lấy chân lật qua lật lại chiếc mũ. Xong, nó lại đuổi. Anh thuỷ thủ vứt tiếp găng tay, khăn, áo choàng... Mỗi lần như vậy, gấu đều dừng lại, tò mò xem xét. Nhưng vì nó chạy rất nhanh nên suýt nữa thì tóm được anh. May mà anh đã kịp nhảy lên tàu, vừa sợ vừa rét run cầm cập.",
+    excerpt:
+      "Đoạn văn kể chuyện ngắn về gấu trắng Bắc Cực, phù hợp với mạch đọc lớp 2 về đặc điểm loài vật, sự quan sát và cách ứng biến trong tình huống nguy hiểm.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "con-vat",
+      "bac-cuc",
+      "tri-khon",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Lê Quang Long.",
+    addedAt: "2026-09-23",
+  }),
+  createParagraph({
+    slug: "voi-nha",
+    title: "Voi nhà",
+    authorSlug: "nguyen-tran-be",
+    content:
+      "Gần tối, cơn mưa rừng ập xuống. Chiếc xe của chúng tôi bỗng khựng lại. Tứ rú ga mấy lần nhưng xe không nhúc nhích. Hai bánh trước đã vục xuống vũng lầy. Chúng tôi đành ngồi thu lu trong xe, chịu rét qua đêm.\nGần sáng, trời tạnh. Tứ nhảy xuống nhìn, lắc đầu:\n- Thế này thì hết cách rồi!\nBỗng Cần kêu lên:\n- Chạy đi! Voi rừng đấy!\nMọi người vội vã nép vào lùm cây ven đường.\nMột con voi già lững thững tiến về chiếc xe. Tứ chộp lấy khẩu súng. Cần vội ngăn lại:\n- Không được bắn!\nCon voi lúc lắc vòi ra hiệu điều gì đó, rồi đến trước mũi xe.\nTứ lo lắng:\n- Nó đập tan xe mất. Phải bắn thôi!\nNhưng kìa, con voi quặp chặt vòi vào đầu xe và co mình lôi mạnh chiếc xe qua vũng lầy. Lôi xong, nó huơ vòi về phía lùm cây rồi lững thững đi theo hướng bản Tun.\nThật may cho chúng tôi đã gặp được voi nhà.",
+    excerpt:
+      "Đoạn văn kể chuyện về voi nhà giữa rừng mưa, phù hợp với mạch đọc lớp 2 về loài vật, núi rừng và sự giúp đỡ bất ngờ đầy nghĩa tình.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "con-vat",
+      "rung-nui",
+      "tay-nguyen",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Trần Bé.",
+    addedAt: "2026-09-23",
   }),
 ];
 

@@ -864,7 +864,7 @@ const poemTiengViet1Tap2: Poem[] = [
     title: "Đi học",
     authorSlug: "minh-chinh",
     content:
-      "Hôm qua em tới trường\n\nMẹ dắt tay từng bước\n\nHôm nay mẹ lên nương\n\nMột mình em tới lớp.\n\nTrường của em be bé\n\nNằm lặng giữa rừng cây\n\nCô giáo em tre trẻ\n\nDạy em hát rất hay.\n\nHương rừng thơm đồi vắng\n\nNước suối trong thầm thì\n\nCọ xoè ô che nắng\n\nRâm mát đường em đi.",
+      "Hôm qua em tới trường\nMẹ dắt tay từng bước\nHôm nay mẹ lên nương\nMột mình em tới lớp.\n\nTrường của em be bé\nNằm lặng giữa rừng cây\nCô giáo em tre trẻ\nDạy em hát rất hay.\n\nHương rừng thơm đồi vắng\nNước suối trong thầm thì\nCọ xoè ô che nắng\nRâm mát đường em đi.",
     excerpt:
       "Bài thơ trong trẻo và giàu nhịp bước đến lớp, phù hợp với mạch đọc lớp 1 về mẹ, trường nhỏ và con đường đi học giữa núi rừng.",
     tags: [
@@ -954,7 +954,7 @@ const poemTiengViet1Tap2: Poem[] = [
     title: "Làm anh",
     authorSlug: "phan-thi-thanh-nhan",
     content:
-      'Làm anh khó đấy\n\nPhải đâu chuyện đùa\n\nVới em gái bé\n\nPhải "người lớn" cơ.\n\nKhi em bé khóc\n\nAnh phải dỗ dành\n\nNếu em bé ngã\n\nAnh nâng dịu dàng.\n\nMẹ cho quà bánh\n\nChia em phần hơn\n\nCó đồ chơi đẹp\n\nCũng nhường em luôn.\n\nLàm anh thật khó\n\nNhưng mà thật vui\n\nAi yêu em bé\n\nThì làm được thôi.',
+      'Làm anh khó đấy\nPhải đâu chuyện đùa\nVới em gái bé\nPhải "người lớn" cơ.\n\nKhi em bé khóc\nAnh phải dỗ dành\nNếu em bé ngã\nAnh nâng dịu dàng.\n\nMẹ cho quà bánh\nChia em phần hơn\nCó đồ chơi đẹp\nCũng nhường em luôn.\n\nLàm anh thật khó\nNhưng mà thật vui\nAi yêu em bé\nThì làm được thôi.',
     excerpt:
       "Bài thơ ngắn, ấm và giàu nhịp nhắc nhở, phù hợp với mạch đọc lớp 1 về anh em, sự nhường nhịn và tình cảm gia đình.",
     tags: [
@@ -1042,7 +1042,7 @@ const poemTiengViet1Tap2: Poem[] = [
     title: "Lăng Bác",
     authorSlug: "nguyen-phan-hach",
     content:
-      "Nắng Ba Đình mùa thu\n\nThắm vàng trên lăng Bác\n\nVẫn trong vắt bầu trời\n\nNgày Tuyên ngôn Độc lập.\n\nÁng mây nào sà thấp\n\nTrên vầng đá hoa cương.\n\nEm đi trên Quảng trường\n\nBâng khuâng như vẫn thấy\n\nNắng reo trên lễ đài\n\nCó bàn tay Bác vẫy.",
+      "Nắng Ba Đình mùa thu\nThắm vàng trên lăng Bác\nVẫn trong vắt bầu trời\nNgày Tuyên ngôn Độc lập.\nÁng mây nào sà thấp\nTrên vầng đá hoa cương.\nEm đi trên Quảng trường\nBâng khuâng như vẫn thấy\nNắng reo trên lễ đài\nCó bàn tay Bác vẫy.",
     excerpt:
       "Bài thơ ngắn, trang trọng và trong trẻo, phù hợp với mạch đọc lớp 1 về Bác Hồ, Quảng trường Ba Đình và tình cảm kính yêu đất nước.",
     tags: [
@@ -1064,7 +1064,7 @@ const poemTiengViet1Tap2: Poem[] = [
     title: "Gửi lời chào lớp Một",
     authorSlug: "huu-tuong",
     content:
-      "Lớp Một ơi! Lớp Một!\n\nĐón em vào năm trước\n\nNay giờ phút chia tay\n\nGửi lời chào tiến bước!\n\nChào bảng đen cửa sổ\n\nChào chỗ ngồi thân quen\n\nTất cả! Chào ở lại\n\nĐón các bạn nhỏ lên.\n\nChào cô giáo kính mến\n\nCô sẽ xa chúng em...\n\nLàm theo lời cô dạy\n\nCô sẽ luôn ở bên.\n\nLớp Một ơi! Lớp Một!\n\nĐón em vào năm trước\n\nNay giờ phút chia tay\n\nGửi lời chào tiến bước!",
+      "Lớp Một ơi! Lớp Một!\nĐón em vào năm trước\nNay giờ phút chia tay\nGửi lời chào tiến bước!\n\nChào bảng đen cửa sổ\nChào chỗ ngồi thân quen\nTất cả! Chào ở lại\nĐón các bạn nhỏ lên.\n\nChào cô giáo kính mến\nCô sẽ xa chúng em...\nLàm theo lời cô dạy\nCô sẽ luôn ở bên.\n\nLớp Một ơi! Lớp Một!\nĐón em vào năm trước\nNay giờ phút chia tay\nGửi lời chào tiến bước!",
     excerpt:
       "Bài thơ ngắn, lưu luyến và trong trẻo, phù hợp với mạch đọc lớp 1 về chia tay lớp cũ, cô giáo và bước chuyển lên lớp mới.",
     tags: [
@@ -1222,6 +1222,8 @@ const poemTiengViet1Tap2: Poem[] = [
     authorSlug: "khuyet-danh",
     content:
       "Nơi ấy ngôi sao khuya\nSoi vào trong giấc ngủ\nNgọn đèn khuya bóng mẹ\nSáng một vùng trên sân.",
+    fullContent:
+      "Nơi này ai cũng quen\nNgay từ thời tấm bé\nKhi tay bà, tay mẹ\nCòn dắt vòng đi men.\n\nNơi bố mẹ ngày đêm\nLúc nào qua cũng vội,\nNơi bạn bè chạy tới\nThường lúc nào cũng vui.\n\nNơi này đã đưa tôi\nBuổi đầu tiên đến lớp\nNay con đường xa tắp,\nVẫn đang chờ tôi đi.\n\nNơi ấy ngôi sao khuya\nSoi vào trong giấc ngủ\nNgọn đèn khuya bóng mẹ\nSáng một vầng trên sân.",
     excerpt:
       "Bài thơ ngắn, dịu và ấm, phù hợp với mạch đọc lớp 1 về mẹ, đêm khuya và tình cảm gia đình.",
     tags: ["tieng-viet-1-tap-2", "tho", "gia-dinh", "me", "van-hoc-thieu-nhi"],
@@ -1415,8 +1417,8 @@ const poemTiengViet1Tap2: Poem[] = [
   }),
   createPoem({
     slug: "quyen-vo-cua-em",
-    title: "Quyền vở của em",
-    authorSlug: "khuyet-danh",
+    title: "Quyển vở của em",
+    authorSlug: "quang-huy",
     content:
       "Quyển vở này mở ra\nBao nhiêu trang giấy trắng\nTừng dòng kẻ ngay ngắn\nNhư chúng em xếp hàng.\n\nLật từng trang, từng trang\nGiấy trắng sờ mát rượi\nThơm tho mùi giấy mới\nNắn nót bàn tay xinh.\n\nÔi quyển vở mới tinh\nEm viết cho sạch, đẹp\nChữ đẹp là tính nết\nCủa những người trò ngoan.",
     excerpt:
@@ -1432,7 +1434,7 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Quang Huy.",
     addedAt: "2026-08-13",
   }),
   createPoem({
@@ -1528,9 +1530,11 @@ const poemTiengViet1Tap2: Poem[] = [
   createPoem({
     slug: "nguong-cua",
     title: "Ngưỡng cửa",
-    authorSlug: "khuyet-danh",
+    authorSlug: "vu-quan-phuong",
     content:
       "Nơi này ai cũng quen\nNgay từ thời tấm bé\nKhi tay bà, tay mẹ\nCòn dắt vòng đi men.\n\nNơi bố mẹ ngày đêm\nLúc nào qua cũng vội,\nNơi bạn bè chạy tới\nThường lúc nào cũng vui.\n\nNơi này đã đưa tôi\nBuổi đầu tiên đến lớp\nNay con đường xa tắp,\nVẫn đang chờ tôi đi.",
+    fullContent:
+      "Nơi này ai cũng quen\nNgay từ thời tấm bé\nKhi tay bà, tay mẹ\nCòn dắt vòng đi men.\n\nNơi bố mẹ ngày đêm\nLúc nào qua cũng vội,\nNơi bạn bè chạy tới\nThường lúc nào cũng vui.\n\nNơi này đã đưa tôi\nBuổi đầu tiên đến lớp\nNay con đường xa tắp,\nVẫn đang chờ tôi đi.\n\nNơi ấy ngôi sao khuya\nSoi vào trong giấc ngủ\nNgọn đèn khuya bóng mẹ\nSáng một vầng trên sân.",
     excerpt:
       "Bài thơ ngắn, lắng và gần gũi, phù hợp với mạch đọc lớp 1 về mái nhà, gia đình và bước đi đầu tiên ra thế giới rộng hơn.",
     tags: [
@@ -1545,13 +1549,13 @@ const poemTiengViet1Tap2: Poem[] = [
     grade: "Lớp 1",
     textbook: "Tiếng Việt 1 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ do người dùng bổ sung cho thư viện.",
+    source: "Theo Vũ Quần Phương.",
     addedAt: "2026-08-13",
   }),
   createPoem({
     slug: "ke-cho-be-nghe",
     title: "Kể cho bé nghe",
-    authorSlug: "khuyet-danh",
+    authorSlug: "tran-dang-khoa",
     content:
       "Hay nói ầm ĩ\nLà con vịt bầu.\n\nHay hỏi đâu đâu\nLà con chó vện.\n\nHay chăng dây điện\nLà con nhện con.\n\nĂn no quay tròn\nLà cối xay lúa.\n\nMồm thở ra gió\nLà cái quạt hòm.\n\nKhông thèm cỏ non\nLà con trâu sắt.\n\nRồng phun nước bạc\nLà chiếc máy bơm.\n\nDùng miệng nấu cơm\nLà cua, là cáy...",
     excerpt:
@@ -1829,28 +1833,50 @@ const poemTiengViet2Tap1: Poem[] = [
 
 const poemTiengViet2Tap2: Poem[] = [
   createPoem({
-    slug: "hat-gao-lang-ta",
-    title: "Hạt gạo làng ta",
-    authorSlug: "tran-dang-khoa",
+    slug: "mua-bong-may",
+    title: "Mưa bóng mây",
+    authorSlug: "to-dong-hai",
     content:
-      "Hạt gạo thơm trong mùi rơm mới\nCó giọt mồ hôi đọng giữa trưa hè\n\nĐi qua những mùa tay mẹ gặt\nThành bữa cơm lành nuôi lớn tiếng quê.",
+      "Cơn mưa nào lạ thế\nThoáng qua rồi tạnh ngay\nEm về nhà hỏi mẹ\nMẹ cười: “Mưa bóng mây.”\n\nCơn mưa rơi nho nhỏ\nKhông làm ướt tóc ai\nTay em che trang vở\nMưa chẳng khắp bàn tay.\n\nMưa yêu em mưa đến\nDung dăng cùng đùa vui\nMưa cũng làm nũng mẹ\nVừa khóc xong đã cười.",
     excerpt:
-      "Một bài thơ giàu không khí đồng quê và lao động, phù hợp cho mạch đọc cuối năm lớp 2.",
+      "Bài thơ nhỏ nhẹ và trong trẻo về cơn mưa bóng mây, phù hợp với mạch đọc lớp 2 về thiên nhiên gần gũi và cảm xúc trẻ thơ.",
     tags: [
       "tieng-viet-2-tap-2",
       "tho",
-      "lao-dong",
-      "gia-dinh",
-      "tho-thieu-nhi",
-      "que-huong",
+      "thien-nhien",
+      "mua-he",
+      "tuoi-tho",
+      "van-hoc-thieu-nhi",
     ],
-    categories: ["Thiếu nhi", "Miêu tả"],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
     grade: "Lớp 2",
     textbook: "Tiếng Việt 2 - Tập 2",
     volume: "Tập 2",
-    source: "Bài thơ mô phỏng cho thư viện demo.",
-    featured: true,
-    addedAt: "2026-08-04",
+    source: "Theo Tô Đông Hải.",
+    addedAt: "2026-09-23",
+  }),
+  createPoem({
+    slug: "ve-chim",
+    title: "Vè chim",
+    authorSlug: "dan-gian",
+    content:
+      "Hay chạy lon xon\nLà gà mới nở\nVừa đi vừa nhảy\nLà em sáo xinh\nHay nói linh tinh\nLà con liếu điếu\nHay nghịch hay trêu\nLà cậu chìa vôi\nHay chao đớp mồi\nLà chim chèo bẻo\nTính hay mách lẻo\nThím khách trước nhà\nHay nhặt lân la\nLà bà chim sẻ\nCó tình có nghĩa\nLà mẹ chim sâu\nGiục hè đến mau\nLà cô tu hú\nNhấp nhem buồn ngủ\nLà bác cú mèo...",
+    excerpt:
+      "Bài vè dân gian vui nhộn về các loài chim, phù hợp với mạch đọc lớp 2 về thiên nhiên, âm điệu dân gian và cách quan sát hồn nhiên của trẻ nhỏ.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "tho",
+      "ve",
+      "loai-chim",
+      "thien-nhien",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Dân gian"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Dân gian.",
+    addedAt: "2026-09-23",
   }),
 ];
 
