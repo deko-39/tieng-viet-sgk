@@ -1878,6 +1878,75 @@ const poemTiengViet2Tap2: Poem[] = [
     source: "Dân gian.",
     addedAt: "2026-09-23",
   }),
+  createPoem({
+    slug: "be-nhin-bien",
+    title: "Bé nhìn biển",
+    authorSlug: "tran-manh-hao",
+    content:
+      "Nghỉ hè với bố\nBé ra biển chơi\nTưởng rằng biển nhỏ\nMà to bằng trời.\n\nNhư con sông lớn\nChỉ có một bờ\nBãi giằng với sóng\nChơi trò kéo co.\n\nPhì phò như bễ\nBiển mệt thở rung\nCòng giơ gọng vó\nĐịnh khiêng sóng lừng.\n\nNghìn con sóng khỏe\nLon ta lon ton\nBiển to lớn thế\nVẫn là trẻ con.",
+    excerpt:
+      "Bài thơ hồn nhiên về biển qua cái nhìn của bé, phù hợp với mạch đọc lớp 2 về thiên nhiên, mùa hè và trí tưởng tượng trẻ thơ.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "tho",
+      "bien-ca",
+      "thien-nhien",
+      "tuoi-tho",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Trần Mạnh Hảo.",
+    addedAt: "2026-09-30",
+  }),
+  createPoem({
+    slug: "cay-dua",
+    title: "Cây dừa",
+    authorSlug: "tran-dang-khoa",
+    content:
+      "Cây dừa xanh toả nhiều tàu,\nDang tay đón gió, gật đầu gọi trăng.\nThân dừa bạc phếch tháng năm,\nQuả dừa - đàn lợn con nằm trên cao.\nĐêm hè hoa nở cùng sao,\nTàu dừa - chiếc lược chải vào mây xanh.\nAi mang nước ngọt, nước lành,\nAi đeo bao hũ rượu quanh cổ dừa.\nTiếng dừa làm dịu nắng trưa,\nGọi đàn gió đến cùng dừa múa reo.\nTrời trong đầy tiếng rì rào,\nĐàn cò đánh nhịp bay vào bay ra.\nĐứng canh trời đất bao la\nMà dừa đủng đỉnh như là đứng chơi.",
+    excerpt:
+      "Bài thơ giàu nhạc điệu và hình ảnh về cây dừa, phù hợp với mạch đọc lớp 2 về thiên nhiên, làng quê và sức gợi tưởng tượng trong thơ thiếu nhi.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "tho",
+      "cay-coi",
+      "thien-nhien",
+      "dong-que",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Thiên nhiên"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Trần Đăng Khoa.",
+    addedAt: "2026-09-30",
+  }),
+  createPoem({
+    slug: "chau-nho-bac-ho",
+    title: "Cháu nhớ Bác Hồ",
+    authorSlug: "thanh-hai",
+    content:
+      "Đêm nay bên bến Ô Lâu,\nCháu ngồi cháu nhớ chòm râu Bác Hồ.\nNhớ hình Bác giữa bóng cờ\nHồng hào đôi má, bạc phơ mái đầu.\nMắt hiền sáng tựa vì sao\nBác nhìn đến tận Cà Mau cuối trời.\nNhớ khi trăng sáng đầy trời\nTrung thu Bác gửi những lời vào thăm.\nĐêm đêm cháu những bâng khuâng\nGiở xem ảnh Bác cất thầm bấy lâu.\nNhìn mắt sáng, nhìn chòm râu,\nNhìn vầng trán rộng, nhìn đầu bạc phơ.\nCàng nhìn càng lại ngẩn ngơ,\nÔm hôn ảnh Bác mà ngỡ Bác hôn.",
+    excerpt:
+      "Bài thơ giàu cảm xúc về nỗi nhớ Bác Hồ, phù hợp với mạch đọc lớp 2 về tình cảm kính yêu Bác, thiếu nhi và những hình ảnh thân thương gần gũi.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "tho",
+      "bac-ho",
+      "thieu-nhi",
+      "cam-xuc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Cảm xúc"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Thanh Hải.",
+    addedAt: "2026-09-30",
+  }),
 ];
 
 const poemTiengViet3Tap1: Poem[] = [

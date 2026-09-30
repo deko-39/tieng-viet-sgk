@@ -56,6 +56,15 @@ export const authors: Author[] = [
     featured: true,
   },
   {
+    id: "thanh-hai",
+    slug: "thanh-hai",
+    name: "Thanh Hải",
+    bio: "Nhà thơ với giọng điệu chân thành, giàu tình cảm với đất nước, Bác Hồ và thiếu nhi, thường gợi những hình ảnh mộc mạc mà tha thiết.",
+    hometown: "Thừa Thiên Huế",
+    born: 1930,
+    died: 1980,
+  },
+  {
     id: "doan-gioi",
     slug: "doan-gioi",
     name: "Đoàn Giỏi",
@@ -287,6 +296,12 @@ export const authors: Author[] = [
     featured: true,
   },
   {
+    id: "nguyen-minh",
+    slug: "nguyen-minh",
+    name: "Nguyễn Minh",
+    bio: "Tác giả của những bài đọc gần gũi với đời sống làng xóm và sinh hoạt cộng đồng, thường gợi không khí quây quần, hồn hậu và niềm vui chung của trẻ nhỏ.",
+  },
+  {
     id: "nguyen-minh-chau",
     slug: "nguyen-minh-chau",
     name: "Nguyễn Minh Châu",
@@ -377,6 +392,24 @@ export const authors: Author[] = [
     bio: "Tác giả của những bài đọc ngắn ấm áp về đời sống thường ngày, phép lịch sự và cách ứng xử dịu dàng của trẻ nhỏ.",
   },
   {
+    id: "tran-manh-hao",
+    slug: "tran-manh-hao",
+    name: "Trần Mạnh Hảo",
+    bio: "Nhà thơ có những bài thơ thiếu nhi giàu nhịp điệu và hình ảnh, thường gợi ra thế giới thiên nhiên rộng lớn qua cái nhìn hồn nhiên của trẻ nhỏ.",
+  },
+  {
+    id: "truong-mi-duc",
+    slug: "truong-mi-duc",
+    name: "Trương Mĩ Đức",
+    bio: "Tác giả của những bài đọc thiếu nhi giàu đối thoại và tình bạn, thường gắn với thế giới loài vật dưới góc nhìn hồn nhiên, gần gũi.",
+  },
+  {
+    id: "dat-nuoc-ngan-nam",
+    slug: "dat-nuoc-ngan-nam",
+    name: "Đất nước ngàn năm",
+    bio: "Nguồn tuyển chọn các bài đọc về danh lam thắng cảnh, lịch sử và vẻ đẹp văn hóa Việt Nam, gần với mạch cảm thụ thiên nhiên và quê hương dành cho học sinh nhỏ tuổi.",
+  },
+  {
     id: "phan-thi-thanh-nhan",
     slug: "phan-thi-thanh-nhan",
     name: "Phan Thị Thanh Nhàn",
@@ -417,6 +450,36 @@ export const authors: Author[] = [
     slug: "nguyen-xuan-sanh",
     name: "Nguyễn Xuân Sanh",
     bio: "Nhà thơ có những bài thơ thiếu nhi ấm áp về lớp học, cô giáo và cảm xúc trong trẻo của tuổi nhỏ.",
+  },
+  {
+    id: "nguyen-khac-vien",
+    slug: "nguyen-khac-vien",
+    name: "Nguyễn Khắc Viện",
+    bio: "Tác giả của những bài đọc giàu hình ảnh về làng quê và ký ức tuổi thơ, thường gợi không gian đồng ruộng, cây cổ thụ và nhịp sống thanh bình.",
+  },
+  {
+    id: "tran-hong-tham",
+    slug: "tran-hong-tham",
+    name: "Trần Hồng Thắm",
+    bio: "Tác giả của những bài đọc thiếu nhi ngắn gọn, giàu đối thoại và bài học ứng xử, thường gợi lòng trắc ẩn với cây cối và thiên nhiên quanh mình.",
+  },
+  {
+    id: "tuy-phuong-thanh-tu",
+    slug: "tuy-phuong-thanh-tu",
+    name: "Túy Phương - Thanh Tú",
+    bio: "Nguồn bài đọc thiếu nhi giàu không khí gần gũi và những câu chuyện đẹp về Bác Hồ, thường nhấn mạnh sự thật thà, biết nhận lỗi và lòng yêu thương trẻ nhỏ.",
+  },
+  {
+    id: "bac-ho-kinh-yeu",
+    slug: "bac-ho-kinh-yeu",
+    name: "Bác Hồ kính yêu",
+    bio: "Nguồn bài đọc quen thuộc về Bác Hồ, gắn với những câu chuyện giản dị, nhân hậu và giàu ý nghĩa dành cho thiếu nhi.",
+  },
+  {
+    id: "tap-doc-lop-4-1977",
+    slug: "tap-doc-lop-4-1977",
+    name: "Tập đọc lớp 4, 1977",
+    bio: "Nguồn bài đọc học đường gắn với những trang văn giàu hình ảnh về đất nước, cảnh quan và lòng thành kính đối với Bác Hồ.",
   },
   {
     id: "to-hoai",

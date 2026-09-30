@@ -29,20 +29,20 @@ type AlphabetLetterSeed = Omit<AlphabetLetter, "id" | "image"> & {
 function createAlphabetLetter(seed: AlphabetLetterSeed): AlphabetLetter {
   const placeholderSubject =
     seed.displayLabel?.toLowerCase() ?? `chữ ${seed.uppercaseForm}`;
+  const illustrationPath = `/illustration/bang-chu-cai/${seed.slug}/minh-hoa`;
 
   return {
     ...seed,
     id: seed.slug,
-    image:
-      seed.image ??
-      createPlaceholderImage(
+    image: seed.image ?? {
+      ...createPlaceholderImage(
         seed.slug,
         `Minh họa ${placeholderSubject}`,
         seed.imageCaption ??
           `Vị trí minh họa cho ${placeholderSubject} đang chờ bổ sung hình ảnh.`,
-        "Bảng chữ cái",
-        seed.slug,
       ),
+      src: illustrationPath,
+    },
   };
 }
 
