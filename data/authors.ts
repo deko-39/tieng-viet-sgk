@@ -707,6 +707,30 @@ export const authors: Author[] = [
     bio: "Nguồn truyện cổ quen thuộc với những câu chuyện giàu yếu tố dân gian, thường gửi gắm bài học về chăm chỉ, nết ở và cách sống.",
   },
   {
+    id: "truyen-co-kho-mu",
+    slug: "truyen-co-kho-mu",
+    name: "Truyện cổ Khơ-mú",
+    bio: "Truyện cổ của người Khơ-mú.",
+  },
+  {
+    id: "truyen-ngu-ngon",
+    slug: "truyen-ngu-ngon",
+    name: "Truyện ngụ ngôn",
+    bio: "Những câu chuyện ngắn gửi gắm bài học qua tình huống gần gũi.",
+  },
+  {
+    id: "nguyen-huy-tuong",
+    slug: "nguyen-huy-tuong",
+    name: "Nguyễn Huy Tưởng",
+    bio: "Nhà văn Việt Nam với nhiều tác phẩm viết về lịch sử dân tộc.",
+  },
+  {
+    id: "phuong-vu",
+    slug: "phuong-vu",
+    name: "Phượng Vũ",
+    bio: "Tác giả bài đọc về anh Hồ Giáo và đàn bê trên đồng cỏ Ba Vì.",
+  },
+  {
     id: "xu-khom-lin-xki",
     slug: "xu-khom-lin-xki",
     name: "Xu-khôm-lin-xki",

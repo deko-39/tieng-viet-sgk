@@ -1947,6 +1947,28 @@ const poemTiengViet2Tap2: Poem[] = [
     source: "Theo Thanh Hải.",
     addedAt: "2026-09-30",
   }),
+  createPoem({
+    slug: "tieng-choi-tre",
+    title: "Tiếng chổi tre",
+    authorSlug: "to-huu",
+    content:
+      "Những đêm hè\nKhi ve ve\nĐã ngủ\nTôi lắng nghe\nTrên đường Trần Phú\nTiếng chổi tre\nXao xác\nHàng me\nTiếng chổi tre\nĐêm hè\nQuét rác...\nNhững đêm đông\nKhi cơn giông\nVừa tắt\nTôi đứng trông\nTrên đường lặng ngắt\nChị lao công\nNhư sắt\nNhư đồng\nChị lao công\nĐêm đông\nQuét rác...\nNhớ em nghe\nTiếng chổi tre\nChị quét\nNhững đêm hè\nĐêm đông gió rét\nTiếng chổi tre\nSớm tối\nĐi về\nGiữ sạch lề\nĐẹp lối\nEm nghe!",
+    excerpt:
+      "Bài thơ về tiếng chổi tre và công việc thầm lặng của chị lao công.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "tho",
+      "lao-dong",
+      "thanh-pho",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Lao động"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Tố Hữu.",
+    addedAt: "2026-10-13",
+  }),
 ];
 
 const poemTiengViet3Tap1: Poem[] = [

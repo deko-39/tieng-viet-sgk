@@ -2078,6 +2078,177 @@ const paragraphTiengViet2Tap2: Paragraph[] = [
     source: "Theo Bác Hồ kính yêu.",
     addedAt: "2026-09-30",
   }),
+  createParagraph({
+    slug: "chuyen-qua-bau",
+    title: "Chuyện quả bầu",
+    authorSlug: "truyen-co-kho-mu",
+    content:
+      "Ngày xửa ngày xưa có hai vợ chồng đi rừng, bắt được một con dúi. Dúi lạy van xin tha, hứa sẽ nói một điều bí mật. Hai vợ chồng thương tình tha cho. Dúi báo sắp có mưa to gió lớn làm ngập lụt khắp nơi. Nó khuyên họ lấy khúc gỗ to, khoét rỗng, chuẩn bị thức ăn đủ bảy ngày, bảy đêm, rồi chui vào đó, bịt kín miệng gỗ bằng sáp ong, hết hạn bảy ngày hãy chui ra. Hai vợ chồng làm theo. Họ còn khuyên bà con trong bản cùng làm nhưng chẳng ai tin. Hai người vừa chuẩn bị xong thì sấm chớp đùng đùng, mây đen ùn ùn kéo đến. Mưa to, gió lớn, nước ngập mênh mông. Muôn loài đều chết chìm trong biển nước. Nhờ sống trong khúc gỗ nổi như thuyền, hai vợ chồng thoát nạn. Sau bảy ngày, họ chui ra. Cỏ cây vàng úa. Mặt đất vắng tanh không còn một bóng người. Ít lâu sau, người vợ sinh ra một quả bầu. Thấy chồng buồn, chị đem bầu cất lên giàn bếp. Một lần, hai vợ chồng đi làm nương về, nghe thấy tiếng cười đùa trong bếp. Lấy làm lạ, họ lấy quả bầu xuống, áp tai nghe thì thấy có tiếng lao xao. Người vợ lấy que đốt thành cái dùi, rồi nhẹ nhàng dùi quả bầu.\nLạ thay, từ trong quả bầu, những con người bé nhỏ nhảy ra. Người Khơ-mú nhanh nhảu ra trước, dính than nên hơi đen. Tiếp đến, người Thái, người Mường, người Dao, người Hmông, người Ê-đê, người Ba-na, người Kinh,... lần lượt ra theo.\nĐó là tổ tiên của các dân tộc anh em trên đất nước ta ngày nay.",
+    excerpt:
+      "Trích đoạn truyện cổ Khơ-mú về nguồn gốc các dân tộc anh em trên đất nước ta.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "truyen-co",
+      "dat-nuoc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Truyện cổ Khơ-mú.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "quyen-so-lien-lac",
+    title: "Quyển sổ liên lạc",
+    authorSlug: "nguyen-minh",
+    content:
+      "Ai cũng bảo bố Trung lắm hoa tay. Bố làm gì cũng khéo, viết chữ thì đẹp. Chẳng hiểu sao, Trung không có được hoa tay như thế. Tháng nào, trong sổ liên lạc, cô giáo cũng nhắc Trung phải tập viết thêm ở nhà.\nMột hôm, bố lấy trong tủ ra một quyển sổ mỏng đã ngả màu, đưa cho Trung. Trung ngạc nhiên: đó là quyển sổ liên lạc của bố ngày bố còn là một cậu học trò lớp hai. Trang sổ nào cũng ghi lời thầy khen bố Trung chăm ngoan, học giỏi. Nhưng cuối lời phê, thầy thường nhận xét chữ bố Trung nguệch ngoạc, cần luyện viết nhiều hơn. Trung băn khoăn:\n- Sao chữ bố đẹp thế mà thầy còn chê?\nBố bảo:\n- Đấy là do sau này bố tập viết rất nhiều, chữ mới được như vậy.\n- Thế bố có được thầy khen không?\nGiọng bố buồn hẳn:\n- Không. Năm bố học lớp ba, thầy đi bộ đội rồi hi sinh.",
+    excerpt:
+      "Câu chuyện về Trung, quyển sổ liên lạc của bố và việc kiên trì luyện chữ.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "gia-dinh",
+      "hoc-tap",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Minh.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "bop-nat-qua-cam",
+    title: "Bóp nát quả cam",
+    authorSlug: "nguyen-huy-tuong",
+    content:
+      "Giặc Nguyên cho sứ thần sang giả vờ mượn đường để xâm chiếm nước ta. Thấy sứ giặc ngang ngược đủ điều, Trần Quốc Toản vô cùng căm giận.\nSáng nay, biết Vua họp bàn việc nước ở dưới thuyền rồng, Quốc Toản quyết đợi gặp Vua để nói hai tiếng “xin đánh”. Đợi từ sáng đến trưa, vẫn không được gặp, cậu bèn liều chết xô mấy người lính gác ngã chúi, xăm xăm xuống bến. Quân lính ập đến vây kín. Quốc Toản mặt đỏ bừng bừng, tuốt gươm, quát lớn:\n- Ta xuống xin bệ kiến Vua, không kẻ nào được giữ ta lại.\nVừa lúc ấy, cuộc họp dưới thuyền rồng tạm nghỉ, Vua cùng các vương hầu ra ngoài mui thuyền.\nQuốc Toản bèn chạy đến, quỳ xuống tâu:\n- Cho giặc mượn đường là mất nước. Xin Bệ hạ cho đánh!\nNói xong, cậu tự đặt thanh gươm lên gáy, xin chịu tội.\nVua truyền cho Quốc Toản đứng dậy, ôn tồn bảo:\n- Quốc Toản làm trái phép nước, lẽ ra phải trị tội. Nhưng xét thấy em còn trẻ mà đã biết lo việc nước, ta có lời khen.\nNói rồi, Vua ban cho Quốc Toản một quả cam.\nQuốc Toản tạ ơn Vua, chân bước lên bờ mà lòng ấm ức: “Vua ban cho cam quý nhưng xem ta như trẻ con, vẫn không cho dự bàn việc nước.” Nghĩ đến quân giặc đang lăm le đè đầu cưỡi cổ dân mình, cậu nghiến răng, hai bàn tay bóp chặt.\nThấy Quốc Toản trở ra, mọi người ùa tới. Cậu xoè bàn tay phải cho họ xem cam quý Vua ban. Nhưng quả cam đã nát từ bao giờ.",
+    excerpt:
+      "Câu chuyện về Trần Quốc Toản và quyết tâm bảo vệ đất nước.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "dat-nuoc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Huy Tưởng.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "la-co",
+    title: "Lá cờ",
+    authorSlug: "nguyen-quang-sang",
+    content:
+      "- Ra coi, mau lên!\nChị tôi vừa gọi, vừa kéo tôi chạy ra cửa. Chị chỉ tay về phía bót:\n- Thấy gì chưa?\nTôi thấy rồi. Cờ! Cờ đỏ sao vàng trên cột cờ trước bót. Tôi ngỡ ngàng ngắm lá cờ rực rỡ với ngôi sao vàng năm cánh đang bay phấp phới trên nền trời xanh mênh mông buổi sáng.\nCờ mọc trước cửa mỗi nhà. Cờ bay trên những ngọn cây xanh lá. Cờ đậu trên tay những người đang lũ lượt đổ về chợ. Trên dòng sông mênh mông, bao nhiêu là xuồng với những lá cờ mỗi lúc mỗi gần nhau, đổ về bến chợ. Xuồng nối nhau, san sát, kết thành một chiếc bè đầy cờ, bập bềnh trên sông.\nĐó là buổi mít tinh đầu tiên của dân làng tôi mừng ngày Cách mạng tháng Tám thành công.",
+    excerpt:
+      "Khung cảnh dân làng mừng ngày Cách mạng tháng Tám thành công với những lá cờ đỏ sao vàng.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "dat-nuoc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Nguyễn Quang Sáng.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "luom",
+    title: "Lượm",
+    authorSlug: "to-huu",
+    content:
+      "Chú bé loắt choắt\nCái xắc xinh xinh\nCái chân thoăn thoắt\nCái đầu nghênh nghênh.\nCa lô đội lệch\nMồm huýt sáo vang\nNhư con chim chích\nNhảy trên đường vàng...\nMột hôm nào đó\nNhư bao hôm nào\nChú đồng chí nhỏ\nBỏ thư vào bao.\nVụt qua mặt trận\nĐạn bay vèo vèo\nThư đề “Thượng khẩn”\nSợ chi hiểm nghèo.\nĐường quê vắng vẻ\nLúa trổ đòng đòng\nCa lô chú bé\nNhấp nhô trên đồng...",
+    excerpt:
+      "Trích đoạn về chú bé liên lạc Lượm, giữ nguyên các dòng thơ.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "dat-nuoc",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Lịch sử"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Tố Hữu.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "nguoi-lam-do-choi",
+    title: "Người làm đồ chơi",
+    authorSlug: "xuan-quynh",
+    content:
+      "Bác Nhân, hàng xóm nhà tôi, là một người làm đồ chơi bằng bột màu. Ở ngoài phố, cái sào nứa cắm đồ chơi của bác dựng chỗ nào là chỗ ấy trẻ con xúm lại. Các bạn ngắm đồ chơi, tò mò xem bác nặn những ông Bụt, Thạch Sanh, Tôn Ngộ Không, những con vịt, con gà,... sắc màu sặc sỡ.\n\nBác Nhân rất vui với công việc của mình. Mỗi chiều bán hàng về, bác lại kể cho tôi nghe trẻ nhỏ thích đồ chơi của bác như thế nào.\n\nDạo này, hàng của bác Nhân bỗng bị ế. Những đồ chơi mới bằng nhựa đã xuất hiện.\n\nMột hôm, bác Nhân bảo: bác sắp về quê làm ruộng, không nặn đồ chơi nữa.\n\nTôi suýt khóc, nhưng cố tỏ ra bình tĩnh:\n\n- Bác đừng về. Bác ở đây làm đồ chơi bán cho chúng cháu.\n- Nhưng độ này chả mấy ai mua đồ chơi của bác nữa.\n- Cháu mua và sẽ rủ bạn cháu cùng mua.\nBác cảm động ôm lấy tôi.\n\nHôm sau là buổi bán hàng cuối cùng của bác Nhân. Sáng ấy, tôi đập con lợn đất, đếm được hơn mười nghìn đồng. Tôi chia nhỏ món tiền, nhờ mấy bạn trong lớp mua giúp đồ chơi của bác.\n\nGặp bác chiều ấy, tôi thấy bác rất vui. Bác tặng tôi hai con giống, rồi kể: “Hôm nay, bác bán hết nhẵn hàng. Thì ra, vẫn còn nhiều trẻ nhỏ thích đồ chơi của bác.”\n\nBác còn bảo:\n\n- Về quê, bác cũng sẽ nặn đồ chơi để bán. Nghe nói trẻ ở nông thôn thích thứ này hơn trẻ thành phố.",
+    excerpt:
+      "Câu chuyện về bác Nhân làm đồ chơi và các bạn nhỏ giúp bác bán hàng.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "lao-dong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Xuân Quỳnh.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "dan-be-cua-anh-ho-giao",
+    title: "Đàn bê của anh Hồ Giáo",
+    authorSlug: "phuong-vu",
+    content:
+      "Đã sang tháng ba, đồng cỏ Ba Vì vẫn giữ nguyên vẻ đẹp như hồi đầu xuân. Không khí trong lành và rất ngọt ngào. Bầu trời cao vút, trập trùng những đám mây trắng...\nHồ Giáo đứng đã lâu trên đồng cỏ. Đàn bê ăn quanh quẩn ở bên anh.\nGiống như những đứa trẻ quấn quýt bên mẹ, đàn bê cứ quấn vào chân Hồ Giáo. Chúng vừa ăn vừa đùa nghịch. Những con bê đực, y hệt những bé trai khoẻ mạnh, chốc chốc lại ngừng ăn, nhảy quẩng lên rồi chạy đuổi nhau thành một vòng tròn xung quanh anh... Những con bê cái thì khác hẳn. Chúng rụt rè chẳng khác nào những bé gái được bà chiều chuộng, chăm bẵm, không dám cho chạy đi chơi xa... Chúng ăn nhỏ nhẹ, từ tốn. Thỉnh thoảng, một con, chừng như nhớ mẹ, chạy lại chỗ Hồ Giáo, dụi mõm vào người anh nũng nịu. Có con còn sán vào lòng anh, quơ quơ đôi chân lên như là đòi bế.",
+    excerpt:
+      "Đàn bê quấn quýt bên anh Hồ Giáo trên đồng cỏ Ba Vì.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "con-vat",
+      "thien-nhien",
+      "lao-dong",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Miêu tả"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Theo Phượng Vũ.",
+    addedAt: "2026-10-13",
+  }),
+  createParagraph({
+    slug: "chay-nha-hang-xom",
+    title: "Cháy nhà hàng xóm",
+    authorSlug: "truyen-ngu-ngon",
+    content:
+      "Trong làng nọ có nhà bị cháy. Cả làng đổ ra, kẻ thùng, người chậu, ai nấy ra sức tìm cách dập đám cháy. Riêng có một người nhà ở ngay bên cạnh vẫn trùm chăn, bình chân như vại, nghĩ:\n- Cháy nhà hàng xóm, chẳng việc gì mình phải bận tâm.\nNào ngờ, lửa mỗi lúc một to, gió thổi mạnh làm tàn lửa bay tứ tung, bén sang mái nhà ông ta. Lúc bấy giờ người kia mới chồm dậy, cuống cuồng tìm cách dập lửa. Nhưng không kịp nữa rồi. Nhà cửa, của cải của ông ta đã bị ngọn lửa thiêu sạch.",
+    excerpt:
+      "Truyện ngụ ngôn về người thờ ơ khi nhà hàng xóm bị cháy.",
+    tags: [
+      "tieng-viet-2-tap-2",
+      "doan-van",
+      "van-hoc-thieu-nhi",
+    ],
+    categories: ["Thiếu nhi", "Kể chuyện"],
+    grade: "Lớp 2",
+    textbook: "Tiếng Việt 2 - Tập 2",
+    volume: "Tập 2",
+    source: "Truyện ngụ ngôn.",
+    addedAt: "2026-10-13",
+  }),
 ];
 
 const paragraphTiengViet3Tap1: Paragraph[] = [

@@ -8,6 +8,17 @@ export interface ChangelogEntry {
 
 export const changelogEntries: ChangelogEntry[] = [
   {
+    id: "2026-10-13-tieng-viet-2-complete",
+    date: "2026-10-13",
+    title: "Hoàn thiện nội dung Tiếng Việt 2 - Tập 1 và Tập 2",
+    description:
+      "Thư viện đã hoàn tất đợt bổ sung bài đọc cho cả hai tập Tiếng Việt 2.",
+    changes: [
+      "Bổ sung các bài thơ và đoạn văn của Tiếng Việt 2 - Tập 1 và Tập 2.",
+      "Hoàn thiện thông tin tác giả và tạo thư mục minh họa cho những bài đọc mới; hình ảnh có thể được bổ sung sau.",
+    ],
+  },
+  {
     id: "2026-08-24-home-carousel-transition",
     date: "2026-08-24",
     title: "Trang chủ có nền ảnh chạy và hiệu ứng bắt đầu đọc mới",
